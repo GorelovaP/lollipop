@@ -40,7 +40,7 @@ button {
 
 .button {
     padding: 10px 20px;
-    background: #4592FF;
+    background: #FFAAB8;
     border-radius: 20px;
     border: none;
     color: #fff;
@@ -52,6 +52,10 @@ button {
     line-height: 20px;
     display: flex;
     align-items: center;
+}
+.button:hover{
+    cursor: pointer;
+    background-color: #ff5a74;
 }
 
 .button-icon, .button-price {
@@ -303,7 +307,7 @@ button {
 }
 
 .footer {
-    background: #8F79D4;
+    background: #fdc9d1;
     padding-top: 45px;
     padding-bottom: 40px;
     color: #fff;
@@ -476,11 +480,13 @@ button {
         display: none;
     }
 
+
     .modal {
         min-width: 400px;
         max-height: 300px;
         padding: 20px;
     }
+
 
 }
 
