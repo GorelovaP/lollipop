@@ -6,9 +6,11 @@
   <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
    <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
   </g>
- </g>
- <g>
+
   <title>Layer 1</title>
-  <text stroke="#000" transform="matrix(1.4187425975174692,0,0,1.6196768459077098,-183.82712502859846,-372.0583858227781) " font-style="italic" font-weight="bold" xml:space="preserve" text-anchor="start" font-family="'Simonetta', serif" font-size="24" id="svg_2" y="251.46864" x="135" stroke-width="0" fill="#FFAAB8">Lollipops</text>
+  <text stroke="#000"
+        transform="matrix(1.4187425975174692,0,0,1.6196768459077098,-183.82712502859846,-372.0583858227781) "
+        font-style="italic" font-weight="bold" xml:space="preserve" text-anchor="start" font-family="'Simonetta', serif"
+        font-size="24" id="svg_2" y="251.46864" x="135" stroke-width="0" fill="#FFAAB8">Lollipops</text>
  </g>
 </svg>
