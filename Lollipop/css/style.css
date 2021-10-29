@@ -559,7 +559,7 @@ button {
         display: block;
         position: fixed;
         visibility: hidden;
-        top: 0;
+        top: -10px;
         width: 300px;
         height: 100%;
         margin: 0;
