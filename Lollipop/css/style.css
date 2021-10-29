@@ -323,7 +323,7 @@ button {
 }
 
 .footer-menu-link {
-    color: #dd5ea2;
+    color: #ed8baf;
     text-decoration: none;
     font-weight: 900;
     font-size: 14px;
@@ -336,7 +336,7 @@ button {
 }
 
 .footer-text {
-    color: #e96caa;
+    color: #ed8baf;
     font-size: 14px;
     line-height: 20px;
 }
@@ -356,7 +356,7 @@ button {
 }
 
 .top-link-text {
-    color: #e96caa;
+    color: #ed8baf;
     margin-right: 15px;
 }
 
@@ -603,6 +603,19 @@ button {
         z-index: 2;
     }
 
+    .footer-menu{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+
+    }
+    .footer-menu-item{
+        margin-right: 0px;
+        text-align: center;
+    }
 }
 
 @media (max-width: 576px) {
