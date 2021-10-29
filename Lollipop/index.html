@@ -20,38 +20,42 @@
 <!-- class="show-goods" -->
 <body id="body">
 	<header class="container header px-4 px-md-0">
-		<div class="row justify-content-between align-items-center">
-			<div class="col-lg-2 col-6">
+		<div class="cont">
+			<div class=" loll" >
 				<a href="index.html" class="logo-link">
 					<img width="128" src="img/logo.svg" alt="logo: Lollipop" class="logo-image">
 				</a>
 			</div>
-			<div class="col-lg-6 d-none d-lg-block">
+			<div class=" col-lg-6 menu d-lg-block">
 				<nav>
-					<ul class="navigation d-flex justify-content-around">
+					<input id="menu_toggle" type="checkbox" />
+					<label class="menu_btn" for="menu_toggle">
+						<span></span>
+					</label>
+					<ul class="navigation d-flex justify-content-around menu__box">
 						<li class="navigation-item">
-							<a href="#" class="navigation-link" data-field="gender">Womens</a>
+							<a href="#" class="navigation-link menu__item" data-field="gender">Womens</a>
 						</li>
 						<li class="navigation-item">
-							<a href="#" class="navigation-link" data-field="gender">Mens</a>
+							<a href="#" class="navigation-link menu__item" data-field="gender">Mens</a>
 						</li>
 						<li class="navigation-item">
-							<a href="#" class="navigation-link" data-field="category">Clothing</a>
+							<a href="#" class="navigation-link menu__item" data-field="category">Clothing</a>
 						</li>
 						<li class="navigation-item">
-							<a href="#" class="navigation-link" data-field="category">Accessories</a>
+							<a href="#" class="navigation-link menu__item" data-field="category">Accessories</a>
 						</li>
-						<li class="navigation-item">
+						<li class="navigation-item menu__item">
 							<a href="#" class="navigation-link" data-field="category">Shoes</a>
 						</li>
-						<li class="navigation-item">
+						<li class="navigation-item menu__item">
 							<a href="#" class="navigation-link view-all">All</a>
 						</li>
 					</ul>
 				</nav>
 			</div>
-			<div class="col-lg-2 col-6 d-flex justify-content-end">
-				<button class="button button-cart">
+			<div class="col-lg-3 col-8 d-flex justify-content-end flex-md-row cart">
+				<button class="button button-cart ">
 					<img class="button-icon" src="img/cart.svg" alt="icon: cart">
 					<span class="button-text">Cart</span>
 					<span class="button-text cart-count"></span>
@@ -60,7 +64,7 @@
 		</div>
 		<!-- /.row -->
 	</header>
-	<section class="slider swiper-container">
+	<section class="slider swiper-container ">
 		<div class="swiper-wrapper">
 			<section class="slide slide-1 swiper-slide">
 				<div class="container">
@@ -602,8 +606,8 @@
 				</tfoot>
 			</table>
 			<form class="modal-form" action="">
-				<input class="modal-input" type="text" placeholder="Имя" name="nameCustomer">
-				<input class="modal-input" type="text" placeholder="Телефон" name="phoneCustomer">
+				<label><input class="modal-input" type="text" placeholder="Имя" name="nameCustomer"></label>
+				<label><input class="modal-input" type="text" placeholder="Телефон" name="phoneCustomer"></label>
 				<button class="button cart-buy">
 					<span class="button-text">Checkout</span>
 				</button>
