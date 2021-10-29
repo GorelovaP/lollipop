@@ -303,6 +303,8 @@ button {
     padding: 0;
 }
 
+/* Футер */
+
 .footer {
     background:  linear-gradient( #FFF0F5, pink);;
     padding-top: 45px;
@@ -315,7 +317,7 @@ button {
 }
 
 .footer-menu-link {
-    color: #FF1493;
+    color: #dd5ea2;
     text-decoration: none;
     font-weight: 900;
     font-size: 14px;
@@ -328,7 +330,7 @@ button {
 }
 
 .footer-text {
-    color: #FF00FF;
+    color: #e96caa;
     font-size: 14px;
     line-height: 20px;
 }
@@ -343,14 +345,18 @@ button {
 }
 
 .top-link-text {
+    color: #e96caa;
     margin-right: 15px;
 }
 
 .payment-logo {
     vertical-align: middle;
     margin-right: 25px;
+    opacity: 0.5;
 }
 
+
+/* модальное */
 .overlay {
     display: none;
     justify-content: center;
