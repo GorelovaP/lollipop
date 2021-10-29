@@ -65,8 +65,7 @@ button {
 }
 
 .button-icon, .button-price {
-    margin-right: 10px;
-    
+    margin-right: 10px;   
 }
 
 .button-icon {
@@ -74,8 +73,7 @@ button {
 }
 
 .button-icon:last-child {
-    margin-right: 0;
-    
+    margin-right: 0;    
 }
 
 .cart-count {
@@ -227,7 +225,6 @@ button {
 
 .card-text.large {
     max-width: 320px;
-
 }
 
 .card-price {
@@ -312,8 +309,10 @@ button {
     padding: 0;
 }
 
+/* Футер */
+
 .footer {
-    background: #fdc9d1;
+    background:  linear-gradient( #FFF0F5, pink);;
     padding-top: 45px;
     padding-bottom: 40px;
     color: #fff;
@@ -324,7 +323,7 @@ button {
 }
 
 .footer-menu-link {
-    color: #fff;
+    color: #dd5ea2;
     text-decoration: none;
     font-weight: 900;
     font-size: 14px;
@@ -337,7 +336,7 @@ button {
 }
 
 .footer-text {
-    color: #E7D9FF;
+    color: #e96caa;
     font-size: 14px;
     line-height: 20px;
 }
@@ -357,14 +356,18 @@ button {
 }
 
 .top-link-text {
+    color: #e96caa;
     margin-right: 15px;
 }
 
 .payment-logo {
     vertical-align: middle;
     margin-right: 25px;
+    opacity: 0.5;
 }
 
+
+/* модальное */
 .overlay {
     display: none;
     justify-content: center;
