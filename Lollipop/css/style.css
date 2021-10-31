@@ -313,7 +313,7 @@ button {
 
 .footer {
     background:  linear-gradient( #FFF0F5, pink);;
-    padding-top: 45px;
+    padding-top: 25px;
     padding-bottom: 40px;
     color: #fff;
 }
@@ -498,7 +498,10 @@ button {
 .col-delete {
     width: 5px;
 }
-
+.top{
+    margin-bottom: 20px;
+    padding-right: 35px;
+}
 
 @media (max-width: 1200px) {
     .slide-1 {
