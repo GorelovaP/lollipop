@@ -638,6 +638,10 @@ button {
 
 
     }
+    footer .row {
+        justify-content: end;
+    }
+
     .footer-menu-item{
         margin-right: 0px;
         text-align: center;
@@ -654,6 +658,8 @@ button {
         line-height: 1.4;
         margin-bottom: 0;
     }
+
+
 
     .card {
         background-position: left top;
