@@ -334,12 +334,28 @@ button {
     text-decoration: none;
     margin-left: 15px;
 }
-
-.footer-text {
+.social-link-text{
     color: #ed8baf;
     font-size: 14px;
     line-height: 20px;
 }
+
+.footer-text {
+    color: #e74b84;
+    margin-left:  40% ;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 20px;
+}
+  .footer-phone {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    font-size: 14px;
+    letter-spacing: 0.24px;
+    margin-bottom: 12px;
+  }
+
 .cont{
     display: flex;
     flex-direction: row;
@@ -348,6 +364,7 @@ button {
 }
 .footer-line {
     opacity: 0.5;
+    margin: -20px 0;
 }
 
 .top-link {
@@ -622,6 +639,10 @@ button {
         margin-right: 0px;
         text-align: center;
     }
+
+    .margin{
+        margin-top: 20px;
+        }
 }
 
 @media (max-width: 576px) {
