@@ -1,11 +1,11 @@
 const mySwiper = new Swiper(".swiper-container", {
-  loop: true,
+    loop: true,
 
-  // Navigation arrows
-  navigation: {
-    nextEl: ".slider-button-next",
-    prevEl: ".slider-button-prev",
-  },
+    // Navigation arrows
+    navigation: {
+        nextEl: ".slider-button-next",
+        prevEl: ".slider-button-prev",
+    },
 });
 
 //cart
@@ -18,143 +18,144 @@ const viewAll = document.querySelectorAll(".view-all");
 const navigationLink = document.querySelectorAll(".navigation-link:not(.view-all)");
 const showClothing = document.querySelectorAll(".show-clothing");
 const showAcsessories = document.querySelectorAll(".show-acsessories");
-const cartTableGoods =document.querySelector('.cart-table__goods');
+const cartTableGoods = document.querySelector('.cart-table__goods');
 const cartTableTotal = document.querySelector('.card-table__total');
 
 const getGoods = async () => {
-  const result = await fetch("db/db.json");
-  if (!result.ok) {
-    throw "Ошибочка вышла:" + result.status;
-  }
-  return await result.json();
+    const result = await fetch("db/db.json");
+    if (!result.ok) {
+        throw "Ошибочка вышла:" + result.status;
+    }
+    return await result.json();
 };
 
 const cart = {
-  cartGoods:[
-    {
-      id: '099',
-      name: 'часы',
-      price: 999,
-      count: 2,
-    },
-    {
-      id: '090',
-      name: 'Кеды',
-      price: 999,
-      count: 2,
-    },
-  ],
-  renderCart(){
-    cartTableGoods.textContent = '';
-    this.cartGoods.forEach(({id, name, price, count})=>{
-const trGood = document.createElement('tr');
-trGood.className = 'cart-item';
-trGood.dataset.id = id;
+    cartGoods: [
+        {
+            id: '099',
+            name: 'часы',
+            price: 999,
+            count: 2,
+        },
+        {
+            id: '090',
+            name: 'Кеды',
+            price: 999,
+            count: 2,
+        },
+    ],
+    renderCart() {
+        cartTableGoods.textContent = '';
+        this.cartGoods.forEach(({id, name, price, count}) => {
+            const trGood = document.createElement('tr');
+            trGood.className = 'cart-item';
+            trGood.dataset.id = id;
 
-trGood.innerHTML = `
+            trGood.innerHTML = `
           <td>${name}</td>
 					<td>${price}$</td>
 					<td><button class="cart-btn-minus">-</button></td>
 					<td>${count}</td>
 					<td><button class="cart-btn-plus">+</button></td>
-					<td>${price*count}$</td>
+					<td>${price * count}$</td>
 					<td><button class="cart-btn-delete">x</button></td>
 `;
-cartTableGoods.append(trGood)
-    })   
-const totalPrice = this.cartGoods.reduce((sum, item) =>{
-return sum + (item.price*item.count);
-}, 0)
-cartTableTotal.textContent = totalPrice +'$'
-  },
+            cartTableGoods.append(trGood)
+        })
+        const totalPrice = this.cartGoods.reduce((sum, item) => {
+            return sum + (item.price * item.count);
+        }, 0)
+        cartTableTotal.textContent = totalPrice + '$'
+    },
 
-  deleteGood(id){
-this.cartGoods = this.cartGoods.filter(item => id!==item.id);
-this.renderCart()
-  },
-  minusGood(id){
-    for (const item of this.cartGoods){
-      if(item.id===id){
-        if (item.count<=1){
-this.deleteGood(id)
+    deleteGood(id) {
+        this.cartGoods = this.cartGoods.filter(item => id !== item.id);
+        this.renderCart()
+    },
+    minusGood(id) {
+        for (const item of this.cartGoods) {
+            if (item.id === id) {
+                if (item.count <= 1) {
+                    this.deleteGood(id)
+                } else {
+                    item.count--;
+                }
+                break;
+            }
         }
-        else
-        {item.count--;}
-        break;
-      }
-    }
-    this.renderCart()
-  },
-  plusGood(id){
-    for (const item of this.cartGoods){
-      if(item.id===id){
-        item.count++;
-        break;
-      }
-    }
-    this.renderCart()
-  },
-  
-  addCartGoods(id){
-    const goodItem = this.cartGoods.find(item => item.id === id);
-if(goodItem){
-  this.plusGood(id)
-}else{
-  getGoods()
-  .then(data => data.find(item => item.id===id))
-  .then(({id, name, price, count})=>{
-    this.cartGoods.push({
-      id,
-       name,
-        price,
-         count:1
-    });
-  });
-}
-  },
+        this.renderCart()
+    },
+    plusGood(id) {
+        for (const item of this.cartGoods) {
+            if (item.id === id) {
+                item.count++;
+                break;
+            }
+        }
+        this.renderCart()
+    },
+
+    addCartGoods(id) {
+        const goodItem = this.cartGoods.find(item => item.id === id);
+        if (goodItem) {
+            this.plusGood(id)
+        } else {
+            getGoods()
+                .then(data => data.find(item => item.id === id))
+                .then(({id, name, price, count}) => {
+                    this.cartGoods.push({
+                        id,
+                        name,
+                        price,
+                        count: 1
+                    });
+                });
+        }
+    },
 }
 
-document.body.addEventListener('click', event =>{
-  const addToCart=event.target.closest('.add-to-cart');
-  if (addToCart){
-    cart.addCartGoods(addToCart.dataset.id)
-  }
+document.body.addEventListener('click', event => {
+    const addToCart = event.target.closest('.add-to-cart');
+    if (addToCart) {
+        cart.addCartGoods(addToCart.dataset.id)
+    }
 })
 
-cartTableGoods.addEventListener('click', event =>{
-const target=event.target;
-if(target.classList.contains('cart-btn-delete')){
-  const id = target.closest('.cart-item').dataset.id;
-  cart.deleteGood(id);
-};
-if (target.classList.contains('cart-btn-minus')){
-  const id = target.closest('.cart-item').dataset.id;
-  cart.minusGood(id);
-}
-if (target.classList.contains('cart-btn-plus')){
-  const id = target.closest('.cart-item').dataset.id;
-  cart.plusGood(id);
-}
+cartTableGoods.addEventListener('click', event => {
+    const target = event.target;
+    if (target.classList.contains('cart-btn-delete')) {
+        const id = target.closest('.cart-item').dataset.id;
+        cart.deleteGood(id);
+    }
+    ;
+    if (target.classList.contains('cart-btn-minus')) {
+        const id = target.closest('.cart-item').dataset.id;
+        cart.minusGood(id);
+    }
+    if (target.classList.contains('cart-btn-plus')) {
+        const id = target.closest('.cart-item').dataset.id;
+        cart.plusGood(id);
+    }
 })
 
 const openModal = function () {
-  cart.renderCart();
-  modalCart.classList.add("show");
+    cart.renderCart();
+    modalCart.classList.add("show");
 };
 const closeModal = function () {
-  modalCart.classList.remove("show");
+    modalCart.classList.remove("show");
 };
 
 buttonCart.addEventListener("click", openModal);
 
 modalCart.addEventListener("click", function (event) {
-  const target = event.target;
-  if (
-    target.classList.contains("overlay") ||
-    target.classList.contains("modal-close")
-  ) {
-    closeModal();
-  }
+    const target = event.target;
+    if (
+        target.classList.contains("overlay") ||
+        target.classList.contains("modal-close")
+    ) {
+        closeModal();
+    }
 });
 
 //scroll smooth
@@ -162,14 +163,14 @@ modalCart.addEventListener("click", function (event) {
 const scrollLinks = document.querySelectorAll("a.scroll-link");
 
 for (const scrollLink of scrollLinks) {
-  scrollLink.addEventListener("click", event =>{
-    event.preventDefault();
-    const id = scrollLink.getAttribute("href");
-    document.querySelector(id).scrollIntoView({
-      behavior: "smooth",
-      block: "start",
+    scrollLink.addEventListener("click", event => {
+        event.preventDefault();
+        const id = scrollLink.getAttribute("href");
+        document.querySelector(id).scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+        });
     });
-  });
 }
 /*
 for (let i = 0; i < scrollLinks.length; i++) {
@@ -186,14 +187,14 @@ for (let i = 0; i < scrollLinks.length; i++) {
 //goods
 
 const createCard = function ({label, name, img, description, id, price}) {
-  const card = document.createElement("div");
-  card.className = "col-lg-3 col-sm-6";
+    const card = document.createElement("div");
+    card.className = "col-lg-3 col-sm-6";
 
-  card.innerHTML = `
+    card.innerHTML = `
 	<div class="goods-card">
 	${label ?
-		 `<span class="label">${label}</span>` :
-		  ""}
+        `<span class="label">${label}</span>` :
+        ""}
 		<img src="db/${img}" alt="${name}" class="goods-image">
 	<h3 class="goods-title">${name}</h3>
 	<p class="goods-description">${description}</p>
@@ -202,52 +203,52 @@ const createCard = function ({label, name, img, description, id, price}) {
 	</button>
 </div>
 	`;
-  return card;
+    return card;
 };
 
 const renderCards = function (data) {
-  longGoodsList.textContent = "";
-  const cards = data.map(createCard);
-  longGoodsList.append(...cards);
-  document.body.classList.add("show-goods");
+    longGoodsList.textContent = "";
+    const cards = data.map(createCard);
+    longGoodsList.append(...cards);
+    document.body.classList.add("show-goods");
 };
 
-const showAll = function(event){
-  event.preventDefault();
-  getGoods().then(renderCards);
+const showAll = function (event) {
+    event.preventDefault();
+    getGoods().then(renderCards);
 }
 
-viewAll.forEach(function(elem) {
-  elem.addEventListener("click",  showAll);
+viewAll.forEach(function (elem) {
+    elem.addEventListener("click", showAll);
 });
 
 const filterCards = function (field, value) {
-  getGoods()
-    .then(data => 
-       data.filter( good => good[field] === value))
-    .then(renderCards);
+    getGoods()
+        .then(data =>
+            data.filter(good => good[field] === value))
+        .then(renderCards);
 };
 
-navigationLink.forEach(function(link){
-	link.addEventListener('click', function(event){
-		event.preventDefault();
-		const field = link.dataset.field;
-		const value = link.textContent;
-		filterCards(field, value)
-})
+navigationLink.forEach(function (link) {
+    link.addEventListener('click', function (event) {
+        event.preventDefault();
+        const field = link.dataset.field;
+        const value = link.textContent;
+        filterCards(field, value)
+    })
 });
 
 showClothing.forEach(item => {
- item.addEventListener('click', event =>{
-  event.preventDefault();
-  filterCards('category', 'Clothing');
- })
+    item.addEventListener('click', event => {
+        event.preventDefault();
+        filterCards('category', 'Clothing');
+    })
 })
 
 showAcsessories.forEach(item => {
-  item.addEventListener('click', event =>{
-    event.preventDefault();
-    filterCards('category', 'Acsessories');
-  })
+    item.addEventListener('click', event => {
+        event.preventDefault();
+        filterCards('category', 'Acsessories');
+    })
 })
 
