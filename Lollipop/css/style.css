@@ -528,6 +528,7 @@ button {
     #menu_toggle {
         opacity: 0;
     }
+
     .menu_btn {
         position: fixed;
         display: flex; /* используем flex для центрирования содержимого */
@@ -595,6 +596,7 @@ button {
         transform: rotate(0);
 
     }
+
     #menu_toggle:checked ~ .menu_btn > span::after {
         top: 0;
         transform: rotate(90deg);

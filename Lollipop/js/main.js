@@ -10,6 +10,8 @@ const mySwiper = new Swiper(".swiper-container", {
 
 //cart
 
+
+
 const buttonCart = document.querySelector(".button-cart");
 const modalCart = document.querySelector("#modal-cart");
 const modalClose = document.querySelector("modal-close");
