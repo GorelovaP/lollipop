@@ -365,6 +365,10 @@ button {
     margin-right: 25px;
     opacity: 0.5;
 }
+.payment-text{
+    font-size: 14px;
+    line-height: 20px;
+}
 
 
 /* модальное */
