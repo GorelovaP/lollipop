@@ -366,6 +366,7 @@ button {
   margin: -20px 0;
 }
 
+
 .top-link {
   text-decoration: none;
   color: #fff;
@@ -405,11 +406,17 @@ button {
 }
 
 .modal {
-  background-color: #e0e0ff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background: rgb(255, 255, 255);
+
+  border-radius: 5%;
   min-width: 600px;
-  max-height: 400px;
+  min-height: 300px;
+  max-height: 600px;
   padding: 30px;
-  overflow: scroll;
   position: relative;
 }
 
@@ -421,6 +428,7 @@ button {
 .modal-title {
   margin-top: 0;
   margin-bottom: 15px;
+  color: #383838;
 }
 
 .modal-close {
@@ -431,7 +439,12 @@ button {
   font-size: 24px;
   border: none;
 }
-
+.modal-header{
+  width: 99%;
+  height: 30px;
+  margin-bottom: 10px;
+  border-bottom: 1px #5a5a5a solid;
+}
 .modal-form {
   display: flex;
   justify-content: space-between;
@@ -443,30 +456,55 @@ button {
   height: 40px;
   padding: 10px;
   border-radius: 20px;
-  border-style: none;
   margin-bottom: 30px;
+  border: 1px solid #5a5a5a;
 }
 
 .cart-table {
   border-collapse: collapse;
   min-width: 540px;
   margin-bottom: 15px;
+  border: none;
+  table-layout: fixed;
+  text-align: center;
+  border-radius: 15%;
+}
+
+.cart-table th{
+  background: #ffaab8;
+  color: #383838;
+}
+.cart-table td{
+  margin-top: 5px;
+  background: rgba(255, 215, 221, 0.91);
 }
 
 .cart-table th,
 .cart-table td {
   text-align: left;
-  border: 1px solid black;
+  line-height: 30px;
 }
+.cart-table tr{
+  line-height: 20px;
 
+}
+.card-table__total{
+  background: #fc7b91;
+}
 .cart-buy {
-  background-color: #28a745;
-  border-color: #28a745;
+  background-color: #f7667e;
   display: block;
   margin-left: auto;
   height: 40px;
 }
-
+.cart-btn-plus, .cart-btn-minus, .cart-btn-delete{
+  border-radius: 50%;
+  border: none;
+  text-align: center;
+  background-color: #fc7b91;
+  color: #5a5a5a;
+  margin: 0 5px;
+}
 .mw-160 {
   max-width: 160px;
 }
