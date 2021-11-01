@@ -260,7 +260,7 @@ button {
   flex-direction: column;
   position: relative;
   text-align: center;
-  padding: 30px 35px 35px;
+  padding: 30px 5px 35px;
   max-height: 350px;
 }
 
@@ -276,6 +276,7 @@ button {
   color: #262d33;
   font-size: 16px;
   line-height: 25px;
+  min-height: 50px;
   font-family: "Roboto Slab", serif;
 }
 
