@@ -199,7 +199,7 @@ const createCard = function ({label, name, img, description, id, price}) {
         ""}
 		<img src="db/${img}" alt="${name}" class="goods-image">
 	<h3 class="goods-title">${name}</h3>
-	<p class="goods-description">${description}</p>
+	
 	<button class="button goods-card-btn add-to-cart" data-id="${id}">
 		<span class="button-price">$${price}</span>
 	</button>

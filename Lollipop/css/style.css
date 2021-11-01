@@ -189,11 +189,14 @@ button {
 .goods-card-btn {
   display: block;
   width: 100px;
-  margin: auto auto 0;
+  margin-left:  auto ;
+  margin-right: auto;
+  bottom: 0;
+
 }
 
 .goods-card-btn .button-price {
-  margin: 0;
+  /* margin: 0; */
 }
 
 .card-title {
@@ -258,7 +261,7 @@ button {
   position: relative;
   text-align: center;
   padding: 30px 35px 35px;
-  min-height: 440px;
+  max-height: 350px;
 }
 
 .goods-card .label {
