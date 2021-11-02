@@ -670,6 +670,13 @@
             </table>
             <form class="modal-form" action="">
                 <label><input class="modal-input" type="text" placeholder="Имя" name="nameCustomer"></label>
+
+                <!-- Телефон -->
+                        <div class="user_phone">
+                          <input type="tel" required placeholder="+375 (__) ___-__-__" id="user_phone" class="user-phone" title="Формат: +375 (44) 999 99 99"/>
+                    </div>
+                   <!-- Телефон -->
+
                 <label><input class="modal-input" type="text" placeholder="Телефон" name="phoneCustomer"></label>
                 <button class="button cart-buy">
                     <span class="button-text">Подтвердить</span>
@@ -677,6 +684,8 @@
             </form>
         </div>
     </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
 </body>
