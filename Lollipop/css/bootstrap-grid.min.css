@@ -1108,7 +1108,8 @@
 .d-flex {
   display: flex !important;
 }
-.d-inline-flex {
+.d-inline-flex
+{
   display: inline-flex !important;
 }
 .d-none {

@@ -537,23 +537,6 @@ button {
   padding-right: 35px;
 }
 
-/* Телефон */
-.user-phone {
-	width: 300px;
-	box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	/*padding: 8px 8px 8px 36px;*/
-	padding: 8px 8px 8px 8px;
-	height: 40px;
-	border: 1px solid #ccc;
-	font-size: 16px;
-	color: #363636;
-}
-.user-phone:focus {
-	outline: none;
-	border-color: #363636;
-}
 
 @media (max-width: 1200px) {
   .slide-1 {
