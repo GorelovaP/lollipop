@@ -13,7 +13,7 @@ const mySwiper = new Swiper(".swiper-container", {
 
 const buttonCart = document.querySelector(".button-cart");
 const modalCart = document.querySelector("#modal-cart");
-const modalClose = document.querySelector("modal-close");
+const modalClose = document.querySelector(".modal-close");
 const longGoodsList = document.querySelector(".long-goods-list");
 const viewAll = document.querySelectorAll(".view-all");
 const navigationLink = document.querySelectorAll(".navigation-link:not(.view-all)");
@@ -21,7 +21,24 @@ const showClothing = document.querySelectorAll(".show-clothing");
 const showAcsessories = document.querySelectorAll(".show-acsessories");
 const cartTableGoods = document.querySelector('.cart-table__goods');
 const cartTableTotal = document.querySelector('.card-table__total');
+const modalCard = document.querySelector(".modalCard")
 
+
+
+const showModal = function (){
+    const buttons = document.querySelectorAll(".goods-card-btn")
+    buttons.forEach(function(btn) {
+        // Вешаем событие клик
+        btn.addEventListener('click', function(e) {
+            if (modalCard.classList.contains("close")){ modalCard.classList.replace("close","active") }
+            else modalCard.classList.add("active")
+
+            modalClose.addEventListener("click", () =>{
+                modalCard.classList.replace("active", "close")
+            })
+        })
+    })}
+showModal();
 const getGoods = async () => {
     const result = await fetch("db/db.json");
     if (!result.ok) {
@@ -153,10 +170,9 @@ modalCart.addEventListener("click", function (event) {
     }
 });
 
-//scroll smooth
+
 
 const scrollLinks = document.querySelectorAll("a.scroll-link");
-
 for (const scrollLink of scrollLinks) {
     scrollLink.addEventListener("click", event => {
         event.preventDefault();
@@ -206,6 +222,7 @@ const renderCards = function (data) {
     const cards = data.map(createCard);
     longGoodsList.append(...cards);
     document.body.classList.add("show-goods");
+    showModal();
 };
 
 const showAll = function (event) {
@@ -246,3 +263,4 @@ showAcsessories.forEach(item => {
         filterCards('category', 'Acsessories');
     })
 })
+
