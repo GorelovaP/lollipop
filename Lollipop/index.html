@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -35,15 +34,25 @@
                     <span></span>
                 </label>
                 <ul class="navigation d-flex justify-content-around menu__box">
-                    <li class="navigation-item">
-                        <a href="#" class="navigation-link menu__item" data-field="gender">Womens</a>
-                    </li>
-                    <li class="navigation-item">
-                        <a href="#" class="navigation-link menu__item" data-field="gender">Mens</a>
-                    </li>
-                    <li class="navigation-item">
-                        <a href="#" class="navigation-link menu__item" data-field="category">Clothing</a>
-                    </li>
+                    <!--                    <li class="navigation-item">-->
+                    <!--                        <a href="#" class="navigation-link menu__item" data-field="gender">Womens</a>-->
+                    <!--                    </li>-->
+                    <!--                    <li class="navigation-item">-->
+                    <!--                        <a href="#" class="navigation-link menu__item" data-field="gender">Mens</a>-->
+                    <!--                    </li>-->
+
+                    <div class="dropdown">
+                        <li class="navigation-item">
+                            <a href="#" class="navigation-link menu__item cat" data-field="category">Одежда</a>
+                        </li>
+                        <div class="dropdown-content">
+                            <a href="#" class="navigation-link menu__item" data-field="class">Платья, юбки</a>
+                            <a href="#" class="navigation-link menu__item" data-field="class">Рубашки</a>
+                            <a href="#" class="navigation-link menu__item" data-field="class">Свитеры, кардиганы</a>
+                            <a href="#" class="navigation-link menu__item" data-field="class">Толстовки, свитшоты</a>
+                            <a href="#" class="navigation-link menu__item" data-field="class">Футболки, топы</a>
+                        </div>
+                    </div>
                     <li class="navigation-item">
                         <a href="#" class="navigation-link menu__item" data-field="category">Accessories</a>
                     </li>
@@ -51,7 +60,7 @@
                         <a href="#" class="navigation-link menu__item" data-field="category">Shoes</a>
                     </li>
                     <li class="navigation-item ">
-                        <a href="#" class="navigation-link menu__item view-all">All</a>
+                        <a href="#" class="navigation-link menu__item view-all">Все</a>
                     </li>
                 </ul>
             </nav>
@@ -670,9 +679,9 @@
         </table>
         <form class="modal-form" action="">
             <label><input class="modal-input" type="text" placeholder="Имя" name="nameCustomer"></label>
-            <label><input required class="modal-input" type="text" placeholder="+375 __ _______" name="phoneCustomer"
-                          pattern="[\+]\d{3}\s\d{2}\s\d{7}" minlength="15"
-                          maxlength="15"></label>
+            <label><input required class="modal-input" type="text" placeholder="+375ХХХХХХХХХ" name="phoneCustomer"
+                          pattern="[\+]\d{3}\d{2}\d{7}" minlength="13"
+                          maxlength="13"></label>
             <button class="button cart-buy">
                 <span class="button-text">Подтвердить</span>
             </button>

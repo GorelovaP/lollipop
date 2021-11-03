@@ -34,7 +34,7 @@ img {
   color: #939699;
   font-family: "Lato", sans-serif;
   font-style: normal;
-  font-weight: 900;
+  font-weight: 700;
   font-size: 14px;
   line-height: 20px;
   letter-spacing: 0.5px;
@@ -536,8 +536,34 @@ button {
   margin-bottom: 20px;
   padding-right: 35px;
 }
-
-
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 2;
+}
+.dropdown-content a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #939699;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  padding: 12px 16px;
+  display: block;
+}
+.dropdown-content a:hover {background-color: #fdc0ca; color: white}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .cat {color: #ffaab8;}
 @media (max-width: 1200px) {
   .slide-1 {
     background-size: cover;

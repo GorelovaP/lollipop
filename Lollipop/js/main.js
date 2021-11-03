@@ -236,7 +236,7 @@ navigationLink.forEach(function (link) {
 showClothing.forEach(item => {
     item.addEventListener('click', event => {
         event.preventDefault();
-        filterCards('category', 'Clothing');
+        filterCards('category', 'Одежда');
     })
 })
 
