@@ -725,13 +725,27 @@ button {
     margin-right: 0px;
     text-align: center;
   }
-hr{
+hr {
     margin: 0;
-}
+   }
   .margin {
     margin-top: 20px;
   }
+    .dropdown-content{
+        width: 100%;
+    }
+    .cat:after{
+        content: "";
+        position: absolute;
+        right: 20px;
+        width: 10px;
+        height: 10px;
+        border-right: 2px solid  #939699;;
+        border-bottom: 2px solid  #939699;;
+        transform: rotate(45deg);
+    }
 }
+
 
 @media (max-width: 576px) {
   .slide-title {
