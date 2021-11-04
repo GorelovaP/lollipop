@@ -600,14 +600,33 @@ color: #fa879a;
 .close{
   display: none;
 }
-.modalCard-close{
-  background-color: rgba(241, 149, 163, 0.91);
+.modalCard-btn{
+  display: flex;
   top: 75%;
   bottom: 5%;
-  right: 35%;
-  font-size: 14px;
-  
 }
+.modalCard-close{
+  background-color: rgba(241, 149, 163, 0.91);
+  font-size: 14px;
+  top: 75%;
+  bottom: 5%;
+  right: 20%;
+  padding: auto;
+  }
+  .modalCard-cart{
+    position: absolute;
+    background-color: transparent;
+    font-size: 24px;
+    z-index: 6;
+    background-color: rgba(241, 149, 163, 0.91);
+    font-size: 14px;
+    top: 75%;
+    bottom: 15%;
+    left: 15%;
+    padding: 40px;
+  }
+
+
 @media (max-width: 1200px) {
   .slide-1 {
     background-size: cover;
@@ -776,6 +795,20 @@ hr {
       right: 0;
       font-size: 14px;
       margin: 0 20% 20px;
+      padding:0 10px ;
+    }
+    .modalCard-cart{
+      top: 60%;
+      bottom: 35%;
+      left: 25%;
+      padding: 25px 25px 25px 15px;
+    }
+    .active{
+      display: block;
+      position: fixed;
+      left: calc(50vw - 25vw);
+      top: calc(50vh - 25vh);
+      z-index: 100;
     }
 }
 
@@ -805,4 +838,27 @@ hr {
     max-height: 400px;
     padding: 20px;
   }
+
+  .modalCard-title{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 24px;
+    color: #fa879a;
+   
+    }
+    .modalCardContent{
+      margin: 50% 25%;
+     }
+
+  .modalCard-close{
+    right: 0;
+    font-size: 11px;
+    margin: 0 10% 20px;
+  }
+  .modalCard-cart{
+    font-size: 11px;
+    left: 10%;
+    right: 10%;
+    padding: 20px 5px 20px 5px;
+  }
+
 }
