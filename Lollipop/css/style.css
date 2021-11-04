@@ -263,6 +263,12 @@ button {
   padding: 30px 5px 35px;
   max-height: 350px;
 }
+.goods-card:hover {
+  transform: scale(1.5);
+  background: rgb(252, 241, 241);
+  z-index: 1;
+  transition: transform .5s;
+}
 
 .goods-card .label {
   position: absolute;
@@ -567,17 +573,22 @@ button {
 .dropdown:hover .cat {color: #ffaab8;}
 
 
-
 .modalCard{
   width: 50vw;
   height: 50vh;
-  background: #ffffff;
+  background: rgba(255, 215, 221, 0.91);
   display: none;
+  border-radius: 10%;
+}
 
+.modalCard-title{
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-size: 64px;
+color: #fa879a;
 
 }
 .modalCardContent{
-  display: flex;
+ margin: 15% 20%;
 }
 .active{
   display: block;
@@ -588,6 +599,14 @@ button {
 }
 .close{
   display: none;
+}
+.modalCard-close{
+  background-color: rgba(241, 149, 163, 0.91);
+  top: 75%;
+  bottom: 5%;
+  right: 35%;
+  font-size: 14px;
+  
 }
 @media (max-width: 1200px) {
   .slide-1 {
@@ -743,6 +762,20 @@ hr {
         border-right: 2px solid  #939699;;
         border-bottom: 2px solid  #939699;;
         transform: rotate(45deg);
+    }
+    .modalCard-title{
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-size: 44px;
+      color: #fa879a;
+     
+      }
+      .modalCardContent{
+        margin: 20% 25%;
+       }
+    .modalCard-close{
+      right: 0;
+      font-size: 14px;
+      margin: 0 20% 20px;
     }
 }
 
