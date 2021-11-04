@@ -570,7 +570,7 @@ button {
 }
 .dropdown-content a:hover {background-color: #fdc0ca; color: white}
 .dropdown:hover .dropdown-content {display: block;}
-.dropdown:hover .cat {color: #ffaab8;}
+.dropdown:hover .cat, .hov:hover {color: #ffaab8;}
 
 
 .modalCard{
