@@ -260,7 +260,7 @@ showClothing.forEach(item => {
 showAcsessories.forEach(item => {
     item.addEventListener('click', event => {
         event.preventDefault();
-        filterCards('category', 'Acsessories');
+        filterCards('category', 'Аксессуары');
     })
 })
 
