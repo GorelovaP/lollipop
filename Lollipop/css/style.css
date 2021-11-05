@@ -601,6 +601,7 @@ button {
 .dropdown:hover .cat, .hov:hover {color: #ffaab8;}
 
 .modalCard {
+    border: 2px solid #ffeef3;
     width: 50vw;
     height: 50vh;
     background: rgba(255, 215, 221, 0.91);
@@ -609,14 +610,18 @@ button {
 }
 
 .modalCard-title {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Lato', 'Roboto Slab', serif;
     font-size: 64px;
-    color: #fa879a;
+    color: rgb(255 170 184);
+    -webkit-text-stroke: 1px   #806d71;
+
 
 }
 
 .modalCardContent {
-    margin: 15% 20%;
+    position: relative;
+    margin: 10% 20%;
+    text-align: center;
 }
 
 .active {
@@ -638,11 +643,12 @@ button {
 }
 
 .modalCard-close {
+    position: initial;
     background-color: rgba(241, 149, 163, 0.91);
+    right: 35%;
     font-size: 14px;
-    top: 75%;
-    bottom: 5%;
-    right: 20%;
+    height: 50px;
+    margin: 0 auto;
 }
 
 .modalCard-cart {
@@ -667,15 +673,9 @@ button {
         background-size: cover;
     }
 
-    .modalCard-title {
-        font-size: 40px;
-
-    }
 
     .modalCard-close {
-        right: 0;
         font-size: 13px;
-        margin-right: 5%;
         padding: 0 15px;
     }
 
