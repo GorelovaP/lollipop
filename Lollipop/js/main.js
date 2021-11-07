@@ -210,7 +210,7 @@ const createCard = function ({label, name, img, description, id, price}) {
 	<h3 class="goods-title">${name}</h3>
 	
 	<button class="button goods-card-btn add-to-cart" data-id="${id}">
-		<span class="button-price">$${price}</span>
+		<span class="button-price">${price} BYN</span>
 	</button>
 </div>
 	`;
