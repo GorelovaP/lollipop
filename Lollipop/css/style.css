@@ -104,11 +104,15 @@ button {
 }
 
 .slide-1 {
-    background: #b4d1e0 url("../img/slide-image-1.png") no-repeat top right 30%;
+    background: #ffdce6 url("../img/slide-3.png") no-repeat top right 30%;
 }
 
 .slide-2 {
-    background: #b9e0b4 url("../img/slide-image-1.png") no-repeat top right 30%;
+    background: #b9e0b4 url("../img/card-5.png") no-repeat top right 30%;
+}
+
+.slide-3 {
+  background: #ebdf41 url("../img/slide-4.png") no-repeat top right 30%;
 }
 
 .label {
@@ -176,7 +180,7 @@ button {
 
 .card-3 {
     padding-top: 35px;
-    background: #ccd5e6 url("../img/card-image-3.png") no-repeat top right 10%;
+    background: #fadee6 url("../img/dress-1.png") no-repeat top right 10%;
     background-size: contain;
 }
 
