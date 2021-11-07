@@ -104,15 +104,15 @@ button {
 }
 
 .slide-1 {
-    background: #ffdce6 url("../img/slide-3.png") no-repeat top right 30%;
+    background: #ffdce6 url("../img/slide-1.png") no-repeat top right 30%;
 }
 
 .slide-2 {
-    background: #b9e0b4 url("../img/card-5.png") no-repeat top right 30%;
+    background: #b9e0b4 url("../img/slide-2.png") no-repeat top right 30%;
 }
 
 .slide-3 {
-  background: #ebdf41 url("../img/slide-4.png") no-repeat top right 30%;
+  background: #dcfcf9 url("../img/slide-3.png") no-repeat top right 30%;
 }
 
 .label {
@@ -892,6 +892,22 @@ button {
         top: calc(50vh - 25vh);
         z-index: 100;
     }
+
+ .slide-1 {
+    background: #ffdce6 url("../img/slide-1_350.png") no-repeat bottom 50% right 0%;
+}
+.slide-2 {
+  background: #b9e0b4 url("../img/slide-2_350.png") no-repeat bottom 50% right 5%;
+}
+
+.slide-3 {
+background: #dcfcf9 url("../img/slide-3_350.png") no-repeat bottom 50% right 5%;
+}
+.card-3 {
+  padding-top: 35px;
+  background: #fadee6 url("../img/dress_350.png") no-repeat top right 10%;
+  background-size: contain;
+}
 }
 
 
@@ -946,4 +962,24 @@ button {
         padding: 20px 5px 20px 5px;
     }
 
+    .slide-1 {
+      background: #ffdce6 url("../img/slide-1_350.png") no-repeat bottom 0 right 30%;
+  }
+  
+  .slide-2 {
+      background: #b9e0b4 url("../img/slide-2_350.png") no-repeat bottom 0 right 30%;
+  }
+  
+  .slide-3 {
+    background: #dcfcf9 url("../img/slide-3_350.png") no-repeat bottom -80% right 30%;
+  }
+  .tel{
+    margin-top: -20%;
+  }
+
+  .card-3 {
+    padding-top: 35px;
+    background: #fadee6 url("../img/dress_250.png") no-repeat bottom 0 right 10%;
+    background-size: contain;
+  }
 }
