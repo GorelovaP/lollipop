@@ -190,7 +190,7 @@ button {
     align-items: flex-start;
     padding-top: 35px;
     padding-left: 25px;
-    background: #ff4f52 url("../img/card-image-4.png") no-repeat top right;
+    background: #cef6fc url("../img/card-image-4.png") no-repeat top right;
     background-size: contain;
 }
 
@@ -354,6 +354,9 @@ button {
     color: #ed8baf;
     font-size: 14px;
     line-height: 20px;
+}
+.white{
+  color: #fff;
 }
 
 .footer-text {
@@ -529,10 +532,12 @@ button {
     border: none;
     text-align: center;
     background-color: #fc7b91;
-    color: #5a5a5a;
+    color: #000000;
     margin: 0 5px;
+    font-weight: bold;
+    width: 20px;
+    height: 20px;
 }
-
 .mw-160 {
     max-width: 160px;
 }
@@ -689,6 +694,22 @@ button {
         margin-left: 5%;
         padding: 0 15px;
     }
+
+    .slide-1 {
+      background: #ffdce6 url("../img/slide-1_500.png") no-repeat bottom 50% right 0%;
+  }
+  .slide-2 {
+    background: #b9e0b4 url("../img/slide-2.png") no-repeat bottom 50% right 10%;
+}
+
+.slide-3 {
+  background: #dcfcf9 url("../img/slide-3.png") no-repeat bottom 50% right 10%;
+}
+.card-3 {
+
+  background: #fadee6 url("../img/dress_350.png") no-repeat bottom 50% right 10%;
+
+}
 }
 
 @media (max-width: 992px) {
@@ -893,16 +914,7 @@ button {
         z-index: 100;
     }
 
- .slide-1 {
-    background: #ffdce6 url("../img/slide-1_350.png") no-repeat bottom 50% right 0%;
-}
-.slide-2 {
-  background: #b9e0b4 url("../img/slide-2_350.png") no-repeat bottom 50% right 5%;
-}
 
-.slide-3 {
-background: #dcfcf9 url("../img/slide-3_350.png") no-repeat bottom 50% right 5%;
-}
 .card-3 {
   padding-top: 35px;
   background: #fadee6 url("../img/dress_350.png") no-repeat top right 10%;
@@ -979,7 +991,19 @@ background: #dcfcf9 url("../img/slide-3_350.png") no-repeat bottom 50% right 5%;
 
   .card-3 {
     padding-top: 35px;
-    background: #fadee6 url("../img/dress_250.png") no-repeat bottom 0 right 10%;
+    background: #fadee6 url("../img/dress_250.png") no-repeat bottom 0 right 0;
     background-size: contain;
   }
+  .label {
+    margin-left: 17%;
+}
+.modal {
+  max-width: 470px;
+  min-height: 300px;
+  max-height: 600px;
+
+}
+.cart-table {
+  min-width: 450px; 
+}
 }

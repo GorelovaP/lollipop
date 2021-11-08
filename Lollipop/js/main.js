@@ -49,12 +49,6 @@ const getGoods = async () => {
 
 const cart = {
     cartGoods: [
-        {
-            id: '099',
-            name: 'часы',
-            price: 0,
-            count: 1,
-        },
     ],
     renderCart() {
         cartTableGoods.textContent = '';
@@ -65,11 +59,11 @@ const cart = {
 
             trGood.innerHTML = `
           <td>${name}</td>
-					<td>${price}$</td>
+					<td>${price}BYN</td>
 					<td><button class="cart-btn-minus">-</button></td>
 					<td>${count}</td>
 					<td><button class="cart-btn-plus">+</button></td>
-					<td>${price * count}$</td>
+					<td>${price * count}BYN</td>
 					<td><button class="cart-btn-delete">x</button></td>
 `;
             cartTableGoods.append(trGood)
@@ -77,7 +71,7 @@ const cart = {
         const totalPrice = this.cartGoods.reduce((sum, item) => {
             return sum + (item.price * item.count);
         }, 0)
-        cartTableTotal.textContent = totalPrice + '$'
+        cartTableTotal.textContent = totalPrice + 'BYN'
     },
 
     deleteGood(id) {
