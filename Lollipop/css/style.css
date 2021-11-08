@@ -65,6 +65,7 @@ button {
 .button:hover {
     cursor: pointer;
     background-color: #ff5a74;
+    text-align: center;
 }
 
 .button-icon,
@@ -461,6 +462,7 @@ button {
     font-size: 24px;
     border: none;
     z-index: 6;
+    margin-right: 20px;
 }
 
 .modal-header {
@@ -646,9 +648,10 @@ button {
 }
 
 .modalCard-btn {
-    display: flex;
-    top: 75%;
-    bottom: 5%;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+
 }
 
 .modalCard-close {
@@ -656,19 +659,13 @@ button {
     background-color: rgba(241, 149, 163, 0.91);
     right: 35%;
     font-size: 14px;
-    height: 50px;
-    margin: 0 auto;
 }
 
 .modalCard-cart {
-    position: absolute;
-    right: 15px;
+    height: 50px;
     border: none;
     background-color: rgba(241, 149, 163, 0.91);
     font-size: 14px;
-    top: 75%;
-    bottom: 5%;
-    left: 15%;
     padding: 35px;
 }
 
@@ -691,7 +688,6 @@ button {
     .modalCard-cart {
         left: 0;
         font-size: 13px;
-        margin-left: 5%;
         padding: 0 15px;
     }
 
@@ -715,7 +711,18 @@ button {
 @media (max-width: 992px) {
     .loll {
     }
-
+    .modalCard-cart {
+       width: 230px;
+        display: flex;
+        justify-content: center;
+    }
+    .modalCard-btn {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
     .cart {
         width: 30%;
     }
@@ -888,24 +895,21 @@ button {
     }
 
     .modalCardContent {
-        margin: 20% 25%;
+        margin: 25% 15%;
     }
 
     .modalCard-close {
-        right: 0;
         font-size: 14px;
-        margin: 0 20% 20px;
+        width: 230px;
+        height: 50px;
+        margin-bottom: 15px;
         padding: 0 15px;
     }
 
-    .modalCard-cart {
-        top: 57%;
-        bottom: 55%;
-        left: 23%;
-        right: 23%;
-        padding: 6%;
-    }
 
+.modal-close{
+    margin-right: 0;
+}
     .active {
         display: block;
         position: fixed;
@@ -961,13 +965,12 @@ button {
     }
 
     .modalCard-close {
-        left: 5%;
-        right: 5%;
         font-size: 11px;
         margin: 0 10% 20px;
     }
 
     .modalCard-cart {
+
         font-size: 11px;
         left: 5%;
         right: 5%;

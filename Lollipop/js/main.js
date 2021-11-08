@@ -1,7 +1,5 @@
 const mySwiper = new Swiper(".swiper-container", {
     loop: true,
-
-    // Navigation arrows
     navigation: {
         nextEl: ".slider-button-next",
         prevEl: ".slider-button-prev",
@@ -11,7 +9,7 @@ const mySwiper = new Swiper(".swiper-container", {
 //cart
 
 
-const buttonCart = document.querySelector(".button-cart");
+const buttonCarts = document.querySelectorAll(".button-cart");
 const modalCart = document.querySelector("#modal-cart");
 const modalClose = document.querySelector(".modal-close");
 const longGoodsList = document.querySelector(".long-goods-list");
@@ -24,20 +22,21 @@ const cartTableTotal = document.querySelector('.card-table__total');
 const modalCard = document.querySelector(".modalCard")
 
 
-
-const showModal = function (){
+const showModal = function () {
     const buttons = document.querySelectorAll(".goods-card-btn")
-    buttons.forEach(function(btn) {
+    buttons.forEach(function (btn) {
         // Вешаем событие клик
-        btn.addEventListener('click', function(e) {
-            if (modalCard.classList.contains("close")){ modalCard.classList.replace("close","active") }
-            else modalCard.classList.add("active")
+        btn.addEventListener('click', function (e) {
+            if (modalCard.classList.contains("close")) {
+                modalCard.classList.replace("close", "active")
+            } else modalCard.classList.add("active")
 
-            modalClose.addEventListener("click", () =>{
+            modalClose.addEventListener("click", () => {
                 modalCard.classList.replace("active", "close")
             })
         })
-    })}
+    })
+}
 showModal();
 const getGoods = async () => {
     const result = await fetch("db/db.json");
@@ -147,12 +146,20 @@ cartTableGoods.addEventListener('click', event => {
 const openModal = function () {
     cart.renderCart();
     modalCart.classList.add("show");
+    if (modalCard.classList.contains("active")) {
+        modalCard.classList.replace("active", "close")
+    }
+
 };
 const closeModal = function () {
     modalCart.classList.remove("show");
 };
 
-buttonCart.addEventListener("click", openModal);
+buttonCarts.forEach(function (btn) {
+    btn.addEventListener("click", openModal);
+
+})
+
 
 modalCart.addEventListener("click", function (event) {
     const target = event.target;
@@ -163,7 +170,6 @@ modalCart.addEventListener("click", function (event) {
         closeModal();
     }
 });
-
 
 
 const scrollLinks = document.querySelectorAll("a.scroll-link");
@@ -191,10 +197,9 @@ for (let i = 0; i < scrollLinks.length; i++) {
 */
 //goods
 
-const createCard = function ({label, name, img, description, id, price}) {
+const createCard = function ({label, name, img, id, price}) {
     const card = document.createElement("div");
     card.className = "col-lg-3 col-sm-6";
-
     card.innerHTML = `
 	<div class="goods-card">
 	${label ?
@@ -202,7 +207,6 @@ const createCard = function ({label, name, img, description, id, price}) {
         ""}
 		<img src="db/${img}" alt="${name}" class="goods-image">
 	<h3 class="goods-title">${name}</h3>
-	
 	<button class="button goods-card-btn add-to-cart" data-id="${id}">
 		<span class="button-price">${price} BYN</span>
 	</button>
