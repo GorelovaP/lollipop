@@ -42,6 +42,9 @@ img {
   line-height: 20px;
   letter-spacing: 0.5px;
 }
+.slide-link{
+    color: black;
+}
 
 button {
   cursor: pointer;
@@ -68,13 +71,19 @@ button {
   text-align: center;
 }
 
-.button-icon,
+.button-slide{
+    background: #fff;
+    color: black;
+}
+
 .button-price {
-  margin-right: 10px;
+  margin-right: 0 5px;
+  font-weight: 700;
 }
 
 .button-icon {
   margin-left: 10px;
+  margin-right: 10px;
 }
 
 .button-icon:last-child {
@@ -432,7 +441,7 @@ button {
   border-radius: 20px;
   min-width: 600px;
   min-height: 300px;
-  max-height: 600px;
+ 
   padding: 30px;
   position: relative;
 }
@@ -931,11 +940,33 @@ button {
         left: calc(50vw - 288px);
         top: calc(50vh - 200px);
     }
-
+  
+    .slide-1 {
+        background: #ffdce6 url("../img/slide-1_350.png") no-repeat bottom 50% right
+          20%;
+      }
+      .slide-2 {
+        background: #b9e0b4 url("../img/slide-2_350.png") no-repeat bottom 50% right 20%;
+      }
+    
+      .slide-3 {
+        background: #dcfcf9 url("../img/slide-3_350.png") no-repeat bottom 50% right 20%;
+      }
+      .card-3 {
+        background: #fadee6 url("../img/dress_350.png") no-repeat bottom 50% right
+          10%;
+      }
   .card-3 {
     padding-top: 35px;
     background: #fadee6 url("../img/dress_350.png") no-repeat top right 10%;
     background-size: contain;
+  }
+  .modal {
+    max-width: 470px;
+    min-height: 300px;
+    max-height: 1500px;
+    margin: 0 5px;
+    border-radius: 20px;
   }
 
 }
@@ -953,9 +984,22 @@ button {
   .slide-title {
     font-size: 36px;
     line-height: 1.4;
-    margin-bottom: 0;
-  }
-
+      margin-left: 40%;
+}
+.width{
+    margin-left: 25%;     
+}
+.slide-description{
+    font-size: 18px;
+line-height: 30px;
+color: #4b5157;
+min-width: 450px;
+margin-bottom: 20px;
+margin-left: 5%;
+}
+.button-slide{
+    margin-left: 10%;
+}
   .card {
     background-position: left top;
   }
@@ -1016,8 +1060,28 @@ button {
 
   .card-3 {
     padding-top: 35px;
-    background: #fadee6 url("../img/dress_250.png") no-repeat bottom 0 right 0;
+    background: #fadee6 url("../img/dress_250.png") no-repeat bottom 1% right 1%;
     background-size: contain;
+  }
+  .card-title.large {
+    max-width: 420px;
+    font-size: 30px;
+    line-height: 30px;
+    margin-top: 30px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+  .card-text {
+    max-width: 176px;
+    color: #4b5157;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 25px;
+  }
+  
+  .card-text.large {
+    max-width: 320px;
+  
   }
   .label {
     margin-left: 17%;
@@ -1025,7 +1089,7 @@ button {
   .modal {
     max-width: 470px;
     min-height: 300px;
-    max-height: 600px;
+    max-height: 1000px;
     margin: 0 5px;
     border-radius: 20px;
   }
@@ -1038,5 +1102,10 @@ button {
   .tell{
     margin-left: 0;
     width: 100%;
+  }
+
+  .slider-button {
+    width: 40px;
+    
   }
 }

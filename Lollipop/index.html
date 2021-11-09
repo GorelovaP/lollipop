@@ -15,550 +15,546 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
-    <link rel="stylesheet" href="css/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css">
 </head>
 <!-- class="show-goods" -->
 
 <body id="body">
-<div class="modalCard">
-    <div class="modalCardContent">
-        <span class="modalCard-title">Товар добавлен!</span>
-    </div>
-    <div class="modalCard-btn">
-        <button class="modalCard-close  button modal-close ">Вернуться к выбору товаров</button>
-        <button class="button-cart modalCard-cart button ">
-            <img class="button-icon" src="img/cart.svg" alt="icon: cart">
-            <span class="button-text">Перейти в корзину</span>
-        </button>
-    </div>
-</div>
-<header class="container header px-4 px-md-0">
-    <div class="cont">
-        <div class=" loll">
-            <a href="index.html" class="logo-link">
-                <img width="128" src="img/logo.svg" alt="logo: Lollipop" class="logo-image">
-            </a>
+    <div class="modalCard">
+        <div class="modalCardContent">
+            <span class="modalCard-title">Товар добавлен!</span>
         </div>
-        <div class=" col-lg-6 menu d-lg-block">
-            <nav>
-                <input id="menu_toggle" type="checkbox"/>
-                <label class="menu_btn" for="menu_toggle">
-                    <span></span>
-                </label>
-                <ul class="navigation d-flex justify-content-around menu__box">
-                    <div class="dropdown">
-                        <li class="navigation-item">
-                            <a href="#" class="navigation-link menu__item cat" data-field="category">Одежда</a>
-                        </li>
-                        <div class="dropdown-content">
-                            <a href="#" class="navigation-link menu__item" data-field="class">Брюки, джинсы</a>
-                            <a href="#" class="navigation-link menu__item" data-field="class">Платья, юбки</a>
-                            <a href="#" class="navigation-link menu__item" data-field="class">Рубашки</a>
-                            <a href="#" class="navigation-link menu__item" data-field="class">Свитеры, кардиганы</a>
-                            <a href="#" class="navigation-link menu__item" data-field="class">Толстовки,
-                                свитшоты</a>
-                            <a href="#" class="navigation-link menu__item" data-field="class">Футболки, топы</a>
-                        </div>
-                    </div>
-                    <div class="dropdown">
-                        <li class="navigation-item ">
-                            <a href="#" class="navigation-link menu__item cat " data-field="category">Обувь</a>
-                        </li>
-                        <div class="dropdown-content">
-                            <a href="#" class="navigation-link menu__item" data-field="class">Ботинки и
-                                ботильоны</a>
-                            <a href="#" class="navigation-link menu__item" data-field="class">Кроссовки и кеды</a>
-                            <a href="#" class="navigation-link menu__item" data-field="class">Туфли на каблуке</a>
-                        </div>
-                    </div>
-                    <div class="dropdown">
-                        <li class="navigation-item ">
-                            <a href="#" class="navigation-link menu__item cat " data-field="category">Нижнее
-                                бельё</a>
-                        </li>
-                        <div class="dropdown-content">
-                            <a href="#" class="navigation-link menu__item" data-field="class">Бра</a>
-                            <a href="#" class="navigation-link menu__item" data-field="class">Комплекты</a>
-                            <a href="#" class="navigation-link menu__item" data-field="class">Трусы</a>
-                        </div>
-                    </div>
-                    <li class="navigation-item ">
-                        <a href="#" class="navigation-link menu__item hov" data-field="category">Аксессуары</a>
-                    </li>
-                    <li class="navigation-item ">
-                        <a href="#" class="navigation-link menu__item view-all hov">Все</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-        <div class="col-lg-3 col-8 d-flex justify-content-end flex-md-row cart">
-            <button class="button-cart button">
+        <div class="modalCard-btn">
+            <button class="modalCard-close  button modal-close ">Вернуться к выбору товаров</button>
+            <button class="button-cart modalCard-cart button ">
                 <img class="button-icon" src="img/cart.svg" alt="icon: cart">
-                <span class="button-text">Корзина</span>
-                <span class="button-text cart-count"></span>
+                <span class="button-text">Перейти в корзину</span>
             </button>
         </div>
     </div>
-    <!-- /.row -->
-</header>
-<section class="slider swiper-container ">
-    <div class="swiper-wrapper">
-        <section class="slide slide-1 swiper-slide">
-            <div class="container">
-                <div class="row">
-                    <div class=" tel col-lg-4 col-10 offset-lg-1">
-                        <span class="label">Bestseller</span>
-                        <h2 class="slide-title">Women's Alpargata Loafer</h2>
-                        <p class="slide-description">At Alpa believe in a better tomorrow, one where humanity
-                            thrives.</p>
-                        <button class="button add-to-cart" data-id="003">
-                            <span class="button-price">$219</span>
-                            <span class="button-text">Shop now</span>
-                        </button>
-
-                    </div>
-                    <!-- /.col-4 offset-lg-1 -->
-                </div>
-                <!-- /.row -->
-            </div>
-            <!-- /.container -->
-        </section>
-        <section class="slide slide-2 swiper-slide">
-            <div class="container">
-                <div class="row">
-                    <div class=" tel col-lg-4 col-10 offset-lg-1">
-                        <span class="label">New</span>
-                        <h2 class="slide-title">Text T-Shirt</h2>
-                        <p class="slide-description">Women’s pearl basic knit sweater with a round neck. Available
-                            in
-                            several colours. Free shipping to stores.</p>
-                        <button class="button add-to-cart" data-id="004">
-                            <span class="button-price">$119</span>
-                            <span class="button-text">Shop now</span>
-                        </button>
-                    </div>
-                    <!-- /.col-4 offset-lg-1 -->
-                </div>
-                <!-- /.row -->
-            </div>
-            <!-- /.container -->
-        </section>
-        <section class="slide slide-3 swiper-slide">
-            <div class="container">
-                <div class="row">
-                    <div class=" tel col-lg-4 col-10 offset-lg-1">
-                        <span class="label">Bestseller</span>
-                        <h2 class="slide-title">Sweater Choker Neck</h2>
-                        <p class="slide-description">Women’s pearl basic knit sweater with a round neck. Available
-                            in
-                            several colours. Free shipping to stores.</p>
-                        <button class="button add-to-cart" data-id="005">
-                            <span class="button-price">$319</span>
-                            <span class="button-text">Shop now</span>
-                        </button>
-                    </div>
-                    <!-- /.col-4 offset-lg-1 -->
-                </div>
-                <!-- /.row -->
-            </div>
-            <!-- /.container -->
-        </section>
-    </div>
-    <!-- /.swiper-wrapper -->
-    <div class="slider-nav">
-        <div class="container">
-            <div class="row justify-content-between">
-                <div class="col-1">
-                    <button class="slider-button slider-button-prev">
-                        <img src="img/arrow-prev.svg" alt="icon: arrow-prev">
-                    </button>
-                </div>
-                <!-- /.col-1 -->
-                <div class="col-1">
-                    <button class="slider-button slider-button-next">
-                        <img src="img/arrow-next.svg" alt="icon: arrow-prev">
-                    </button>
-                </div>
-                <!-- /.col-1 -->
-            </div>
-            <!-- /.row -->
-        </div>
-        <!-- /.container -->
-    </div>
-    <!-- /.slider-nav -->
-</section>
-<!-- /.slider -->
-<section class="special-offers container pt-5 pb-4">
-    <div class="row mb-4">
-        <div class="col-xl-6">
-            <div class="card card-1 mb-4">
-                <h3 class="card-title">Fashion Month Ready in Capital Shop</h3>
-                <p class="card-text">Bags & Acsessories & Lingerie & Sportswear & Beauty & Swimwear</p>
-                <button class="button show-acsessories">
-                    <span class="button-text">View all</span>
-                    <img src="img/arrow.svg" alt="icon: arrow" class="button-icon">
-                </button>
-            </div>
-            <!-- /.card -->
-        </div>
-        <!-- /.col-6 -->
-        <div class="col-xl-6">
-            <div class="card card-2 mb-4">
-                <h3 class="card-title text-light">Catch the Sun: Spring Break Styles From $5.99</h3>
-                <p class="card-text text-light">Sweaters & Hoodies & Puffer Jackets & Coats and Jackets & Knit</p>
-                <button class="button show-clothing">
-                    <span class="button-text">View all</span>
-                    <img src="img/arrow.svg" alt="icon: arrow" class="button-icon">
-                </button>
-            </div>
-            <!-- /.card -->
-        </div>
-        <!-- /.col-6 -->
-        <div class="col-xl-9 col-lg-6 mb-4">
-            <div class="card card-3">
-                <span class="label">Bestseller</span>
-                <h3 class="card-title large">Poplin Top <br>With Sleeve Bow</h3>
-                <p class="card-text large">Poplin top with roll neckline, long sleeves</p>
-                <button class="button add-to-cart" data-id="002">
-                    <span class="button-price">$129</span>
-                    <span class="button-text">Shop now</span>
-                </button>
-            </div>
-            <!-- /.card -->
-        </div>
-        <!-- /.col-9 -->
-        <div class="col-xl-3 col-lg-6">
-            <div class="card card-4">
-                <h3 class="card-title text-light mw-160">Printed Shirt with a Bow</h3>
-                <p class="card-text text-light">Pink/Sky Blue/Yellow</p>
-                <button class="button add-to-cart button-four" data-id="009">
-                    <span class="button-price">$119</span>
-                    <span class="button-text">Shop now</span>
-                </button>
-            </div>
-            <!-- /.card -->
-        </div>
-        <!-- /.col-3 -->
-    </div>
-    <!-- /.row -->
-    <div class="row align-items-center mb-4">
-        <div class="col-9">
-            <h2 class="section-title">New Arrival</h2>
-        </div>
-        <!-- /.col-9 -->
-        <div class="col-3 d-flex justify-content-end">
-            <a href="#body" class="more scroll-link view-all">View All</a>
-        </div>
-        <!-- /.col-3 -->
-    </div>
-    <!-- /.row -->
-    <div class="short-goods row">
-        <div class="col-lg-3 col-sm-6">
-            <div class="goods-card">
-                <span class="label">New</span>
-                <!-- /.label --><img src="img/image-119.jpg" alt="image: Hoodie" class="goods-image">
-                <h3 class="goods-title">Embroidered Hoodie</h3>
-                <!-- /.goods-title -->
-                <p class="goods-description">Yellow/Lilac/Fuchsia/Orange</p>
-                <!-- /.goods-description -->
-                <!-- /.goods-price -->
-                <button class="button goods-card-btn add-to-cart" data-id="012">
-                    <span class="button-price">$89</span>
-                </button>
-            </div>
-            <!-- /.goods-card -->
-        </div>
-        <!-- /.col-3 -->
-        <div class="col-lg-3 col-sm-6">
-            <div class="goods-card">
-                <span class="label">New</span>
-                <!-- /.label --><img src="img/image-120.jpg" alt="image: Faded Beach Trousers" class="goods-image">
-                <h3 class="goods-title">Faded Beach Trousers</h3>
-                <!-- /.goods-title -->
-                <p class="goods-description">Navy/Ochre/Black/Khaki</p>
-                <!-- /.goods-description -->
-                <button class="button goods-card-btn add-to-cart" data-id="011">
-                    <span class="button-price">$139</span>
-                </button>
-                <!-- /.goods-price -->
-            </div>
-            <!-- /.goods-card -->
-        </div>
-        <!-- /.col-3 -->
-        <div class="col-lg-3 col-sm-6">
-            <div class="goods-card">
-                <span class="label">New</span>
-                <!-- /.label --><img src="img/image-121.jpg" alt="image: Text T-Shirt" class="goods-image">
-                <h3 class="goods-title">Text T-Shirt</h3>
-                <!-- /.goods-title -->
-                <p class="goods-description">White</p>
-                <!-- /.goods-description -->
-                <button class="button goods-card-btn add-to-cart" data-id="010">
-                    <span class="button-price">$59</span>
-                </button>
-                <!-- /.goods-price -->
-            </div>
-            <!-- /.goods-card -->
-        </div>
-        <!-- /.col-3 -->
-        <div class="col-lg-3 col-sm-6">
-            <div class="goods-card">
-                <span class="label">New</span>
-                <!-- /.label --><img src="img/image-122.jpg" alt="image: Striped Long Sleeve Shirt"
-                                     class="goods-image">
-                <h3 class="goods-title">Striped Long Sleeve Shirt</h3>
-                <!-- /.goods-title -->
-                <p class="goods-description">Red/Sky Blue</p>
-                <!-- /.goods-description -->
-                <button class="button goods-card-btn add-to-cart" data-id="001">
-                    <span class="button-price">$119</span>
-                </button>
-                <!-- /.goods-price -->
-            </div>
-            <!-- /.goods-card -->
-        </div>
-        <!-- /.col-3 -->
-    </div>
-    <!-- /.row -->
-</section>
-<!-- /.container -->
-<section class="long-goods">
-    <div class="container">
-        <div class="row align-items-center mb-4">
-            <div class="col-12">
-                <h2 class="section-title">Category</h2>
-            </div>
-            <!-- /.col-12 -->
-        </div>
-        <div class="row long-goods-list">
-            <div class="col-lg-3 col-sm-6">
-                <div class="goods-card">
-                    <span class="label">New</span>
-                    <!-- /.label --><img src="img/image-119.jpg" alt="image: Hoodie" class="goods-image">
-                    <h3 class="goods-title">Embroidered Hoodie</h3>
-                    <!-- /.goods-title -->
-                    <p class="goods-description">Yellow/Lilac/Fuchsia/Orange</p>
-                    <!-- /.goods-description -->
-                    <!-- /.goods-price -->
-                    <button class="button goods-card-btn add-to-cart" data-id="007">
-                        <span class="button-price">$89</span>
-                    </button>
-                </div>
-                <!-- /.goods-card -->
-            </div>
-            <!-- /.col-3 -->
-            <div class="col-lg-3 col-sm-6">
-                <div class="goods-card">
-                    <span class="label">New</span>
-                    <!-- /.label --><img src="img/image-120.jpg" alt="image: Faded Beach Trousers"
-                                         class="goods-image">
-                    <h3 class="goods-title">Faded Beach Trousers</h3>
-                    <!-- /.goods-title -->
-                    <p class="goods-description">Navy/Ochre/Black/Khaki</p>
-                    <!-- /.goods-description -->
-                    <button class="button goods-card-btn add-to-cart" data-id="007">
-                        <span class="button-price">$139</span>
-                    </button>
-                    <!-- /.goods-price -->
-                </div>
-                <!-- /.goods-card -->
-            </div>
-            <!-- /.col-3 -->
-            <div class="col-lg-3 col-sm-6">
-                <div class="goods-card">
-                    <span class="label">New</span>
-                    <!-- /.label --><img src="img/image-121.jpg" alt="image: Text T-Shirt" class="goods-image">
-                    <h3 class="goods-title">Text T-Shirt</h3>
-                    <!-- /.goods-title -->
-                    <p class="goods-description">White</p>
-                    <!-- /.goods-description -->
-                    <button class="button goods-card-btn add-to-cart" data-id="007">
-                        <span class="button-price">$59</span>
-                    </button>
-                    <!-- /.goods-price -->
-                </div>
-                <!-- /.goods-card -->
-            </div>
-            <!-- /.col-3 -->
-            <div class="col-lg-3 col-sm-6">
-                <div class="goods-card">
-                    <span class="label">New</span>
-                    <!-- /.label --><img src="img/image-122.jpg" alt="image: Striped Long Sleeve Shirt"
-                                         class="goods-image">
-                    <h3 class="goods-title">Striped Long Sleeve Shirt</h3>
-                    <!-- /.goods-title -->
-                    <p class="goods-description">Red/Sky Blue</p>
-                    <!-- /.goods-description -->
-                    <button class="button goods-card-btn add-to-cart" data-id="001">
-                        <span class="button-price">$119</span>
-                    </button>
-                    <!-- /.goods-price -->
-                </div>
-                <!-- /.goods-card -->
-            </div>
-            <!-- /.col-3 -->
-            <div class="col-lg-3 col-sm-6">
-                <div class="goods-card">
-                    <span class="label">New</span>
-                    <!-- /.label --><img src="img/image-119.jpg" alt="image: Hoodie" class="goods-image">
-                    <h3 class="goods-title">Embroidered Hoodie</h3>
-                    <!-- /.goods-title -->
-                    <p class="goods-description">Yellow/Lilac/Fuchsia/Orange</p>
-                    <!-- /.goods-description -->
-                    <!-- /.goods-price -->
-                    <button class="button goods-card-btn add-to-cart" data-id="007">
-                        <span class="button-price">$89</span>
-                    </button>
-                </div>
-                <!-- /.goods-card -->
-            </div>
-            <!-- /.col-3 -->
-            <div class="col-lg-3 col-sm-6">
-                <div class="goods-card">
-                    <span class="label">New</span>
-                    <!-- /.label --><img src="img/image-120.jpg" alt="image: Faded Beach Trousers"
-                                         class="goods-image">
-                    <h3 class="goods-title">Faded Beach Trousers</h3>
-                    <!-- /.goods-title -->
-                    <p class="goods-description">Navy/Ochre/Black/Khaki</p>
-                    <!-- /.goods-description -->
-                    <button class="button goods-card-btn add-to-cart" data-id="007">
-                        <span class="button-price">$139</span>
-                    </button>
-                    <!-- /.goods-price -->
-                </div>
-                <!-- /.goods-card -->
-            </div>
-            <!-- /.col-3 -->
-            <div class="col-lg-3 col-sm-6">
-                <div class="goods-card">
-                    <span class="label">New</span>
-                    <!-- /.label --><img src="img/image-121.jpg" alt="image: Text T-Shirt" class="goods-image">
-                    <h3 class="goods-title">Text T-Shirt</h3>
-                    <!-- /.goods-title -->
-                    <p class="goods-description">White</p>
-                    <!-- /.goods-description -->
-                    <button class="button goods-card-btn add-to-cart" data-id="007">
-                        <span class="button-price">$59</span>
-                    </button>
-                    <!-- /.goods-price -->
-                </div>
-                <!-- /.goods-card -->
-            </div>
-            <!-- /.col-3 -->
-            <div class="col-lg-3 col-sm-6">
-                <div class="goods-card">
-                    <span class="label">New</span>
-                    <!-- /.label --><img src="img/image-122.jpg" alt="image: Striped Long Sleeve Shirt"
-                                         class="goods-image">
-                    <h3 class="goods-title">Striped Long Sleeve Shirt</h3>
-                    <!-- /.goods-title -->
-                    <p class="goods-description">Red/Sky Blue</p>
-                    <!-- /.goods-description -->
-                    <button class="button goods-card-btn add-to-cart" data-id="001">
-                        <span class="button-price">$119</span>
-                    </button>
-                    <!-- /.goods-price -->
-                </div>
-                <!-- /.goods-card -->
-            </div>
-            <!-- /.col-3 -->
-            <div class="col-lg-3 col-sm-6">
-                <div class="goods-card">
-                    <span class="label">New</span>
-                    <!-- /.label --><img src="img/image-119.jpg" alt="image: Hoodie" class="goods-image">
-                    <h3 class="goods-title">Embroidered Hoodie</h3>
-                    <!-- /.goods-title -->
-                    <p class="goods-description">Yellow/Lilac/Fuchsia/Orange</p>
-                    <!-- /.goods-description -->
-                    <!-- /.goods-price -->
-                    <button class="button goods-card-btn add-to-cart" data-id="007">
-                        <span class="button-price">$89</span>
-                    </button>
-                </div>
-                <!-- /.goods-card -->
-            </div>
-            <!-- /.col-3 -->
-            <div class="col-lg-3 col-sm-6">
-                <div class="goods-card">
-                    <span class="label">New</span>
-                    <!-- /.label --><img src="img/image-120.jpg" alt="image: Faded Beach Trousers"
-                                         class="goods-image">
-                    <h3 class="goods-title">Faded Beach Trousers</h3>
-                    <!-- /.goods-title -->
-                    <p class="goods-description">Navy/Ochre/Black/Khaki</p>
-                    <!-- /.goods-description -->
-                    <button class="button goods-card-btn add-to-cart" data-id="007">
-                        <span class="button-price">$139</span>
-                    </button>
-                    <!-- /.goods-price -->
-                </div>
-                <!-- /.goods-card -->
-            </div>
-            <!-- /.col-3 -->
-            <div class="col-lg-3 col-sm-6">
-                <div class="goods-card">
-                    <span class="label">New</span>
-                    <!-- /.label --><img src="img/image-121.jpg" alt="image: Text T-Shirt" class="goods-image">
-                    <h3 class="goods-title">Text T-Shirt</h3>
-                    <!-- /.goods-title -->
-                    <p class="goods-description">White</p>
-                    <!-- /.goods-description -->
-                    <button class="button goods-card-btn add-to-cart" data-id="007">
-                        <span class="button-price">$59</span>
-                    </button>
-                    <!-- /.goods-price -->
-                </div>
-                <!-- /.goods-card -->
-            </div>
-            <!-- /.col-3 -->
-            <div class="col-lg-3 col-sm-6">
-                <div class="goods-card">
-                    <span class="label">New</span>
-                    <!-- /.label --><img src="img/image-122.jpg" alt="image: Striped Long Sleeve Shirt"
-                                         class="goods-image">
-                    <h3 class="goods-title">Striped Long Sleeve Shirt</h3>
-                    <!-- /.goods-title -->
-                    <p class="goods-description">Red/Sky Blue</p>
-                    <!-- /.goods-description -->
-                    <button class="button goods-card-btn add-to-cart" data-id="001">
-                        <span class="button-price">$119</span>
-                    </button>
-                    <!-- /.goods-price -->
-                </div>
-                <!-- /.goods-card -->
-            </div>
-            <!-- /.col-3 -->
-        </div>
-    </div>
-
-</section>
-<footer class="footer">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 col-sm-1 d-flex justify-content-end top">
-                <a href="#body" class="scroll-link top-link d-flex align-items-center">
-                    <span class="top-link-text">Top</span>
-                    <img src="img/top.svg" alt="icon: arrow top">
+    <header class="container header px-4 px-md-0">
+        <div class="cont">
+            <div class=" loll">
+                <a href="index.html" class="logo-link">
+                    <img width="128" src="img/logo.svg" alt="logo: Lollipop" class="logo-image">
                 </a>
             </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-4 col-sm-9">
-                    <span class="footer-text">Способы оплаты</span>
-                    <hr class="footer-line mt-3 mb-3">
-                    <img class="payment-logo" src="img/n-visa.png" width="50px" height="30px" alt="visa logo">
-                    <img class="payment-logo" src="img/n-mastercard.png" width="50px" height="30px"
-                         alt="master card logo">
-                    <img class="payment-logo" src="img/n-cash.png" width="50px" height="30px" alt="bitcoin logo">
-                    <p class="payment-text">Наличными или банковской картой, через систему АИС "Расчет" (ЕРИП),
-                        онлайн
-                        банковской картой через систему bePaid.</p>
+            <div class=" col-lg-6 menu d-lg-block">
+                <nav>
+                    <input id="menu_toggle" type="checkbox" />
+                    <label class="menu_btn" for="menu_toggle">
+                        <span></span>
+                    </label>
+                    <ul class="navigation d-flex justify-content-around menu__box">
+                        <div class="dropdown">
+                            <li class="navigation-item">
+                                <a href="#" class="navigation-link menu__item cat" data-field="category">Одежда</a>
+                            </li>
+                            <div class="dropdown-content">
+                                <a href="#" class="navigation-link menu__item" data-field="class">Брюки, джинсы</a>
+                                <a href="#" class="navigation-link menu__item" data-field="class">Платья</a>
+                                <a href="#" class="navigation-link menu__item" data-field="class">Рубашки</a>
+                                <a href="#" class="navigation-link menu__item" data-field="class">Свитеры, кардиганы</a>
+                                <a href="#" class="navigation-link menu__item" data-field="class">Толстовки,
+                                    свитшоты</a>
+                                <a href="#" class="navigation-link menu__item" data-field="class">Футболки, топы</a>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <li class="navigation-item ">
+                                <a href="#" class="navigation-link menu__item cat " data-field="category">Обувь</a>
+                            </li>
+                            <div class="dropdown-content">
+                                <a href="#" class="navigation-link menu__item" data-field="class">Ботинки и
+                                    ботильоны</a>
+                                <a href="#" class="navigation-link menu__item" data-field="class">Кроссовки и кеды</a>
+                                <a href="#" class="navigation-link menu__item" data-field="class">Туфли на каблуке</a>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <li class="navigation-item ">
+                                <a href="#" class="navigation-link menu__item cat " data-field="category">Нижнее бельё</a>
+                            </li>
+                            <div class="dropdown-content">
+                                <a href="#" class="navigation-link menu__item" data-field="class">Бра</a>
+                                <a href="#" class="navigation-link menu__item" data-field="class">Комплекты</a>
+                                <a href="#" class="navigation-link menu__item" data-field="class">Трусы</a>
+                            </div>
+                        </div>
+                        <li class="navigation-item ">
+                            <a href="#" class="navigation-link menu__item hov" data-field="category">Аксессуары</a>
+                        </li>
+                        <li class="navigation-item ">
+                            <a href="#" class="navigation-link menu__item view-all hov">Все</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-lg-3 col-8 d-flex justify-content-end flex-md-row cart">
+                <button class="button-cart button">
+                    <img class="button-icon" src="img/cart.svg" alt="icon: cart">
+                    <span class="button-text">Корзина</span>
+                    <span class="button-text cart-count"></span>
+                </button>
+            </div>
+        </div>
+        <!-- /.row -->
+    </header>
+    <section class="slider swiper-container ">
+        <div class="swiper-wrapper">
+            <section class="slide slide-1 swiper-slide">
+                <div class="container">
+                    <div class="row">
+                        <div class=" tel col-lg-4 col-10 offset-lg-1">
+                            
+                            <h2 class="slide-title">Одежда</h2>
+                            <p class="slide-description">О характере и настроении женщины могут рассказать не только жесты, 
+                                манеры поведения, взгляд, но и одежда, которую она носит. У нас Вы можете создать свой неповторимый образ.</p>
+                            <button class="button-slide button add-to-cart">
+                                <a href="#" class="navigation-link slide-link " data-field="category">Одежда</a>
+                            </button>
+
+                        </div>
+                        <!-- /.col-4 offset-lg-1 -->
+                    </div>
+                    <!-- /.row -->
                 </div>
-                <div class="col-lg-4 col-sm-9 margin">
-                    <span class="footer-text">Контакты</span>
-                    <hr class="footer-line mt-3 mb-3">
-                    <span class="social-link-text">Follow Us
+                <!-- /.container -->
+            </section>
+            <section class="slide slide-2 swiper-slide">
+                <div class="container">
+                    <div class="row">
+                        <div class=" tel col-lg-4 col-10 offset-lg-1">
+                            <h2 class="slide-title">Обувь</h2>
+                            <p class="slide-description">Чувственность и свобода, естественность и комфорт, уверенность и стремление
+                                 к разнообразию — обувь отражает все эти ценности современной женщины. 
+                                Достаточно посмотреть себе под ноги!</p>
+                            <button class="button-slide button add-to-cart">
+                                <a href="#" class="navigation-link slide-link" data-field="category">Обувь</a>
+                            </button>
+                        </div>
+                        <!-- /.col-4 offset-lg-1 -->
+                    </div>
+                    <!-- /.row -->
+                </div>
+                <!-- /.container -->
+            </section>
+            <section class="slide slide-3 swiper-slide">
+                <div class="container">
+                    <div class="row">
+                        <div class=" tel col-lg-4 col-10 offset-lg-1">
+                            <h2 class="slide-title width">Нижнее бельё</h2>
+                            <p class="slide-description">Настоящая женщина должна излучать уверенность в незыблемости
+                                 своей красоты и силе своего обаяния.
+                                 Без красивого белья здесь не обойтись!</p>
+                            <button class="button-slide button add-to-cart">
+                                <a href="#" class="navigation-link slide-link" data-field="category">Нижнее бельё</a>
+                               
+                            </button>
+                        </div>
+                        <!-- /.col-4 offset-lg-1 -->
+                    </div>
+                    <!-- /.row -->
+                </div>
+                <!-- /.container -->
+            </section>
+        </div>
+        <!-- /.swiper-wrapper -->
+        <div class="slider-nav">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-1">
+                        <button class="slider-button slider-button-prev">
+                            <img src="img/arrow-prev.svg" alt="icon: arrow-prev">
+                        </button>
+                    </div>
+                    <!-- /.col-1 -->
+                    <div class="col-1">
+                        <button class="slider-button slider-button-next">
+                            <img src="img/arrow-next.svg" alt="icon: arrow-prev">
+                        </button>
+                    </div>
+                    <!-- /.col-1 -->
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.slider-nav -->
+    </section>
+    <!-- /.slider -->
+    <section class="special-offers container pt-5 pb-4">
+        <div class="row mb-4">
+            <div class="col-xl-6">
+                <div class="card card-1 mb-4">
+                    <h3 class="card-title">Fashion Month Ready in Capital Shop</h3>
+                    <p class="card-text">Bags & Acsessories & Lingerie & Sportswear & Beauty & Swimwear</p>
+                    <button class="button show-acsessories">
+                        <span class="button-text">View all</span>
+                        <img src="img/arrow.svg" alt="icon: arrow" class="button-icon">
+                    </button>
+                </div>
+                <!-- /.card -->
+            </div>
+            <!-- /.col-6 -->
+            <div class="col-xl-6">
+                <div class="card card-2 mb-4">
+                    <h3 class="card-title text-light">Catch the Sun: Spring Break Styles From $5.99</h3>
+                    <p class="card-text text-light">Sweaters & Hoodies & Puffer Jackets & Coats and Jackets & Knit</p>
+                    <button class="button show-clothing">
+                        <span class="button-text">View all</span>
+                        <img src="img/arrow.svg" alt="icon: arrow" class="button-icon">
+                    </button>
+                </div>
+                <!-- /.card -->
+            </div>
+            <!-- /.col-6 -->
+            <div class="col-xl-9 col-lg-6 mb-4">
+                <div class="card card-3">
+                          <h3 class="card-title large">Стильные платья <br> на каждый день</h3>
+                    <p class="card-text large">Не стоит отказывать себе в удовольствии носить платья ежедневно! 
+                        У нас можно найти немало прекрасных платьев, как для
+                        повседневного ношения, так и для особых мероприятий.</p>
+                    <button class="button add-to-cart">
+                        <a href="#" class="navigation-link menu__item" data-field="class">Платья</a>
+                    </button>
+                </div>
+                <!-- /.card -->
+            </div>
+            <!-- /.col-9 -->
+            <div class="col-xl-3 col-lg-6">
+                <div class="card card-4">
+                    <h3 class="card-title text-light mw-160">Printed Shirt with a Bow</h3>
+                    <p class="card-text text-light">Pink/Sky Blue/Yellow</p>
+                    <button class="button add-to-cart button-four" data-id="009">
+                        <span class="button-price">$119</span>
+                        <span class="button-text">Shop now</span>
+                    </button>
+                </div>
+                <!-- /.card -->
+            </div>
+            <!-- /.col-3 -->
+        </div>
+        <!-- /.row -->
+        <div class="row align-items-center mb-4">
+            <div class="col-9">
+                <h2 class="section-title">New Arrival</h2>
+            </div>
+            <!-- /.col-9 -->
+            <div class="col-3 d-flex justify-content-end">
+                <a href="#body" class="more scroll-link view-all">View All</a>
+            </div>
+            <!-- /.col-3 -->
+        </div>
+        <!-- /.row -->
+        <div class="short-goods row">
+            <div class="col-lg-3 col-sm-6">
+                <div class="goods-card">
+                    <span class="label">New</span>
+                    <!-- /.label --><img src="img/image-119.jpg" alt="image: Hoodie" class="goods-image">
+                    <h3 class="goods-title">Embroidered Hoodie</h3>
+                    <!-- /.goods-title -->
+                    <p class="goods-description">Yellow/Lilac/Fuchsia/Orange</p>
+                    <!-- /.goods-description -->
+                    <!-- /.goods-price -->
+                    <button class="button goods-card-btn add-to-cart" data-id="012">
+                        <span class="button-price">$89</span>
+                    </button>
+                </div>
+                <!-- /.goods-card -->
+            </div>
+            <!-- /.col-3 -->
+            <div class="col-lg-3 col-sm-6">
+                <div class="goods-card">
+                    <span class="label">New</span>
+                    <!-- /.label --><img src="img/image-120.jpg" alt="image: Faded Beach Trousers" class="goods-image">
+                    <h3 class="goods-title">Faded Beach Trousers</h3>
+                    <!-- /.goods-title -->
+                    <p class="goods-description">Navy/Ochre/Black/Khaki</p>
+                    <!-- /.goods-description -->
+                    <button class="button goods-card-btn add-to-cart" data-id="011">
+                        <span class="button-price">$139</span>
+                    </button>
+                    <!-- /.goods-price -->
+                </div>
+                <!-- /.goods-card -->
+            </div>
+            <!-- /.col-3 -->
+            <div class="col-lg-3 col-sm-6">
+                <div class="goods-card">
+                    <span class="label">New</span>
+                    <!-- /.label --><img src="img/image-121.jpg" alt="image: Text T-Shirt" class="goods-image">
+                    <h3 class="goods-title">Text T-Shirt</h3>
+                    <!-- /.goods-title -->
+                    <p class="goods-description">White</p>
+                    <!-- /.goods-description -->
+                    <button class="button goods-card-btn add-to-cart" data-id="010">
+                        <span class="button-price">$59</span>
+                    </button>
+                    <!-- /.goods-price -->
+                </div>
+                <!-- /.goods-card -->
+            </div>
+            <!-- /.col-3 -->
+            <div class="col-lg-3 col-sm-6">
+                <div class="goods-card">
+                    <span class="label">New</span>
+                    <!-- /.label --><img src="img/image-122.jpg" alt="image: Striped Long Sleeve Shirt"
+                        class="goods-image">
+                    <h3 class="goods-title">Striped Long Sleeve Shirt</h3>
+                    <!-- /.goods-title -->
+                    <p class="goods-description">Red/Sky Blue</p>
+                    <!-- /.goods-description -->
+                    <button class="button goods-card-btn add-to-cart" data-id="001">
+                        <span class="button-price">$119</span>
+                    </button>
+                    <!-- /.goods-price -->
+                </div>
+                <!-- /.goods-card -->
+            </div>
+            <!-- /.col-3 -->
+        </div>
+        <!-- /.row -->
+    </section>
+    <!-- /.container -->
+    <section class="long-goods">
+        <div class="container">
+            <div class="row align-items-center mb-4">
+                <div class="col-12">
+                    <h2 class="section-title">Category</h2>
+                </div>
+                <!-- /.col-12 -->
+            </div>
+            <div class="row long-goods-list">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="goods-card">
+                        <span class="label">New</span>
+                        <!-- /.label --><img src="img/image-119.jpg" alt="image: Hoodie" class="goods-image">
+                        <h3 class="goods-title">Embroidered Hoodie</h3>
+                        <!-- /.goods-title -->
+                        <p class="goods-description">Yellow/Lilac/Fuchsia/Orange</p>
+                        <!-- /.goods-description -->
+                        <!-- /.goods-price -->
+                        <button class="button goods-card-btn add-to-cart" data-id="007">
+                            <span class="button-price">$89</span>
+                        </button>
+                    </div>
+                    <!-- /.goods-card -->
+                </div>
+                <!-- /.col-3 -->
+                <div class="col-lg-3 col-sm-6">
+                    <div class="goods-card">
+                        <span class="label">New</span>
+                        <!-- /.label --><img src="img/image-120.jpg" alt="image: Faded Beach Trousers"
+                            class="goods-image">
+                        <h3 class="goods-title">Faded Beach Trousers</h3>
+                        <!-- /.goods-title -->
+                        <p class="goods-description">Navy/Ochre/Black/Khaki</p>
+                        <!-- /.goods-description -->
+                        <button class="button goods-card-btn add-to-cart" data-id="007">
+                            <span class="button-price">$139</span>
+                        </button>
+                        <!-- /.goods-price -->
+                    </div>
+                    <!-- /.goods-card -->
+                </div>
+                <!-- /.col-3 -->
+                <div class="col-lg-3 col-sm-6">
+                    <div class="goods-card">
+                        <span class="label">New</span>
+                        <!-- /.label --><img src="img/image-121.jpg" alt="image: Text T-Shirt" class="goods-image">
+                        <h3 class="goods-title">Text T-Shirt</h3>
+                        <!-- /.goods-title -->
+                        <p class="goods-description">White</p>
+                        <!-- /.goods-description -->
+                        <button class="button goods-card-btn add-to-cart" data-id="007">
+                            <span class="button-price">$59</span>
+                        </button>
+                        <!-- /.goods-price -->
+                    </div>
+                    <!-- /.goods-card -->
+                </div>
+                <!-- /.col-3 -->
+                <div class="col-lg-3 col-sm-6">
+                    <div class="goods-card">
+                        <span class="label">New</span>
+                        <!-- /.label --><img src="img/image-122.jpg" alt="image: Striped Long Sleeve Shirt"
+                            class="goods-image">
+                        <h3 class="goods-title">Striped Long Sleeve Shirt</h3>
+                        <!-- /.goods-title -->
+                        <p class="goods-description">Red/Sky Blue</p>
+                        <!-- /.goods-description -->
+                        <button class="button goods-card-btn add-to-cart" data-id="001">
+                            <span class="button-price">$119</span>
+                        </button>
+                        <!-- /.goods-price -->
+                    </div>
+                    <!-- /.goods-card -->
+                </div>
+                <!-- /.col-3 -->
+                <div class="col-lg-3 col-sm-6">
+                    <div class="goods-card">
+                        <span class="label">New</span>
+                        <!-- /.label --><img src="img/image-119.jpg" alt="image: Hoodie" class="goods-image">
+                        <h3 class="goods-title">Embroidered Hoodie</h3>
+                        <!-- /.goods-title -->
+                        <p class="goods-description">Yellow/Lilac/Fuchsia/Orange</p>
+                        <!-- /.goods-description -->
+                        <!-- /.goods-price -->
+                        <button class="button goods-card-btn add-to-cart" data-id="007">
+                            <span class="button-price">$89</span>
+                        </button>
+                    </div>
+                    <!-- /.goods-card -->
+                </div>
+                <!-- /.col-3 -->
+                <div class="col-lg-3 col-sm-6">
+                    <div class="goods-card">
+                        <span class="label">New</span>
+                        <!-- /.label --><img src="img/image-120.jpg" alt="image: Faded Beach Trousers"
+                            class="goods-image">
+                        <h3 class="goods-title">Faded Beach Trousers</h3>
+                        <!-- /.goods-title -->
+                        <p class="goods-description">Navy/Ochre/Black/Khaki</p>
+                        <!-- /.goods-description -->
+                        <button class="button goods-card-btn add-to-cart" data-id="007">
+                            <span class="button-price">$139</span>
+                        </button>
+                        <!-- /.goods-price -->
+                    </div>
+                    <!-- /.goods-card -->
+                </div>
+                <!-- /.col-3 -->
+                <div class="col-lg-3 col-sm-6">
+                    <div class="goods-card">
+                        <span class="label">New</span>
+                        <!-- /.label --><img src="img/image-121.jpg" alt="image: Text T-Shirt" class="goods-image">
+                        <h3 class="goods-title">Text T-Shirt</h3>
+                        <!-- /.goods-title -->
+                        <p class="goods-description">White</p>
+                        <!-- /.goods-description -->
+                        <button class="button goods-card-btn add-to-cart" data-id="007">
+                            <span class="button-price">$59</span>
+                        </button>
+                        <!-- /.goods-price -->
+                    </div>
+                    <!-- /.goods-card -->
+                </div>
+                <!-- /.col-3 -->
+                <div class="col-lg-3 col-sm-6">
+                    <div class="goods-card">
+                        <span class="label">New</span>
+                        <!-- /.label --><img src="img/image-122.jpg" alt="image: Striped Long Sleeve Shirt"
+                            class="goods-image">
+                        <h3 class="goods-title">Striped Long Sleeve Shirt</h3>
+                        <!-- /.goods-title -->
+                        <p class="goods-description">Red/Sky Blue</p>
+                        <!-- /.goods-description -->
+                        <button class="button goods-card-btn add-to-cart" data-id="001">
+                            <span class="button-price">$119</span>
+                        </button>
+                        <!-- /.goods-price -->
+                    </div>
+                    <!-- /.goods-card -->
+                </div>
+                <!-- /.col-3 -->
+                <div class="col-lg-3 col-sm-6">
+                    <div class="goods-card">
+                        <span class="label">New</span>
+                        <!-- /.label --><img src="img/image-119.jpg" alt="image: Hoodie" class="goods-image">
+                        <h3 class="goods-title">Embroidered Hoodie</h3>
+                        <!-- /.goods-title -->
+                        <p class="goods-description">Yellow/Lilac/Fuchsia/Orange</p>
+                        <!-- /.goods-description -->
+                        <!-- /.goods-price -->
+                        <button class="button goods-card-btn add-to-cart" data-id="007">
+                            <span class="button-price">$89</span>
+                        </button>
+                    </div>
+                    <!-- /.goods-card -->
+                </div>
+                <!-- /.col-3 -->
+                <div class="col-lg-3 col-sm-6">
+                    <div class="goods-card">
+                        <span class="label">New</span>
+                        <!-- /.label --><img src="img/image-120.jpg" alt="image: Faded Beach Trousers"
+                            class="goods-image">
+                        <h3 class="goods-title">Faded Beach Trousers</h3>
+                        <!-- /.goods-title -->
+                        <p class="goods-description">Navy/Ochre/Black/Khaki</p>
+                        <!-- /.goods-description -->
+                        <button class="button goods-card-btn add-to-cart" data-id="007">
+                            <span class="button-price">$139</span>
+                        </button>
+                        <!-- /.goods-price -->
+                    </div>
+                    <!-- /.goods-card -->
+                </div>
+                <!-- /.col-3 -->
+                <div class="col-lg-3 col-sm-6">
+                    <div class="goods-card">
+                        <span class="label">New</span>
+                        <!-- /.label --><img src="img/image-121.jpg" alt="image: Text T-Shirt" class="goods-image">
+                        <h3 class="goods-title">Text T-Shirt</h3>
+                        <!-- /.goods-title -->
+                        <p class="goods-description">White</p>
+                        <!-- /.goods-description -->
+                        <button class="button goods-card-btn add-to-cart" data-id="007">
+                            <span class="button-price">$59</span>
+                        </button>
+                        <!-- /.goods-price -->
+                    </div>
+                    <!-- /.goods-card -->
+                </div>
+                <!-- /.col-3 -->
+                <div class="col-lg-3 col-sm-6">
+                    <div class="goods-card">
+                        <span class="label">New</span>
+                        <!-- /.label --><img src="img/image-122.jpg" alt="image: Striped Long Sleeve Shirt"
+                            class="goods-image">
+                        <h3 class="goods-title">Striped Long Sleeve Shirt</h3>
+                        <!-- /.goods-title -->
+                        <p class="goods-description">Red/Sky Blue</p>
+                        <!-- /.goods-description -->
+                        <button class="button goods-card-btn add-to-cart" data-id="001">
+                            <span class="button-price">$119</span>
+                        </button>
+                        <!-- /.goods-price -->
+                    </div>
+                    <!-- /.goods-card -->
+                </div>
+                <!-- /.col-3 -->
+            </div>
+        </div>
+
+    </section>
+    <footer class="footer">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-sm-1 d-flex justify-content-end top">
+                    <a href="#body" class="scroll-link top-link d-flex align-items-center">
+                        <span class="top-link-text">Top</span>
+                        <img src="img/top.svg" alt="icon: arrow top">
+                    </a>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-4 col-sm-9">
+                        <span class="footer-text">Способы оплаты</span>
+                        <hr class="footer-line mt-3 mb-3">
+                        <img class="payment-logo" src="img/n-visa.png" width="50px" height="30px" alt="visa logo">
+                        <img class="payment-logo" src="img/n-mastercard.png" width="50px" height="30px"
+                            alt="master card logo">
+                        <img class="payment-logo" src="img/n-cash.png" width="50px" height="30px" alt="bitcoin logo">
+                        <p class="payment-text">Наличными или банковской картой, через систему АИС "Расчет" (ЕРИП),
+                            онлайн
+                            банковской картой через систему bePaid.</p>
+                    </div>
+                    <div class="col-lg-4 col-sm-9 margin">
+                        <span class="footer-text">Контакты</span>
+                        <hr class="footer-line mt-3 mb-3">
+                        <span class="social-link-text">Follow Us
                             <a href="#" class="social-link">
                                 <img src="img/Facebook.svg" alt="Facebook">
                             </a>
@@ -566,126 +562,128 @@
                                 <img src="img/Twitter.svg" alt="Twitter">
                             </a>
                             <a href="https://www.instagram.com/lollipop.minsk/?utm_medium=copy_link"
-                               class="social-link">
+                                class="social-link">
                                 <img src="img/Instagram.svg" alt="Instagram">
                             </a></span>
 
 
-                    <div> <span class="social-link-text">📞Отдел обслуживания клиентов
+
+                        <div> <span class="social-link-text">📞Отдел обслуживания клиентов
                             </span>
-                        <a href="tel:+78006548745" class="footer-phone">8 (800) 654-87-45</a></span>
+                            <a href="tel:+78006548745" class="footer-phone">8 (800) 654-87-45</a></span>
+                        </div>
                     </div>
 
+                    <div class="col-lg-4 col-sm-9">
+
+
+                        <span class="footer-text">Адрес???????????</span>
+                        <hr class="footer-line mt-3 mb-3">
+                        <span class="social-link-text">🍬ТЦ «СИЛУЭТ» 1 этаж 5 ряд 16 место</span><br>
+                        <span class="social-link-text">🍬ТЦ «СИЛУЭТ» 2 этаж 10 ряд 1 место</span><br>
+                        <span class="social-link-text">🕚Время работы :<span class="white"> 10:00 - 22:00</span> </span>
+
+                    </div>
                 </div>
-                <div class="col-lg-4 col-sm-9">
-                    <span class="footer-text">Адрес???????????</span>
-                    <hr class="footer-line mt-3 mb-3">
-                    <span class="social-link-text">🍬ТЦ «СИЛУЭТ» 1 этаж 5 ряд 16 место</span><br>
-                    <span class="social-link-text">🍬ТЦ «СИЛУЭТ» 2 этаж 10 ряд 1 место</span><br>
-                    <span class="social-link-text">🕚Время работы :<span class="white"> 10:00 - 22:00</span> </span>
-                </div>
+
             </div>
+            <!-- /.row -->
+            <!-- /.container -->
+    </footer>
+    <div class="overlay" id="modal-cart">
+        <div class="modal">
+            <header class="modal-header">
+                <h2 class="modal-title">Корзина</h2>
+                <button class="modal-close">x</button>
+
+            </header>
+            <table class="cart-table ">
+                <colgroup>
+                    <col class="col-goods">
+                    <col class="col-price">
+                    <col class="col-minus">
+                    <col class="col-qty">
+                    <col class="col-plus">
+                    <col class="col-total-price">
+                    <col class="col-delete">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>Товар(ы)</th>
+                        <th>Цена</th>
+                        <th colspan="3">Кол-во.</th>
+                        <th colspan="2">Сумма</th>
+                    </tr>
+                </thead>
+                <tbody class="cart-table__goods">
+                    <tr class="cart-item" data-id="003">
+                        <td>Sweater</td>
+                        <td>250$</td>
+                        <td>
+                            <button class="cart-btn-minus">-</button>
+                        </td>
+                        <td>2</td>
+                        <td>
+                            <button class="cart-btn-plus">+</button>
+                        </td>
+                        <td>500$</td>
+                        <td>
+                            <button class="cart-btn-delete">x</button>
+                        </td>
+                    </tr>
+                    <tr class="cart-item" data-id="003">
+                        <td>Sweater</td>
+                        <td>250$</td>
+                        <td>
+                            <button class="cart-btn-minus">-</button>
+                        </td>
+                        <td>2</td>
+                        <td>
+                            <button class="cart-btn-plus">+</button>
+                        </td>
+                        <td>500$</td>
+                        <td>
+                            <button class="cart-btn-delete">x</button>
+                        </td>
+                    </tr>
+                    <tr class="cart-item" data-id="003">
+                        <td>Sweater</td>
+                        <td>250$</td>
+                        <td>
+                            <button class="cart-btn-minus">-</button>
+                        </td>
+                        <td>2</td>
+                        <td>
+                            <button class="cart-btn-plus">+</button>
+                        </td>
+                        <td>500$</td>
+                        <td>
+                            <button class="cart-btn-delete">x</button>
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th class="total" colspan="5">Total:</th>
+                        <th class="card-table__total" colspan="2">1500$</th>
+                    </tr>
+
+                </tfoot>
+            </table>
+            <form class="modal-form" action="">
+                <label><input class="modal-input" type="text" placeholder="Имя" name="nameCustomer"
+                        pattern="^[A-Za-zА-Яа-яЁё\s]{6,}" minlength="3" maxlength="15"></label>
+                <label><input required class="modal-input" type="text" placeholder="+375ХХХХХХХХХ" name="phoneCustomer"
+                        pattern="[\+]\d{3}\d{2}\d{7}" minlength="13" maxlength="13"></label>
+                <label> <input class="modal-input address" type="text" placeholder="Адрес доставки:"> </label>
+                <button class="button cart-buy">
+                    <span class="button-text">Подтвердить</span>
+                </button>
+            </form>
         </div>
     </div>
-    </div>
-</footer>
-<div class="overlay" id="modal-cart">
-    <div class="modal">
-        <header class="modal-header">
-            <h2 class="modal-title">Корзина</h2>
-            <button class="modal-close">x</button>
-
-        </header>
-        <table class="cart-table ">
-            <colgroup>
-                <col class="col-goods">
-                <col class="col-price">
-                <col class="col-minus">
-                <col class="col-qty">
-                <col class="col-plus">
-                <col class="col-total-price">
-                <col class="col-delete">
-            </colgroup>
-            <thead>
-            <tr>
-                <th>Товар(ы)</th>
-                <th>Цена</th>
-                <th colspan="3">Кол-во.</th>
-                <th colspan="2">Сумма</th>
-            </tr>
-            </thead>
-            <tbody class="cart-table__goods">
-            <tr class="cart-item" data-id="003">
-                <td>Sweater</td>
-                <td>250$</td>
-                <td>
-                    <button class="cart-btn-minus">-</button>
-                </td>
-                <td>2</td>
-                <td>
-                    <button class="cart-btn-plus">+</button>
-                </td>
-                <td>500$</td>
-                <td>
-                    <button class="cart-btn-delete">x</button>
-                </td>
-            </tr>
-            <tr class="cart-item" data-id="003">
-                <td>Sweater</td>
-                <td>250$</td>
-                <td>
-                    <button class="cart-btn-minus">-</button>
-                </td>
-                <td>2</td>
-                <td>
-                    <button class="cart-btn-plus">+</button>
-                </td>
-                <td>500$</td>
-                <td>
-                    <button class="cart-btn-delete">x</button>
-                </td>
-            </tr>
-            <tr class="cart-item" data-id="003">
-                <td>Sweater</td>
-                <td>250$</td>
-                <td>
-                    <button class="cart-btn-minus">-</button>
-                </td>
-                <td>2</td>
-                <td>
-                    <button class="cart-btn-plus">+</button>
-                </td>
-                <td>500$</td>
-                <td>
-                    <button class="cart-btn-delete">x</button>
-                </td>
-            </tr>
-            </tbody>
-            <tfoot>
-            <tr>
-                <th class="total" colspan="5">Total:</th>
-                <th class="card-table__total" colspan="2">1500$</th>
-            </tr>
-
-            </tfoot>
-        </table>
-        <form class="modal-form" action="">
-            <label class="labName"><input required class="modal-input name" type="text" placeholder="Введите ФИО"
-                                          name="nameCustomer" pattern="^[A-Za-zА-Яа-яЁё\s]{6,}" minlength="3"
-                                          maxlength="25"></label>
-            <label class="labTel"><input required class="modal-input tell" type="text" placeholder="+375ХХХХХХХХХ"
-                                         name="phoneCustomer"
-                                         pattern="[\+]\d{3}\d{2}\d{7}" minlength="13" maxlength="13"></label>
-            <label class="labAddress"> <input required class="modal-input address" type="text"
-                                              placeholder="Адрес доставки:"> </label>
-            <button class="button cart-buy">
-                <span class="button-text">Подтвердить</span>
-            </button>
-        </form>
-    </div>
-</div>
-<script src="js/swiper-bundle.min.js"></script>
-<script src="js/main.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
