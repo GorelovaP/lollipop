@@ -617,8 +617,8 @@ button {
 
 .modalCard {
   border: 2px solid #ffeef3;
-  width: 50vw;
-  height: 50vh;
+  width: 700px;
+  height: 400px;
   background: rgba(255, 215, 221, 0.91);
   display: none;
   border-radius: 10%;
@@ -640,8 +640,8 @@ button {
 .active {
   display: block;
   position: fixed;
-  left: calc(50vw - 25vw);
-  top: calc(50vh - 25vh);
+  left: calc(50vw - 350px);
+  top: calc(50vh - 200px);
   z-index: 100;
 }
 
@@ -687,7 +687,6 @@ button {
   .modalCard-cart {
     left: 0;
     font-size: 13px;
-    padding: 0 15px;
   }
 
   .slide-1 {
@@ -712,7 +711,9 @@ button {
     width: 230px;
     display: flex;
     justify-content: center;
+      padding: 0;
   }
+
   .modalCard-btn {
     display: flex;
     flex-direction: column;
@@ -885,13 +886,12 @@ button {
   }
 
   .modalCard-title {
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-    font-size: 44px;
+    font-size: 48px;
     color: #fa879a;
   }
 
   .modalCardContent {
-    margin: 25% 15%;
+    margin: 10% 15%;
   }
 
   .modalCard-close {
@@ -905,13 +905,14 @@ button {
   .modal-close {
     margin-right: 0;
   }
-  .active {
-    display: block;
-    position: fixed;
-    left: calc(50vw - 25vw);
-    top: calc(50vh - 25vh);
-    z-index: 100;
-  }
+    .modalCard {
+        width: 576px;
+        height: 400px;
+    }
+    .active {
+        left: calc(50vw - 288px);
+        top: calc(50vh - 200px);
+    }
 
   .card-3 {
     padding-top: 35px;
@@ -919,14 +920,18 @@ button {
     background-size: contain;
   }
 
-  .modalCardContent {
-    position: relative;
-    margin: 15% 20%;
-    text-align: center;
-  }
 }
 
 @media (max-width: 576px) {
+
+    .modalCard {
+        width: 90vw;
+        height: 400px;
+    }
+    .active {
+        left: calc(50vw - 45vw);
+        top: calc(50vh - 200px);
+    }
   .slide-title {
     font-size: 36px;
     line-height: 1.4;
@@ -953,13 +958,12 @@ button {
   }
 
   .modalCard-title {
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-    font-size: 24px;
+    font-size: 36px;
     color: #fa879a;
   }
 
   .modalCardContent {
-    margin: 50% 25%;
+    margin: 15% 25%;
   }
 
   .modalCard-close {
