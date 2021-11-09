@@ -190,7 +190,7 @@ button {
 
 .card-3 {
   padding-top: 35px;
-  background: #fadee6 url("../img/dress-1.png") no-repeat top right 10%;
+  background: #faebde url("../img/dress-1.png") no-repeat top right 10%;
   background-size: contain;
 }
 
@@ -231,7 +231,7 @@ button {
 }
 
 .card-text {
-  max-width: 176px;
+  max-width: 250px;
   color: #4b5157;
   font-size: 14px;
   line-height: 20px;
@@ -1107,5 +1107,8 @@ margin-left: 5%;
   .slider-button {
     width: 40px;
     
+  }
+  .text-light {
+    color: #fff;
   }
 }
