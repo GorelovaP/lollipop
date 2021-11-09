@@ -429,8 +429,7 @@ button {
   align-items: center;
   justify-content: space-between;
   background: rgb(255, 255, 255);
-
-  border-radius: 5%;
+  border-radius: 20px;
   min-width: 600px;
   min-height: 300px;
   max-height: 600px;
@@ -628,7 +627,7 @@ button {
   height: 400px;
   background: rgba(255, 215, 221, 0.91);
   display: none;
-  border-radius: 10%;
+  border-radius: 20px;
 }
 
 .modalCard-title {
@@ -763,7 +762,16 @@ button {
     padding: 20px;
   }
   .cart-table{
-    min-width: 90%;
+    min-width: 99%;
+  }
+  .labAddress{
+    width: 73%;
+  }
+  .labTel{
+    margin-right: 0;
+  }
+  .tell{
+    width: 117%;
   }
 
   #menu_toggle {
@@ -1018,8 +1026,17 @@ button {
     max-width: 470px;
     min-height: 300px;
     max-height: 600px;
+    margin: 0 5px;
+    border-radius: 20px;
   }
-  .cart-table {
-    min-width: 450px;
+  .cart-table{
+    min-width: 99%;
+  }
+  .labName, .labAddress, .labTel{
+    width: 100%;
+  }
+  .tell{
+    margin-left: 0;
+    width: 100%;
   }
 }
