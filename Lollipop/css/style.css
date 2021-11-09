@@ -469,7 +469,6 @@ button {
 
 .modal-form {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
 }
 
@@ -478,18 +477,26 @@ button {
   height: 40px;
   padding: 10px;
   border-radius: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   border: 1px solid #5a5a5a;
 }
-
-.address{
-    
+.labName,.labName{
+  width: 50%;
+}
+.address, .name, .tell{
     border: 1px solid #5a5a5a;
+  width: 100%;
+}
+.tell{
+  margin-left: 10px;
+}
+.labAddress{
+  width: 80%;
 }
 
 .cart-table {
   border-collapse: collapse;
-  min-width: 540px;
+  min-width: 810px;
   margin-bottom: 15px;
   border: none;
   table-layout: fixed;
@@ -711,7 +718,7 @@ button {
     width: 230px;
     display: flex;
     justify-content: center;
-      padding: 0;
+    padding: 0;
   }
 
   .modalCard-btn {
@@ -751,9 +758,12 @@ button {
   }
 
   .modal {
-    min-width: 400px;
+    max-width:596px;
     max-height: 300px;
     padding: 20px;
+  }
+  .cart-table{
+    min-width: 90%;
   }
 
   #menu_toggle {
