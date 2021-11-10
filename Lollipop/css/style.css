@@ -357,6 +357,7 @@ button {
 }
 
 .social-link-text {
+  text-decoration: none;
   color: #ed8baf;
   font-size: 14px;
   line-height: 20px;
