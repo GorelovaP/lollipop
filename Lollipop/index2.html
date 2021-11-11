@@ -17,9 +17,24 @@
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Ubuntu+Condensed&display=swap" rel="stylesheet">
 </head>
-<body>
+<body id="body">
 <header class="container header px-4 px-md-0">
+    <div class="modalCard">
+        <div class="modalCardContent">
+            <span class="modalCard-title">Товар добавлен!</span>
+        </div>
+        <div class="modalCard-btn">
+            <button class="modalCard-close  button modal-close ">Вернуться к выбору товаров</button>
+            <button class="button-cart modalCard-cart button ">
+                <img class="button-icon" src="img/cart.svg" alt="icon: cart">
+                <span class="button-text">Перейти в корзину</span>
+            </button>
+        </div>
+    </div>
     <div class="cont">
         <div class=" loll">
             <a href="index.html" class="logo-link">
@@ -42,8 +57,7 @@
                             <a href="#" class="navigation-link menu__item" data-field="class">Платья</a>
                             <a href="#" class="navigation-link menu__item" data-field="class">Рубашки</a>
                             <a href="#" class="navigation-link menu__item" data-field="class">Свитеры, кардиганы</a>
-                            <a href="#" class="navigation-link menu__item" data-field="class">Толстовки,
-                                свитшоты</a>
+                            <a href="#" class="navigation-link menu__item" data-field="class">Толстовки, свитшоты</a>
                             <a href="#" class="navigation-link menu__item" data-field="class">Футболки, топы</a>
                         </div>
                     </div>
