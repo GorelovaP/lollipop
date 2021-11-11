@@ -54,7 +54,6 @@ const cart = {
       const trGood = document.createElement("tr");
       trGood.className = "cart-item";
       trGood.dataset.id = id;
-
       trGood.innerHTML = `
           <td>${name}</td>
 					<td>${price}BYN</td>

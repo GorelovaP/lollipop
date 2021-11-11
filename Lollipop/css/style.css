@@ -95,7 +95,8 @@ button {
 }
 
 .show-goods .slider,
-.show-goods .special-offers {
+.show-goods .special-offers,
+.show-goods .delivery-section{
   display: none;
 }
 
@@ -501,6 +502,7 @@ button {
 }
 .tell {
   margin-left: 10px;
+  /*width: 172%;*/
 }
 .labAddress {
   width: 80%;
