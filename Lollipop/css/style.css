@@ -713,26 +713,20 @@ button {
 }
 
 .delivery-banner-advantage {
-  display: inline-block;
-  vertical-align: top;
-  width: 238px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 600px;
+  align-content: space-between;
+}
+.advantage-item{
   font-size: 20px;
   line-height: 28px;
   color: #ffffff;
-  box-sizing: border-box;
-  padding-left: 62px;
-  position: relative;
-  margin-bottom: 24px;
-}
-
-.delivery-banner-advantage .advantage-item:after {
-  content: "";
-  display: block;
-  width: 42px;
-  height: 42px;
-  position: absolute;
-  top: 0;
-  left: 0;
+  margin: 10px;
+  padding: 5px;
+  border: 3px solid rgb(255, 255, 255);
+  border-radius: 10px;
 }
 
 .delivery-banner-btn {
@@ -757,87 +751,13 @@ button {
 }
 .delivery-banner-img {
   position: absolute;
-  top: 47px;
-  right: 92px;
+  margin-top: 10%;
+  margin-right: 15%;
+  top: 0;
+  right: 0;
   z-index: 1;
 }
-/* @media screen and (max-width: 1245px) {
-  .free-shipping-banner .delivery-banner {
-    margin-bottom: 28px;
-  }
-  .free-shipping-banner .delivery-banner-content {
-    width: calc(100% - 345px);
-  }
-  .free-shipping-banner .delivery-banner-title {
-    margin-bottom: 29px;
-    font-size: 32px;
-    line-height: 42px;
-  }
-  .free-shipping-banner .delivery-banner-btn {
-    margin-top: 20px;
-  }
-  .free-shipping-banner .delivery-banner-img {
-    top: 56px;
-    right: 44px;
-  }
-  .free-shipping-banner .delivery-banner-advantage .advantage-item {
-    width: 220px;
-    font-size: 16px;
-    line-height: 22px;
-  }
-  .free-shipping-banner .delivery-banner-advantage .advantage-item.advantage-item-free {
-    margin-right: 12px;
-  }
-  .free-shipping-banner .delivery-banner-advantage .advantage-item.advantage-item-time {
-    margin-right: 12px;
-  }
-}
-@media screen and (max-width: 1023px) {
-  .free-shipping-banner .delivery-banner {
-    padding: 32px 40px 40px;
-    border-radius: 16px;
-  }
-  .free-shipping-banner .delivery-banner-advantage .advantage-item {
-    width: 100%;
-    max-width: 222px;
-    display: block;
-  }
-  .free-shipping-banner .delivery-banner-content {
-    width: calc(100% - 75px);
-  }
-  .free-shipping-banner .delivery-banner-img {
-    top: 156px;
-    right: 64px;
-    width: 257px;
-  }
-}
-@media screen and (max-width: 767px) {
-  .free-shipping-banner .delivery-banner {
-    padding: 20px 16px;
-    border-radius: 12px;
-    min-height: auto;
-  }
-  .free-shipping-banner .delivery-banner-title {
-    font-size: 24px;
-    line-height: 32px;
-    margin-bottom: 20px;
-    max-width: 495px;
-  }
-  .free-shipping-banner .delivery-banner-content {
-    width: 100%;
-  }
-  .free-shipping-banner .delivery-banner-img {
-    display: none;
-  }
-  .free-shipping-banner .delivery-banner-btn {
-    margin-top: 0;
-  }
-}
-@media screen and (max-width: 575px) {
-  .free-shipping-banner .delivery-banner-btn {
-    width: 100%;
-  }
-} */
+
 
 @media (max-width: 1200px) {
   .slide-1 {
@@ -1270,4 +1190,8 @@ button {
   .text-light {
     color: #fff;
   }
+
+  .delivery-banner-img {
+    display: none;
+   }
 }

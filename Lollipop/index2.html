@@ -52,16 +52,14 @@
                             <a href="#" class="navigation-link menu__item cat " data-field="category">Обувь</a>
                         </li>
                         <div class="dropdown-content">
-                            <a href="#" class="navigation-link menu__item" data-field="class">Ботинки и
-                                ботильоны</a>
+                            <a href="#" class="navigation-link menu__item" data-field="class">Ботинки и ботильоны</a>
                             <a href="#" class="navigation-link menu__item" data-field="class">Кроссовки и кеды</a>
                             <a href="#" class="navigation-link menu__item" data-field="class">Туфли на каблуке</a>
                         </div>
                     </div>
                     <div class="dropdown">
                         <li class="navigation-item ">
-                            <a href="#" class="navigation-link menu__item cat " data-field="category">Нижнее
-                                бельё</a>
+                            <a href="#" class="navigation-link menu__item cat " data-field="category">Нижнее бельё</a>
                         </li>
                         <div class="dropdown-content">
                             <a href="#" class="navigation-link menu__item" data-field="class">Бра</a>
@@ -300,11 +298,14 @@
             </tfoot>
         </table>
         <form class="modal-form" action="">
-            <label><input class="modal-input" type="text" placeholder="Имя" name="nameCustomer"
-                    pattern="^[A-Za-zА-Яа-яЁё\s]{6,}" minlength="3" maxlength="15"></label>
-            <label><input required class="modal-input" type="text" placeholder="+375ХХХХХХХХХ" name="phoneCustomer"
-                    pattern="[\+]\d{3}\d{2}\d{7}" minlength="13" maxlength="13"></label>
-            <label> <input class="modal-input address" type="text" placeholder="Адрес доставки:"> </label>
+            <label class="labName"><input required class="modal-input name" type="text" placeholder="Введите ФИО"
+                                          name="nameCustomer" pattern="^[A-Za-zА-Яа-яЁё\s]{6,}" minlength="3"
+                                          maxlength="25"></label>
+            <label class="labTel"><input required class="modal-input tell" type="text" placeholder="+375ХХХХХХХХХ"
+                                         name="phoneCustomer"
+                                         pattern="[\+]\d{3}\d{2}\d{7}" minlength="13" maxlength="13"></label>
+            <label class="labAddress"> <input required class="modal-input address" type="text"
+                                              placeholder="Адрес доставки:"> </label>
             <button class="button cart-buy">
                 <span class="button-text">Подтвердить</span>
             </button>
