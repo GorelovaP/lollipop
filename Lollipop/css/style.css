@@ -104,6 +104,7 @@ button {
   display: none;
 }
 
+
 .show-goods .long-goods {
   display: block;
 }
@@ -293,14 +294,19 @@ button {
 }
 
 .goods-title {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-top: 15px;
   margin-bottom: 5px;
   color: #262d33;
   font-size: 16px;
   line-height: 25px;
-  max-height: 50px;
+  min-height: 50px;
   font-family: "Roboto Slab", serif;
 }
+
 
 .goods-image {
   object-fit: contain;
@@ -359,7 +365,7 @@ button {
 
 .social-link-text {
   text-decoration: none;
-  color: #ed8baf;
+  color:rgb(241 149 163);
   font-size: 14px;
   line-height: 20px;
 }
@@ -368,7 +374,7 @@ button {
 }
 
 .footer-text {
-  color: #e74b84;
+  color: #fa879a;
   margin-left: 40%;
   font-size: 14px;
   font-weight: bold;
@@ -758,7 +764,24 @@ button {
   z-index: 1;
 }
 
+.delivery-section, .method{
+  display: flex;
+  flex-direction: column;
+  padding-left: 15px;
+  padding-bottom: 15px;
+}
+.delivery-title{
+  color: #4e4e4e;
+  text-align: center;
+}
 
+.method-title{
+  margin: 10px;
+  color: #f791a2;
+}
+.method-payment h3{
+  color: #707070;
+}
 @media (max-width: 1200px) {
   .slide-1 {
     background-size: cover;
