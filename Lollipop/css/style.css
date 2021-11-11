@@ -42,8 +42,8 @@ img {
   line-height: 20px;
   letter-spacing: 0.5px;
 }
-.slide-link{
-    color: black;
+.slide-link {
+  color: black;
 }
 
 button {
@@ -71,9 +71,9 @@ button {
   text-align: center;
 }
 
-.button-slide{
-    background: #fff;
-    color: black;
+.button-slide {
+  background: #fff;
+  color: black;
 }
 
 .button-price {
@@ -442,7 +442,7 @@ button {
   border-radius: 20px;
   min-width: 600px;
   min-height: 300px;
- 
+
   padding: 30px;
   position: relative;
 }
@@ -489,17 +489,20 @@ button {
   margin-bottom: 10px;
   border: 1px solid #5a5a5a;
 }
-.labName,.labName{
+.labName,
+.labName {
   width: 50%;
 }
-.address, .name, .tell{
-    border: 1px solid #5a5a5a;
+.address,
+.name,
+.tell {
+  border: 1px solid #5a5a5a;
   width: 100%;
 }
-.tell{
+.tell {
   margin-left: 10px;
 }
-.labAddress{
+.labAddress {
   width: 80%;
 }
 
@@ -686,6 +689,154 @@ button {
   padding: 35px;
 }
 
+/* Доставка */
+.delivery-banner {
+  background: linear-gradient(89.51deg, #f18d5e 2.39%, #f05fc0 99.79%);
+  border-radius: 40px;
+  box-sizing: border-box;
+  margin-bottom: 12px;
+  padding: 44px 68px 68px;
+  position: relative;
+}
+
+.delivery-banner-title {
+  font-family: system, -apple-system, BlinkMacSystemFont, "Segoe UI", "Segoe WP",
+    Roboto, Ubuntu, Oxygen, Cantarell, "Fira Sans", "Helvetica Neue", Helvetica,
+    "Lucida Grande", "Droid Sans", Tahoma, "Microsoft Sans Serif", sans-serif;
+  font-size: 42px;
+  line-height: 56px;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0 0 44px;
+}
+
+.delivery-banner-advantage {
+  display: inline-block;
+  vertical-align: top;
+  width: 238px;
+  font-size: 20px;
+  line-height: 28px;
+  color: #ffffff;
+  box-sizing: border-box;
+  padding-left: 62px;
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.delivery-banner-advantage .advantage-item:after {
+  content: "";
+  display: block;
+  width: 42px;
+  height: 42px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.delivery-banner-btn {
+  line-height: 1.1;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+  display: inline-block;
+  min-width: 244px;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.2);
+  font-size: 18px;
+  padding: 16px 25px 15px;
+  margin-top: 44px;
+}
+.delivery-banner-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+.delivery-banner-img {
+  position: absolute;
+  top: 47px;
+  right: 92px;
+  z-index: 1;
+}
+/* @media screen and (max-width: 1245px) {
+  .free-shipping-banner .delivery-banner {
+    margin-bottom: 28px;
+  }
+  .free-shipping-banner .delivery-banner-content {
+    width: calc(100% - 345px);
+  }
+  .free-shipping-banner .delivery-banner-title {
+    margin-bottom: 29px;
+    font-size: 32px;
+    line-height: 42px;
+  }
+  .free-shipping-banner .delivery-banner-btn {
+    margin-top: 20px;
+  }
+  .free-shipping-banner .delivery-banner-img {
+    top: 56px;
+    right: 44px;
+  }
+  .free-shipping-banner .delivery-banner-advantage .advantage-item {
+    width: 220px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .free-shipping-banner .delivery-banner-advantage .advantage-item.advantage-item-free {
+    margin-right: 12px;
+  }
+  .free-shipping-banner .delivery-banner-advantage .advantage-item.advantage-item-time {
+    margin-right: 12px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .free-shipping-banner .delivery-banner {
+    padding: 32px 40px 40px;
+    border-radius: 16px;
+  }
+  .free-shipping-banner .delivery-banner-advantage .advantage-item {
+    width: 100%;
+    max-width: 222px;
+    display: block;
+  }
+  .free-shipping-banner .delivery-banner-content {
+    width: calc(100% - 75px);
+  }
+  .free-shipping-banner .delivery-banner-img {
+    top: 156px;
+    right: 64px;
+    width: 257px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .free-shipping-banner .delivery-banner {
+    padding: 20px 16px;
+    border-radius: 12px;
+    min-height: auto;
+  }
+  .free-shipping-banner .delivery-banner-title {
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 20px;
+    max-width: 495px;
+  }
+  .free-shipping-banner .delivery-banner-content {
+    width: 100%;
+  }
+  .free-shipping-banner .delivery-banner-img {
+    display: none;
+  }
+  .free-shipping-banner .delivery-banner-btn {
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 575px) {
+  .free-shipping-banner .delivery-banner-btn {
+    width: 100%;
+  }
+} */
+
 @media (max-width: 1200px) {
   .slide-1 {
     background-size: cover;
@@ -767,20 +918,20 @@ button {
   }
 
   .modal {
-    max-width:576px;
+    max-width: 576px;
     max-height: 300px;
     padding: 20px;
   }
-  .cart-table{
+  .cart-table {
     min-width: 99%;
   }
-  .labAddress{
+  .labAddress {
     width: 73%;
   }
-  .labTel{
+  .labTel {
     margin-right: 0;
   }
-  .tell{
+  .tell {
     width: 117%;
   }
 
@@ -933,30 +1084,32 @@ button {
   .modal-close {
     margin-right: 0;
   }
-    .modalCard {
-        width: 576px;
-        height: 400px;
-    }
-    .active {
-        left: calc(50vw - 288px);
-        top: calc(50vh - 200px);
-    }
-  
-    .slide-1 {
-        background: #ffdce6 url("../img/slide-1_350.png") no-repeat bottom 50% right
-          20%;
-      }
-      .slide-2 {
-        background: #b9e0b4 url("../img/slide-2_350.png") no-repeat bottom 50% right 20%;
-      }
-    
-      .slide-3 {
-        background: #dcfcf9 url("../img/slide-3_350.png") no-repeat bottom 50% right 20%;
-      }
-      .card-3 {
-        background: #fadee6 url("../img/dress_350.png") no-repeat bottom 50% right
-          10%;
-      }
+  .modalCard {
+    width: 576px;
+    height: 400px;
+  }
+  .active {
+    left: calc(50vw - 288px);
+    top: calc(50vh - 200px);
+  }
+
+  .slide-1 {
+    background: #ffdce6 url("../img/slide-1_350.png") no-repeat bottom 50% right
+      20%;
+  }
+  .slide-2 {
+    background: #b9e0b4 url("../img/slide-2_350.png") no-repeat bottom 50% right
+      20%;
+  }
+
+  .slide-3 {
+    background: #dcfcf9 url("../img/slide-3_350.png") no-repeat bottom 50% right
+      20%;
+  }
+  .card-3 {
+    background: #fadee6 url("../img/dress_350.png") no-repeat bottom 50% right
+      10%;
+  }
   .card-3 {
     padding-top: 35px;
     background: #fadee6 url("../img/dress_350.png") no-repeat top right 10%;
@@ -969,38 +1122,36 @@ button {
     margin: 0 5px;
     border-radius: 20px;
   }
-
 }
 
 @media (max-width: 576px) {
-
-    .modalCard {
-        width: 90vw;
-        height: 400px;
-    }
-    .active {
-        left: calc(50vw - 45vw);
-        top: calc(50vh - 200px);
-    }
+  .modalCard {
+    width: 90vw;
+    height: 400px;
+  }
+  .active {
+    left: calc(50vw - 45vw);
+    top: calc(50vh - 200px);
+  }
   .slide-title {
     font-size: 36px;
     line-height: 1.4;
-      margin-left: 40%;
-}
-.width{
-    margin-left: 25%;     
-}
-.slide-description{
+    margin-left: 40%;
+  }
+  .width {
+    margin-left: 25%;
+  }
+  .slide-description {
     font-size: 18px;
-line-height: 30px;
-color: #4b5157;
-min-width: 450px;
-margin-bottom: 20px;
-margin-left: 5%;
-}
-.button-slide{
+    line-height: 30px;
+    color: #4b5157;
+    min-width: 450px;
+    margin-bottom: 20px;
+    margin-left: 5%;
+  }
+  .button-slide {
     margin-left: 10%;
-}
+  }
   .card {
     background-position: left top;
   }
@@ -1079,10 +1230,9 @@ margin-left: 5%;
     line-height: 20px;
     margin-bottom: 25px;
   }
-  
+
   .card-text.large {
     max-width: 320px;
-  
   }
   .label {
     margin-left: 17%;
@@ -1094,20 +1244,21 @@ margin-left: 5%;
     margin: 0 5px;
     border-radius: 20px;
   }
-  .cart-table{
+  .cart-table {
     min-width: 99%;
   }
-  .labName, .labAddress, .labTel{
+  .labName,
+  .labAddress,
+  .labTel {
     width: 100%;
   }
-  .tell{
+  .tell {
     margin-left: 0;
     width: 100%;
   }
 
   .slider-button {
     width: 40px;
-    
   }
   .text-light {
     color: #fff;

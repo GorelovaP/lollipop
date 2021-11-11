@@ -4,7 +4,7 @@
     "img": "Каталог/Одежда/Рубашки/Рубашка1.jpg",
     "name": "Укороченная рубашка",
     "label": "-25%",
-    "description": "Артикул RTLAAP665201",
+    "description": "XS/S/M/L/XL",
     "price": "99",
     "category": "Одежда",
     "class": "Рубашки"
@@ -14,7 +14,7 @@
     "img": "Каталог/Одежда/Рубашки/Рубашка2.jpg",
     "name": "Укороченная рубашка",
     "label": "-25%",
-    "description": "Red/Sky Blue",
+    "description": "XS/S/M/L/XL",
     "price": "58",
     "category": "Одежда",
     "class": "Рубашки"
@@ -24,7 +24,7 @@
     "img": "Каталог/Одежда/Рубашки/Рубашка3.jpg",
     "name": "Укороченная рубашка",
     "label": "",
-    "description": "Red/Sky Blue",
+    "description": "XS/S/M/L/XL",
     "price": "73",
     "category": "Одежда",
     "class": "Рубашки"
@@ -34,7 +34,7 @@
     "img": "Каталог/Одежда/Рубашки/Рубашка4.jpg",
     "name": "Базовая рубашка оверсайз",
     "label": "",
-    "description": "Red/Sky Blue",
+    "description": "XS/S/M/XL",
     "price": "105",
     "category": "Одежда",
     "class": "Рубашки"
@@ -44,7 +44,7 @@
     "img": "Каталог/Одежда/Рубашки/Рубашка5.jpg",
     "name": "Укороченная рубашка из эко-кожи",
     "label": "-15%",
-    "description": "Red/Sky Blue",
+    "description": "XS/S/M/L/XL",
     "price": "99",
     "category": "Одежда",
     "class": "Рубашки"
@@ -54,7 +54,7 @@
     "img": "Каталог/Одежда/Рубашки/Рубашка6.jpg",
     "name": "Рубашка эко-кожи",
     "label": "",
-    "description": "Red/Sky Blue",
+    "description": "XS/S/M/L/XL",
     "price": "83",
     "category": "Одежда",
     "class": "Рубашки"
@@ -64,7 +64,7 @@
     "img": "Каталог/Одежда/Рубашки/Рубашка7.jpg",
     "name": "Рубашка из ЭКО-кожи",
     "label": "",
-    "description": "Red/Sky Blue",
+    "description": "XS/S/M/L/XL",
     "price": "78",
     "category": "Одежда",
     "class": "Рубашки"

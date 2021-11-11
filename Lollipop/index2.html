@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lollipop</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/lollipop-icon128.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/lollipop-icon32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/lollipop-icon16.png">
+    <!-- <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5"> -->
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<header class="container header px-4 px-md-0">
+    <div class="cont">
+        <div class=" loll">
+            <a href="index.html" class="logo-link">
+                <img width="128" src="img/logo.svg" alt="logo: Lollipop" class="logo-image">
+            </a>
+        </div>
+        <div class=" col-lg-6 menu d-lg-block">
+            <nav>
+                <input id="menu_toggle" type="checkbox" />
+                <label class="menu_btn" for="menu_toggle">
+                    <span></span>
+                </label>
+                <ul class="navigation d-flex justify-content-around menu__box">
+                    <div class="dropdown">
+                        <li class="navigation-item">
+                            <a href="#" class="navigation-link menu__item cat" data-field="category">Одежда</a>
+                        </li>
+                        <div class="dropdown-content">
+                            <a href="#" class="navigation-link menu__item" data-field="class">Брюки, джинсы</a>
+                            <a href="#" class="navigation-link menu__item" data-field="class">Платья</a>
+                            <a href="#" class="navigation-link menu__item" data-field="class">Рубашки</a>
+                            <a href="#" class="navigation-link menu__item" data-field="class">Свитеры, кардиганы</a>
+                            <a href="#" class="navigation-link menu__item" data-field="class">Толстовки,
+                                свитшоты</a>
+                            <a href="#" class="navigation-link menu__item" data-field="class">Футболки, топы</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <li class="navigation-item ">
+                            <a href="#" class="navigation-link menu__item cat " data-field="category">Обувь</a>
+                        </li>
+                        <div class="dropdown-content">
+                            <a href="#" class="navigation-link menu__item" data-field="class">Ботинки и
+                                ботильоны</a>
+                            <a href="#" class="navigation-link menu__item" data-field="class">Кроссовки и кеды</a>
+                            <a href="#" class="navigation-link menu__item" data-field="class">Туфли на каблуке</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <li class="navigation-item ">
+                            <a href="#" class="navigation-link menu__item cat " data-field="category">Нижнее
+                                бельё</a>
+                        </li>
+                        <div class="dropdown-content">
+                            <a href="#" class="navigation-link menu__item" data-field="class">Бра</a>
+                            <a href="#" class="navigation-link menu__item" data-field="class">Комплекты</a>
+                            <a href="#" class="navigation-link menu__item" data-field="class">Трусы</a>
+                        </div>
+                    </div>
+                    <li class="navigation-item ">
+                        <a href="#" class="navigation-link menu__item hov" data-field="category">Аксессуары</a>
+                    </li>
+                    <li class="navigation-item ">
+                        <a href="#" class="navigation-link menu__item view-all hov">Все</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="col-lg-3 col-8 d-flex justify-content-end flex-md-row cart">
+            <button class="button-cart button">
+                <img class="button-icon" src="img/cart.svg" alt="icon: cart">
+                <span class="button-text">Корзина</span>
+                <span class="button-text cart-count"></span>
+            </button>
+        </div>
+    </div>
+    <!-- /.row -->
+</header>
+
+<section class="delivery-section">
+    <h1 class="delivery-title">СПОСОБЫ ДОСТАВКИ</h1>
+    <span>Заботясь о комфортном и современном шопинге, мы представляем несколько вариантов доставки понравившихся
+        товаров</span>
+    <ul class="delivery-list">
+        <li>Курьером – по Минску и окрестностям (собственная курьерская служба);</li>
+        <li>Курьером – по Беларуси (курьерская служба DPD);</li>
+        <li>Почтой по Беларуси – куда угодно;</li>
+        <li>Самовывоз из магазина (несколько разновидностей самовывоза);</li>
+    </ul>
+
+    <div class="method">
+        <h2 class="method-title">Курьером — по Минску</h2>
+        <p class="method-text">
+            Курьер может доставить ваши покупки по Минску и близлежащим районам, поселкам, агрогородкам и деревням в
+            течение 1-3 дней в трех временных промежутках – с 10:00 до 13:00, с 13:00 до 16:00 и с 18:00 до 22:00.
+        </p>
+        <p>
+            Заказы, оформленные до 10:00, могут быть доставлены в этот же день. Доставка будет бесплатной, если вы
+            закажете товаров более чем на 50 BYN. При заказе на сумму до 50 BYN стоимость доставки составит 4 BYN.
+        </p>
+        <p>
+            Курьер подождет, пока вы примерите изделия (мы просим не затягивать примерку более чем на 15 минут), и
+            заберет те из них, которые вам не подошли. Если сумма выкупаемого заказа будет менее 50 BYN или вы полностью
+            откажетесь от него, то вам необходимо будет оплатить стоимость доставки (4 BYN). Курьер примет у вас оплату
+            наличными или банковской картой. Вы также можете оплатить ваши покупки заранее – картой онлайн.
+        </p>
+    </div>
+    <div class="method">
+        <h2 class="method-title">Почтой по Беларуси — куда угодно</h2>
+        <p class="method-text">
+            Мы можем отправить ваши покупки с помощью почты Беларуси. В данном случае доставка почти всегда будет
+            платной (например, посылка в любой город Беларуси обойдется примерно в 6 BYN). Исключением являются заказы
+            на сумму от 50 BYN – их доставка бесплатна. </p>
+        <ol class="method-payment">
+            <h3>Порядок действий: </h3>
+            <li>При оформлении заказа, выберите доставку почтой Беларуси;</li>
+            <li>Специалист подтвердит наличие товара на складе;</li>
+            <li>Оплатите товар полностью (картой онлайн или с помощью ЕРИП) в течение 5 календарных дней, иначе нам
+                придется аннулировать заказ;</li>
+            <li>Мы доставим товар в почтовое отделение в любой день, кроме понедельника, как только увидим поступление
+                денег на расчетный счет (обычно они поступают туда за 1-3 дня);</li>
+            <li>Почта сообщит вам о поступлении посылки (среднее время по Беларуси – 3-6 дней) с помощью извещения;</li>
+            <li> Вы заберете посылку в почтовом отделении по документу, удостоверяющему личность.</li>
+        </ol>
+    </div>
+    <div class="method">
+        <h2 class="method-title">Cамовывоз</h2>
+        <p class="method-text">
+            Если хотите, вы можете забрать свои покупки самостоятельно. </p>
+        <p>
+            Вы можете забрать свои товары в наших магазинах по адресу ул. В. Хоружей 1a, ТЦ «СИЛУЭТ» 1 этаж 5.
+        </p>
+    </div>
+</section>
+
+<footer class="footer">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-sm-1 d-flex justify-content-end top">
+                <a href="#body" class="scroll-link top-link d-flex align-items-center">
+                    <span class="top-link-text">Top</span>
+                    <img src="img/top.svg" alt="icon: arrow top">
+                </a>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-sm-9">
+                    <span class="footer-text">Способы оплаты</span>
+                    <hr class="footer-line mt-3 mb-3">
+                    <img class="payment-logo" src="img/n-visa.png" width="50px" height="30px" alt="visa logo">
+                    <img class="payment-logo" src="img/n-mastercard.png" width="50px" height="30px"
+                        alt="master card logo">
+                    <img class="payment-logo" src="img/n-cash.png" width="50px" height="30px" alt="bitcoin logo">
+                    <p class="payment-text">Наличными или банковской картой, через систему АИС "Расчет" (ЕРИП),
+                        онлайн
+                        банковской картой через систему bePaid.</p>
+                </div>
+                <div class="col-lg-4 col-sm-9 margin">
+                    <span class="footer-text">Контакты</span>
+                    <hr class="footer-line mt-3 mb-3">
+                    <span class="social-link-text">Follow Us
+                        <a href="#" class="social-link">
+                            <img src="img/Facebook.svg" alt="Facebook">
+                        </a>
+                        <a href="#" class="social-link">
+                            <img src="img/Twitter.svg" alt="Twitter">
+                        </a>
+                        <a href="https://www.instagram.com/lollipop.minsk/?utm_medium=copy_link" class="social-link">
+                            <img src="img/Instagram.svg" alt="Instagram">
+                        </a></span>
+
+
+
+                    <div> <span class="social-link-text">📞Отдел обслуживания клиентов
+                        </span>
+                        <a href="tel:+375446548775" class="footer-phone">+375(44)-654-87-45</a></span>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-9">
+
+
+                    <span class="footer-text">Адрес???????????</span>
+                    <hr class="footer-line mt-3 mb-3">
+                    <a href="https://goo.gl/maps/QVbfoWzH2ZqGk5nm7" class="social-link-text">🍬ТЦ «СИЛУЭТ» 1 этаж 5
+                        ряд 16 место</a><br>
+                    <a href="https://goo.gl/maps/QVbfoWzH2ZqGk5nm7" class="social-link-text">🍬ТЦ «СИЛУЭТ» 2 этаж 10
+                        ряд 1 место</a><br>
+                    <span class="social-link-text">🕚Время работы :<span class="white"> 10:00 - 22:00</span> </span>
+
+                </div>
+            </div>
+
+        </div>
+        <!-- /.row -->
+        <!-- /.container -->
+</footer>
+<div class="overlay" id="modal-cart">
+    <div class="modal">
+        <header class="modal-header">
+            <h2 class="modal-title">Корзина</h2>
+            <button class="modal-close">x</button>
+
+        </header>
+        <table class="cart-table ">
+            <colgroup>
+                <col class="col-goods">
+                <col class="col-price">
+                <col class="col-minus">
+                <col class="col-qty">
+                <col class="col-plus">
+                <col class="col-total-price">
+                <col class="col-delete">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>Товар(ы)</th>
+                    <th>Цена</th>
+                    <th colspan="3">Кол-во.</th>
+                    <th colspan="2">Сумма</th>
+                </tr>
+            </thead>
+            <tbody class="cart-table__goods">
+                <tr class="cart-item" data-id="003">
+                    <td>Sweater</td>
+                    <td>250$</td>
+                    <td>
+                        <button class="cart-btn-minus">-</button>
+                    </td>
+                    <td>2</td>
+                    <td>
+                        <button class="cart-btn-plus">+</button>
+                    </td>
+                    <td>500$</td>
+                    <td>
+                        <button class="cart-btn-delete">x</button>
+                    </td>
+                </tr>
+                <tr class="cart-item" data-id="003">
+                    <td>Sweater</td>
+                    <td>250$</td>
+                    <td>
+                        <button class="cart-btn-minus">-</button>
+                    </td>
+                    <td>2</td>
+                    <td>
+                        <button class="cart-btn-plus">+</button>
+                    </td>
+                    <td>500$</td>
+                    <td>
+                        <button class="cart-btn-delete">x</button>
+                    </td>
+                </tr>
+                <tr class="cart-item" data-id="003">
+                    <td>Sweater</td>
+                    <td>250$</td>
+                    <td>
+                        <button class="cart-btn-minus">-</button>
+                    </td>
+                    <td>2</td>
+                    <td>
+                        <button class="cart-btn-plus">+</button>
+                    </td>
+                    <td>500$</td>
+                    <td>
+                        <button class="cart-btn-delete">x</button>
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th class="total" colspan="5">Total:</th>
+                    <th class="card-table__total" colspan="2">1500$</th>
+                </tr>
+
+            </tfoot>
+        </table>
+        <form class="modal-form" action="">
+            <label><input class="modal-input" type="text" placeholder="Имя" name="nameCustomer"
+                    pattern="^[A-Za-zА-Яа-яЁё\s]{6,}" minlength="3" maxlength="15"></label>
+            <label><input required class="modal-input" type="text" placeholder="+375ХХХХХХХХХ" name="phoneCustomer"
+                    pattern="[\+]\d{3}\d{2}\d{7}" minlength="13" maxlength="13"></label>
+            <label> <input class="modal-input address" type="text" placeholder="Адрес доставки:"> </label>
+            <button class="button cart-buy">
+                <span class="button-text">Подтвердить</span>
+            </button>
+        </form>
+    </div>
+</div>
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+
+</html>
