@@ -4,7 +4,7 @@
 
 body {
   margin: 0;
-  font-family: "Lato", sans-serif;
+  font-family: 'Merriweather', serif;
 }
 
 img {
@@ -35,7 +35,7 @@ img {
   text-decoration: none;
   text-transform: uppercase;
   color: #939699;
-  font-family: "Lato", sans-serif;
+  font-family: 'Merriweather', serif;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -56,7 +56,7 @@ button {
   border-radius: 20px;
   border: none;
   color: #fff;
-  font-family: "Lato", sans-serif;
+  font-family: 'Merriweather', serif;
   font-style: normal;
   font-weight: 900;
   font-size: 14px;
@@ -140,7 +140,7 @@ button {
   color: #262d33;
   font-size: 55px;
   line-height: 70px;
-  font-family: "Roboto Slab", serif;
+  font-family: 'Merriweather', serif;
   margin-top: 20px;
   margin-bottom: 15px;
 }
@@ -219,7 +219,7 @@ button {
   color: #262d33;
   font-size: 25px;
   line-height: 30px;
-  font-family: "Roboto Slab", serif;
+  font-family: 'Merriweather', serif;
   max-width: 222px;
   margin: 0;
 }
@@ -256,7 +256,7 @@ button {
 }
 
 .section-title {
-  font-family: "Roboto Slab", serif;
+  font-family: 'Merriweather', serif;
   font-size: 25px;
   line-height: 30px;
   color: #262d33;
@@ -304,7 +304,7 @@ button {
   font-size: 16px;
   line-height: 25px;
   min-height: 50px;
-  font-family: "Roboto Slab", serif;
+  font-family: 'Merriweather', serif;
 }
 
 
@@ -619,7 +619,7 @@ button {
   text-decoration: none;
   text-transform: uppercase;
   color: #939699;
-  font-family: "Lato", sans-serif;
+  font-family: 'Merriweather', serif;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -652,7 +652,7 @@ button {
 }
 
 .modalCard-title {
-  font-family: "Lato", "Roboto Slab", serif;
+  font-family: 'Merriweather', serif;
   font-size: 64px;
   color: rgb(255 170 184);
   -webkit-text-stroke: 1px #806d71;
@@ -940,7 +940,7 @@ button {
     display: block;
     padding: 12px 24px;
     color: #333;
-    font-family: "Roboto", sans-serif;
+    font-family: 'Merriweather', serif;
     font-size: 20px;
     font-weight: 600;
     text-decoration: none;
