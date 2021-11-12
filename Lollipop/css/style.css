@@ -491,6 +491,7 @@ button {
   color: #383838;
 }
 
+
 .modal-close {
   position: absolute;
   background-color: transparent;
@@ -668,6 +669,14 @@ button {
   color: #ffaab8;
 }
 
+.modalCardBuy{
+  border: 2px solid #ffeef3;
+  width: 700px;
+  height: 400px;
+  background: rgba(255, 215, 221, 0.91);
+  display: none;
+  border-radius: 20px;
+}
 .modalCard {
   border: 2px solid #ffeef3;
   width: 700px;
@@ -680,6 +689,12 @@ button {
 .modalCard-title {
   font-family: "Lato", "Roboto Slab", serif;
   font-size: 64px;
+  color: rgb(255 170 184);
+  -webkit-text-stroke: 1px #806d71;
+}
+.modalCard-title2 {
+  font-family: "Lato", "Roboto Slab", serif;
+  font-size: 46px;
   color: rgb(255 170 184);
   -webkit-text-stroke: 1px #806d71;
 }

@@ -21,6 +21,25 @@ const showAcsessories = document.querySelectorAll(".show-acsessories");
 const cartTableGoods = document.querySelector(".cart-table__goods");
 const cartTableTotal = document.querySelector(".card-table__total");
 const modalCard = document.querySelector(".modalCard");
+const modalCardBuy = document.querySelector(".modalCardBuy")
+
+
+
+
+
+
+const modalform =  document.querySelector(".modal-form")
+modalform.addEventListener("submit",  function (e){
+  e.preventDefault();
+  if (modalCardBuy.classList.contains("close")) {
+    modalCardBuy.classList.replace("close", "active");
+  } else modalCardBuy.classList.add("active");
+   closeModal();
+  let modalClose2 = document.querySelector(".modal-close2");
+  modalClose2.addEventListener("click", () => {
+    modalCardBuy.classList.replace("active", "close");
+  });
+});
 
 const showModal = function () {
   const buttons = document.querySelectorAll(".goods-card-btn");
@@ -31,6 +50,7 @@ const showModal = function () {
         modalCard.classList.replace("close", "active");
       } else modalCard.classList.add("active");
 
+      closeModal();
       modalClose.addEventListener("click", () => {
         modalCard.classList.replace("active", "close");
       });

@@ -36,6 +36,14 @@
             </button>
         </div>
     </div>
+    <div class="modalCardBuy">
+        <div class="modalCardContent">
+            <span class="modalCard-title2">Спасибо за ваш заказ! Мы с вами свяжемся. Ожидайте</span>
+        </div>
+        <div class="modalCard-btn">
+            <button class="modalCard-close  button modal-close2 ">Вернуться к выбору товаров</button>
+        </div>
+    </div>
     <header class="container header px-4 px-md-0">
         <div class="cont">
             <div class=" loll">
@@ -428,7 +436,7 @@
 
                 </tfoot>
             </table>
-            <form class="modal-form" action="">
+            <form class="modal-form" action="#">
                 <label class="labName"><input required class="modal-input name" type="text" placeholder="Введите ФИО"
                                               name="nameCustomer" pattern="^[A-Za-zА-Яа-яЁё\s]{6,}" minlength="3"
                                               maxlength="25"></label>
@@ -437,7 +445,7 @@
                                              pattern="[\+]\d{3}\d{2}\d{7}" minlength="13" maxlength="13"></label>
                 <label class="labAddress"> <input required class="modal-input address" type="text"
                                                   placeholder="Адрес доставки:"> </label>
-                <button class="button cart-buy">
+                <button type="submit" class="button cart-buy">
                     <span class="button-text">Подтвердить</span>
                 </button>
             </form>
