@@ -4,7 +4,7 @@
 
 body {
   margin: 0;
-  font-family: 'Merriweather', serif;
+  font-family: "Lato", sans-serif;
 }
 
 img {
@@ -35,7 +35,7 @@ img {
   text-decoration: none;
   text-transform: uppercase;
   color: #939699;
-  font-family: 'Merriweather', serif;
+  font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -56,7 +56,7 @@ button {
   border-radius: 20px;
   border: none;
   color: #fff;
-  font-family: 'Merriweather', serif;
+  font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: 900;
   font-size: 14px;
@@ -74,6 +74,30 @@ button {
 .button-slide {
   background: #fff;
   color: black;
+}
+
+.button-slide {
+  line-height: 1.1;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  display: inline-block;
+  min-width: 144px;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.2);
+  font-size: 18px;
+  padding: 16px 25px 15px;
+ 
+}
+.button-slide:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.black{
+  color: #000;
 }
 
 .button-price {
@@ -124,7 +148,7 @@ button {
 }
 
 .slide-3 {
-  background: #dcfcf9 url("../img/slide-3.png") no-repeat top right 30%;
+  background: #d2dbf5 url("../img/slide-3.png") no-repeat top right 30%;
 }
 
 .label {
@@ -140,7 +164,7 @@ button {
   color: #262d33;
   font-size: 55px;
   line-height: 70px;
-  font-family: 'Merriweather', serif;
+  font-family: "Roboto Slab", serif;
   margin-top: 20px;
   margin-bottom: 15px;
 }
@@ -200,10 +224,9 @@ button {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding-top: 35px;
+  padding-bottom: 55px;
   padding-left: 25px;
-  background: rgb(255, 246, 226) url("../img/card-image-4.png") no-repeat top
-    right;
+  background: rgb(255, 246, 226) url("../img/card-4.png") no-repeat top right -70px;
   background-size: contain;
 }
 
@@ -219,7 +242,7 @@ button {
   color: #262d33;
   font-size: 25px;
   line-height: 30px;
-  font-family: 'Merriweather', serif;
+  font-family: "Roboto Slab", serif;
   max-width: 222px;
   margin: 0;
 }
@@ -243,6 +266,9 @@ button {
 .card-text.large {
   max-width: 320px;
 }
+.card-text.middle{
+  max-width: 200px;
+}
 
 .card-price {
   color: #ffffff;
@@ -256,7 +282,7 @@ button {
 }
 
 .section-title {
-  font-family: 'Merriweather', serif;
+  font-family: "Roboto Slab", serif;
   font-size: 25px;
   line-height: 30px;
   color: #262d33;
@@ -304,7 +330,7 @@ button {
   font-size: 16px;
   line-height: 25px;
   min-height: 50px;
-  font-family: 'Merriweather', serif;
+  font-family: "Roboto Slab", serif;
 }
 
 
@@ -619,7 +645,7 @@ button {
   text-decoration: none;
   text-transform: uppercase;
   color: #939699;
-  font-family: 'Merriweather', serif;
+  font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -652,7 +678,7 @@ button {
 }
 
 .modalCard-title {
-  font-family: 'Merriweather', serif;
+  font-family: "Lato", "Roboto Slab", serif;
   font-size: 64px;
   color: rgb(255 170 184);
   -webkit-text-stroke: 1px #806d71;
@@ -809,7 +835,7 @@ button {
   }
 
   .slide-3 {
-    background: #dcfcf9 url("../img/slide-3.png") no-repeat bottom 50% right 10%;
+    background: #d2dbf5 url("../img/slide-3.png") no-repeat bottom 50% right 10%;
   }
   .card-3 {
     background: #fadee6 url("../img/dress_350.png") no-repeat bottom 50% right
@@ -940,7 +966,7 @@ button {
     display: block;
     padding: 12px 24px;
     color: #333;
-    font-family: 'Merriweather', serif;
+    font-family: "Roboto", sans-serif;
     font-size: 20px;
     font-weight: 600;
     text-decoration: none;
@@ -1050,17 +1076,15 @@ button {
   }
 
   .slide-3 {
-    background: #dcfcf9 url("../img/slide-3_350.png") no-repeat bottom 50% right
+    background: #d2dbf5 url("../img/slide-3_350.png") no-repeat bottom 50% right
       20%;
   }
   .card-3 {
     background: #fadee6 url("../img/dress_350.png") no-repeat bottom 50% right
       10%;
   }
-  .card-3 {
-    padding-top: 35px;
-    background: #fadee6 url("../img/dress_350.png") no-repeat top right 10%;
-    background-size: contain;
+  .card-4 {
+    padding-left: 46px;
   }
   .modal {
     max-width: 470px;
@@ -1087,16 +1111,18 @@ button {
     border: 3px solid rgb(255, 255, 255);
     border-radius: 10px;
   }
+  .card-text.middle{
+    max-width: 300px;
+  }
 }
 
-@media (max-width: 720px){
+@media (max-width: 880px){
   .delivery-banner-img {
    display: none;
   }
 
   .delivery-banner-advantage {
-    
-    width: 450px;
+    width: 600px;
     align-content: space-between;
   }
   .advantage-item{
@@ -1108,6 +1134,14 @@ button {
     padding: 5px;
     border: 3px solid rgb(255, 255, 255);
     border-radius: 10px;
+  }
+  .delivery-banner-img2{
+    display: inline;
+    position: absolute;
+    margin-right: 2%;
+    bottom: 0;
+   right: 0;
+   z-index: 1;
   }
 }
 
@@ -1191,7 +1225,7 @@ button {
   }
 
   .slide-3 {
-    background: #dcfcf9 url("../img/slide-3_350.png") no-repeat bottom -80% right
+    background: #d2dbf5 url("../img/slide-3_350.png") no-repeat bottom -80% right
       30%;
   }
   .tel {
