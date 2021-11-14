@@ -56,7 +56,7 @@ img {
   margin-top: 10px;
 }
 .slide-link {
-
+  
 font-weight: 200;
 font-size: 44px;
 line-height: 54px;
@@ -816,6 +816,9 @@ color: #1B1B1B;
   color: #1B1B1B;
   bottom: 0;
 }
+.delivery-link{
+margin-top: 50%;
+}
 .delivery-banner-btn:hover {
   background: rgba(255, 255, 255, 0.3);
 }
@@ -855,17 +858,38 @@ color: #1B1B1B;
 }
 
 @media (max-width: 1200px) {
-  .slide-1 {
-    background:   url("../img/slider-1.png") no-repeat top right;
+  .card-1 {
+    background: #fff url("../img/card1.png") no-repeat top right 30%;
+    background-size: contain;
+
   }
-  .slide-2 {
-    background:  url("../img/slider-2.png") no-repeat top right;
+  .card-link{
+  margin-left: 10%;
   }
-  .slide-3 {
-    background:  url("../img/slider-3.png") no-repeat top right;
+  .card-text{
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  text-decoration-line: underline;
+
+  color: #1B1B1B;
+
   }
-  .slide-4 {
-    background:  url("../img/slider-4.png") no-repeat top right;
+
+  .card-2 {
+    background:  url("../img/card2.png") no-repeat top right 30%;
+    background-size: contain;
+  }
+
+  .card-3 {
+    background:  url("../img/card3.png") no-repeat top right 30%;
+    background-size: contain;
+  }
+
+  .card-4 {
+
+    background:  url("../img/card4.png") no-repeat top right 30%;
+    background-size: contain;
   }
 
   .modalCard-close {
@@ -1342,5 +1366,8 @@ padding-left: 20%;
           line-height: 24px;
           color: #1B1B1B
         }
-    
+        .delivery-link{
+          margin-top: 10%;
+          }
+
 }
