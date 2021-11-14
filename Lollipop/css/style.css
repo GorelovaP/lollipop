@@ -842,17 +842,38 @@ margin-top: 50%;
 }
 
 @media (max-width: 1200px) {
-  .slide-1 {
-    background:   url("../img/slider-1.png") no-repeat top right;
+  .card-1 {
+    background: #fff url("../img/card1.png") no-repeat top right 30%;
+    background-size: contain;
+   
   }
-  .slide-2 {
-    background:  url("../img/slider-2.png") no-repeat top right;
+  .card-link{
+  margin-left: 10%;
   }
-  .slide-3 {
-    background:  url("../img/slider-3.png") no-repeat top right;
+  .card-text{
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  text-decoration-line: underline;
+  
+  color: #1B1B1B;
+  
   }
-  .slide-4 {
-    background:  url("../img/slider-4.png") no-repeat top right;
+  
+  .card-2 {
+    background:  url("../img/card2.png") no-repeat top right 30%;
+    background-size: contain;
+  }
+  
+  .card-3 {
+    background:  url("../img/card3.png") no-repeat top right 30%;
+    background-size: contain;
+  }
+  
+  .card-4 {
+  
+    background:  url("../img/card4.png") no-repeat top right 30%;
+    background-size: contain;
   }
 
   .modalCard-close {
