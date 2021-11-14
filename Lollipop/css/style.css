@@ -44,10 +44,19 @@ img {
   letter-spacing: 0.5px;
 }
 .slider-link{
-bottom: 10%;
+  margin-top: 310px;
+  text-align: center;
+  }
+.slide-link:after{
+  content: '';
+  width: 100%;
+  display: block;
+  height: 2px;
+  background:#FEFEFE;
+  margin-top: 10px;
 }
 .slide-link {
-  
+
 font-weight: 200;
 font-size: 44px;
 line-height: 54px;
@@ -142,7 +151,7 @@ color: #1B1B1B;
 
 .slide {
   padding-top: 90px;
-  padding-bottom: 110px;
+  padding-bottom: 30px;
   margin-bottom: 58px;
   min-height: 510px;
 }
@@ -1200,9 +1209,10 @@ color: #1B1B1B;
     padding: 20px 5px 20px 5px;
   }
 
-  .tel {
-    margin-top: -20%;
-  }
+.bottom{
+  position: absolute;
+  bottom: 0;
+}
 
   .card-title.large {
     max-width: 420px;
