@@ -116,6 +116,7 @@
 }
 .col-2 {
   flex: 0 0 auto;
+  position: relative;
   width: 16.6666666667%;
 }
 .col-3 {

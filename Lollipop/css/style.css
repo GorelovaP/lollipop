@@ -143,23 +143,28 @@ color: #1B1B1B;
 .slide {
   padding-top: 90px;
   padding-bottom: 110px;
-  min-height: 568px;
+  margin-bottom: 58px;
+  min-height: 510px;
 }
 
 .slide-1 {
-  background: #fff  url("../img/slider-1.png") no-repeat top right;
+  background: #2a362a  url("../img/slider-1big.png") no-repeat top center;
   
 }
 .slide-2 {
-  background: #fff url("../img/slider-2.png") no-repeat top left;
+  background: #013355 url("../img/slider-2big.png") no-repeat top center;
 }
 .slide-3 {
-  background: #fff url("../img/slider-3.png") no-repeat top left;
+  background: #737d5a url("../img/slider-3big.png") no-repeat top center;
 }
 .slide-4 {
-  background: #fff url("../img/slider-4.png") no-repeat top left;
+  background: #1a202f url("../img/slider-4big.png") no-repeat top center;
 }
+.slider-button-next{
+  position: absolute;
+  right: 0;
 
+}
 
 .label {
   background-color: #d4d4d4;

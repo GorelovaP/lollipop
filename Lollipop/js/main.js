@@ -37,6 +37,7 @@ modalform.addEventListener("submit",  function (e){
    closeModal();
   let modalClose2 = document.querySelector(".modal-close2");
   modalClose2.addEventListener("click", () => {
+
     modalCardBuy.classList.replace("active", "close");
   });
 });
