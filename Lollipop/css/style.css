@@ -5,6 +5,7 @@
 body {
   margin: 0;
   font-family: "Monserrat";
+  max-width: 1366px;
 }
 
 img {
@@ -42,8 +43,16 @@ img {
   line-height: 20px;
   letter-spacing: 0.5px;
 }
+.slider-link{
+bottom: 10%;
+}
 .slide-link {
-  color: black;
+  
+font-weight: 200;
+font-size: 44px;
+line-height: 54px;
+letter-spacing: 0.07em;
+color: #FEFEFE;
 }
 
 button {
@@ -140,16 +149,18 @@ button {
 }
 
 .slide-1 {
-  background: #ffdce6 url("../img/slide-1.png") no-repeat top right 30%;
+  background:  url("../img/slider-1.png") no-repeat top left;
 }
-
 .slide-2 {
-  background: #b9e0b4 url("../img/slide-2.png") no-repeat top right 30%;
+  background:  url("../img/slider-2.png") no-repeat top left;
+}
+.slide-3 {
+  background:  url("../img/slider-3.png") no-repeat top left;
+}
+.slide-4 {
+  background:  url("../img/slider-4.png") no-repeat top left;
 }
 
-.slide-3 {
-  background: #d2dbf5 url("../img/slide-3.png") no-repeat top right 30%;
-}
 
 .label {
   background-color: #f597b3;
@@ -183,7 +194,7 @@ button {
 
 .slider-nav {
   position: absolute;
-  top: 50%;
+  top: 40%;
   width: 100%;
   transform: translateY(-50%);
   z-index: 9;
@@ -193,11 +204,11 @@ button {
   background-color: transparent;
   border: none;
   cursor: pointer;
+  opacity: 0.3;
 }
 
 .card {
   min-height: 370px;
-  border-radius: 10px;
   padding-top: 60px;
   padding-left: 46px;
   padding-right: 46px;
@@ -205,28 +216,36 @@ button {
 }
 
 .card-1 {
-  background: #e3e2e3 url("../img/akss.png") no-repeat top right;
+  background:  url("../img/card1.png") no-repeat top right;
   background-size: contain;
+}
+.card-link{
+position: relative;
+bottom: 10%;
+}
+.card-text{
+  font-weight: normal;
+font-size: 18px;
+line-height: 22px;
+text-decoration-line: underline;
+
+color: #1B1B1B;
+
 }
 
 .card-2 {
-  background: #000 url("../img/sneak.png") no-repeat top right;
+  background:  url("../img/card2.png") no-repeat top right;
   background-size: contain;
 }
 
 .card-3 {
-  padding-top: 35px;
-  background: #faebde url("../img/dress-1.png") no-repeat top right 10%;
+  background:  url("../img/card3.png") no-repeat top right;
   background-size: contain;
 }
 
 .card-4 {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding-bottom: 55px;
-  padding-left: 25px;
-  background: rgb(255, 246, 226) url("../img/card-4.png") no-repeat top right -70px;
+
+  background:  url("../img/card4.png") no-repeat top right;
   background-size: contain;
 }
 
@@ -740,20 +759,27 @@ button {
 
 /* Доставка */
 .delivery-banner {
-  background: linear-gradient(89.51deg, #f18d5e 2.39%, #f05fc0 99.79%);
+  background: #fff url("../img/deliver.png") no-repeat top left 10%;
   border-radius: 10px;
   box-sizing: border-box;
+  margin-top: 120px;
   margin-bottom: 12px;
-  padding: 44px 68px 68px;
+  padding-left: 43%;
   position: relative;
+  min-height: 540px;
+}
+.delivery-banner-content{
+ max-width: 300px;
 }
 
 .delivery-banner-title {
-   font-size: 42px;
-  line-height: 56px;
-  font-weight: bold;
-  color: #ffffff;
-  margin: 0 0 44px;
+  font-weight: normal;
+  font-size: 23px;
+  line-height: 28px;
+  text-transform: uppercase;
+  
+  color: #1B1B1B;
+  
 }
 
 .delivery-banner-advantage {
@@ -764,14 +790,11 @@ button {
   align-content: space-between;
 }
 .advantage-item{
-  font-size: 15px;
-  line-height: 28px;
-  width: 200px;
-  color: #ffffff;
-  margin: 10px;
-  padding: 5px;
-  border: 3px solid rgb(255, 255, 255);
-  border-radius: 10px;
+  font-weight: 200;
+  font-size: 20px;
+  line-height: 24px;
+  
+  color: #1B1B1B
 }
 
 .delivery-banner-btn {
@@ -830,9 +853,9 @@ button {
 }
 
 @media (max-width: 1200px) {
-  .slide-1 {
+  /* .slide-1 {
     background-size: cover;
-  }
+  } */
 
   .card-3 {
     background-size: cover;
@@ -848,21 +871,6 @@ button {
     font-size: 13px;
   }
 
-  .slide-1 {
-    background: #ffdce6 url("../img/slide-1_500.png") no-repeat bottom 50% right
-      0%;
-  }
-  .slide-2 {
-    background: #b9e0b4 url("../img/slide-2.png") no-repeat bottom 50% right 10%;
-  }
-
-  .slide-3 {
-    background: #d2dbf5 url("../img/slide-3.png") no-repeat bottom 50% right 10%;
-  }
-  .card-3 {
-    background: #fadee6 url("../img/dress_350.png") no-repeat bottom 50% right
-      10%;
-  }
   .delivery-banner-img {
      margin-right: 0%;
   }
@@ -1088,19 +1096,6 @@ button {
     top: calc(50vh - 200px);
   }
 
-  .slide-1 {
-    background: #ffdce6 url("../img/slide-1_350.png") no-repeat bottom 50% right
-      20%;
-  }
-  .slide-2 {
-    background: #b9e0b4 url("../img/slide-2_350.png") no-repeat bottom 50% right
-      20%;
-  }
-
-  .slide-3 {
-    background: #d2dbf5 url("../img/slide-3_350.png") no-repeat bottom 50% right
-      20%;
-  }
   .card-3 {
     background: #fadee6 url("../img/dress_350.png") no-repeat bottom 50% right
       10%;
@@ -1236,20 +1231,11 @@ button {
     padding: 20px 5px 20px 5px;
   }
 
-  .slide-1 {
+  /* .slide-1 {
     background: #ffdce6 url("../img/slide-1_350.png") no-repeat bottom 0 right
       30%;
-  }
+  } */
 
-  .slide-2 {
-    background: #b9e0b4 url("../img/slide-2_350.png") no-repeat bottom 0 right
-      30%;
-  }
-
-  .slide-3 {
-    background: #d2dbf5 url("../img/slide-3_350.png") no-repeat bottom -80% right
-      30%;
-  }
   .tel {
     margin-top: -20%;
   }
