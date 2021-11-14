@@ -4,7 +4,7 @@
 
 body {
   margin: 0;
-  font-family: "Lato", sans-serif;
+  font-family: "Monserrat";
 }
 
 img {
@@ -205,13 +205,13 @@ button {
 }
 
 .card-1 {
-  background: #e3e2e3 url("../img/card-image-1.jpg") no-repeat top right;
-  background-size: cover;
+  background: #e3e2e3 url("../img/akss.png") no-repeat top right;
+  background-size: contain;
 }
 
 .card-2 {
-  background: #000 url("../img/sneakers.png") no-repeat top right;
-  background-size: cover;
+  background: #000 url("../img/sneak.png") no-repeat top right;
+  background-size: contain;
 }
 
 .card-3 {
@@ -312,6 +312,10 @@ button {
   z-index: 1;
   transition: transform 0.5s;
 }
+.goods-image {
+  object-fit: contain;
+  height: 190px;
+}
 
 .goods-card .label {
   position: absolute;
@@ -333,11 +337,6 @@ button {
   font-family: "Roboto Slab", serif;
 }
 
-
-.goods-image {
-  object-fit: contain;
-  height: 190px;
-}
 
 .goods-description {
   color: #4b5157;
@@ -366,7 +365,7 @@ button {
 /* Футер */
 
 .footer {
-  background: linear-gradient(#fff0f5, pink);
+  background: #E0E8E4;
   padding-top: 25px;
   padding-bottom: 40px;
   color: #fff;
@@ -386,25 +385,26 @@ button {
 
 .social-link {
   text-decoration: none;
-  margin-left: 15px;
+  margin-right: 20px;
 }
+.footer-links{
+  margin-top: 22px;
 
-.social-link-text {
+}
+.footer-link {
   text-decoration: none;
-  color:rgb(241 149 163);
-  font-size: 14px;
-  line-height: 20px;
-}
-.white {
-  color: #fff;
-}
+  color:#1B1B1B;
+  font-weight: 200;
+  font-size: 12px;
+  line-height: 15px;
+  }
 
-.footer-text {
-  color: #fa879a;
-  margin-left: 40%;
+.footer-title {
+  color: #1B1B1B;
   font-size: 14px;
-  font-weight: bold;
-  line-height: 20px;
+  line-height: 17px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
 }
 
 .footer-phone {
@@ -433,7 +433,7 @@ button {
 }
 
 .top-link-text {
-  color: #ed8baf;
+  color: #1B1B1B;
   margin-right: 15px;
 }
 
@@ -636,7 +636,7 @@ button {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f1f1f1;
+  background-color: #ffffff;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 2;
@@ -1348,5 +1348,7 @@ button {
    right: 0;
    z-index: 1;
   }
-  
+  .mobile{
+  margin-top: 40%;
+  }
 }

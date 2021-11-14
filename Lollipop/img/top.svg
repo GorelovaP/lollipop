@@ -1,9 +1,9 @@
 <svg width="40" height="40" xmlns="http://www.w3.org/2000/svg" fill="none">
  <g id="Layer_1">
   <title>Layer 1</title>
-  <path id="svg_2" d="m19.84399,37.66022c-10.04003,0 -18.17246,-7.9312 -18.17246,-17.72281c0,-9.79161 8.13243,-17.72281 18.17246,-17.72281c10.04003,0 18.17246,7.9312 18.17246,17.72281c0,9.79161 -8.13243,17.72281 -18.17246,17.72281z" opacity="undefined" stroke-width="3" stroke="#FFAFCC" fill="none"/>
-  <line stroke-width="2" fill="none" x1="20.30205" y1="15.29794" x2="14.47055" y2="24.15318" id="svg_1" stroke="#FFAFCC"/>
-  <path transform="rotate(-3.49562 23.0024 19.6534)" stroke-width="2" id="svg_3" d="m20.41063,14.90178l5.18355,9.50318" opacity="undefined" stroke="#FFAFCC" fill="none"/>
+  <path id="svg_2" d="m19.84399,37.66022c-10.04003,0 -18.17246,-7.9312 -18.17246,-17.72281c0,-9.79161 8.13243,-17.72281 18.17246,-17.72281c10.04003,0 18.17246,7.9312 18.17246,17.72281c0,9.79161 -8.13243,17.72281 -18.17246,17.72281z" opacity="undefined" stroke-width="3" stroke="#1B1B1B" fill="none"/>
+  <line stroke-width="2" fill="none" x1="20.30205" y1="15.29794" x2="14.47055" y2="24.15318" id="svg_1" stroke="#1B1B1B"/>
+  <path transform="rotate(-3.49562 23.0024 19.6534)" stroke-width="2" id="svg_3" d="m20.41063,14.90178l5.18355,9.50318" opacity="undefined" stroke="#1B1B1B" fill="none"/>
  </g>
 
 </svg>
