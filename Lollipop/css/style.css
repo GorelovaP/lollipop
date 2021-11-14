@@ -5,7 +5,7 @@
 body {
   margin: 0 auto;
   font-family: "Monserrat";
-  width: 100%;
+  max-width: 1538px;
 }
 
 img {
@@ -147,17 +147,17 @@ color: #1B1B1B;
 }
 
 .slide-1 {
-  background: #fff  url("../img/slider-1big.png") no-repeat top right;
+  background: #fff  url("../img/slider-1.png") no-repeat top right;
   
 }
 .slide-2 {
-  background: #fff url("../img/slider-2big.png") no-repeat top left;
+  background: #fff url("../img/slider-2.png") no-repeat top left;
 }
 .slide-3 {
-  background: #fff url("../img/slider-3big.png") no-repeat top left;
+  background: #fff url("../img/slider-3.png") no-repeat top left;
 }
 .slide-4 {
-  background: #fff url("../img/slider-4big.png") no-repeat top left;
+  background: #fff url("../img/slider-4.png") no-repeat top left;
 }
 
 
@@ -1258,5 +1258,32 @@ color: #1B1B1B;
 
   .mobile{
   margin-top: 40%;
+  }
+  /* .row{
+padding-left: 20%;
+  } */
+  .card-1 {
+    background: #fff url("../img/card1.png") no-repeat top;
+    background-size: contain;
+     }
+     .card-2 {
+      background: #fff url("../img/card2.png") no-repeat top;
+      background-size: contain;
+    }
+    
+    .card-3 {
+      background: #fff url("../img/card3.png") no-repeat top;
+      background-size: contain;
+    }
+    
+    .card-4 {
+    
+      background: #fff url("../img/card4.png") no-repeat top ;
+      background-size: contain;
+    }
+  .card-link{
+margin-top: 300px;
+margin-bottom: -18%;
+margin-left: 40%;
   }
 }
