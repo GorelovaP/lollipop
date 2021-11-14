@@ -764,13 +764,11 @@ color: #1B1B1B;
   box-sizing: border-box;
   margin-top: 120px;
   margin-bottom: 12px;
-  padding-left: 43%;
+  padding-left: 50%;
   position: relative;
   min-height: 540px;
-}
-.delivery-banner-content{
- max-width: 300px;
-}
+  }
+
 
 .delivery-banner-title {
   font-weight: normal;
@@ -782,13 +780,7 @@ color: #1B1B1B;
   
 }
 
-.delivery-banner-advantage {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  width: 700px;
-  align-content: space-between;
-}
+
 .advantage-item{
   font-weight: 200;
   font-size: 20px;
@@ -853,14 +845,6 @@ color: #1B1B1B;
 }
 
 @media (max-width: 1200px) {
-  /* .slide-1 {
-    background-size: cover;
-  } */
-
-  .card-3 {
-    background-size: cover;
-  }
-
   .modalCard-close {
     font-size: 13px;
     padding: 0 15px;
@@ -1096,13 +1080,6 @@ color: #1B1B1B;
     top: calc(50vh - 200px);
   }
 
-  .card-3 {
-    background: #fadee6 url("../img/dress_350.png") no-repeat bottom 50% right
-      10%;
-  }
-  .card-4 {
-    padding-left: 46px;
-  }
   .modal {
     max-width: 470px;
     min-height: 300px;
@@ -1111,21 +1088,12 @@ color: #1B1B1B;
     border-radius: 20px;
   }
 
-  .delivery-banner-advantage {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    width: 550px;
-    align-content: space-between;
-  }
   .advantage-item{
     font-size: 15px;
     line-height: 28px;
     width: 150px;
-    color: #ffffff;
     margin: 10px;
     padding: 5px;
-    border: 3px solid rgb(255, 255, 255);
     border-radius: 10px;
   }
   .card-text.middle{
@@ -1134,31 +1102,14 @@ color: #1B1B1B;
 }
 
 @media (max-width: 880px){
-  .delivery-banner-img {
-   display: none;
-  }
 
-  .delivery-banner-advantage {
-    width: 600px;
-    align-content: space-between;
-  }
   .advantage-item{
     font-size: 15px;
     line-height: 28px;
     width: 150px;
-    color: #ffffff;
     margin: 10px;
     padding: 5px;
-    border: 3px solid rgb(255, 255, 255);
     border-radius: 10px;
-  }
-  .delivery-banner-img2{
-    display: inline;
-    position: absolute;
-    margin-right: 2%;
-    bottom: 0;
-   right: 0;
-   z-index: 1;
   }
 }
 
@@ -1195,10 +1146,6 @@ color: #1B1B1B;
     background-position: left top;
   }
 
-  .card-4 {
-    background-position: right top;
-  }
-
   .card {
     padding: 30px;
     min-height: 300px;
@@ -1231,20 +1178,10 @@ color: #1B1B1B;
     padding: 20px 5px 20px 5px;
   }
 
-  /* .slide-1 {
-    background: #ffdce6 url("../img/slide-1_350.png") no-repeat bottom 0 right
-      30%;
-  } */
-
   .tel {
     margin-top: -20%;
   }
 
-  .card-3 {
-    padding-top: 35px;
-    background: #fadee6 url("../img/dress_250.png") no-repeat bottom 1% right 1%;
-    background-size: contain;
-  }
   .card-title.large {
     max-width: 420px;
     font-size: 30px;
@@ -1286,10 +1223,20 @@ color: #1B1B1B;
     margin-left: 0;
     width: 100%;
   }
-
-  .slider-button {
-    width: 40px;
+  .slide-1 {
+    background:  url("../img/slider-1.png") no-repeat top left;
   }
+  .slide-2 {
+    background:  url("../img/slider-2_min.png") no-repeat top left;
+  }
+  .slide-3 {
+    background:  url("../img/slider-3.png") no-repeat top left;
+  }
+  .slide-4 {
+    background:  url("../img/slider-4.png") no-repeat top left;
+  }
+  
+
   .text-light {
     color: #fff;
   }
@@ -1301,39 +1248,18 @@ color: #1B1B1B;
    font-size: 30px;
    line-height: 36px;
    font-weight: bold;
-   color: #ffffff;
    margin: 0 0 24px;
  } 
-  .delivery-banner-advantage {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    width: 550px;
-    align-content: space-between;
-  }
+
   .advantage-item{
     font-size: 15px;
     line-height: 18px;
     width: 100px;
-    color: #ffffff;
     margin: 10px;
     padding: 5px;
-    border: 3px solid rgb(255, 255, 255);
     border-radius: 10px;
   }
 
-  .delivery-banner-img{
-    display: none;
-  }
-
-  .delivery-banner-img2{
-    display: inline;
-    position: absolute;
-    margin-right: 2%;
-    bottom: 0;
-   right: 0;
-   z-index: 1;
-  }
   .mobile{
   margin-top: 40%;
   }
