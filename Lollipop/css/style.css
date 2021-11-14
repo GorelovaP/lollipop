@@ -4,8 +4,8 @@
 
 body {
   margin: 0 auto;
-  font-family: "Monserrat";
-  max-width: 1538px;
+  font-family: 'Merriweather', serif;
+  min-width: 1538px;
 }
 
 img {
@@ -35,8 +35,8 @@ img {
 .navigation-link {
   text-decoration: none;
   text-transform: uppercase;
-  color: #939699;
-  font-family: "Lato", sans-serif;
+  color: #5B5E5C;
+  font-family: 'Merriweather', serif;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -65,7 +65,7 @@ button {
   border-radius: 20px;
   border: none;
   color: #fff;
-  font-family: "Lato", sans-serif;
+  font-family: 'Merriweather', serif;
   font-style: normal;
   font-weight: 900;
   font-size: 14px;
@@ -149,7 +149,6 @@ color: #1B1B1B;
 
 .slide-1 {
   background: #2a362a  url("../img/slider-1big.png") no-repeat top center;
-  
 }
 .slide-2 {
   background: #013355 url("../img/slider-2big.png") no-repeat top center;
@@ -647,7 +646,17 @@ color: #1B1B1B;
   margin-bottom: 20px;
   padding-right: 35px;
 }
-
+.loll{
+  display: flex;
+  align-items: center;
+}
+.logo-link{
+  color:  #1B1B1B;
+  text-decoration: none;
+  font-size: 17px;
+  line-height: 21px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
 .dropdown {
   position: relative;
   display: inline-block;
@@ -666,7 +675,7 @@ color: #1B1B1B;
   text-decoration: none;
   text-transform: uppercase;
   color: #939699;
-  font-family: "Lato", sans-serif;
+  font-family: 'Merriweather', serif;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
