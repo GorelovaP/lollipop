@@ -261,7 +261,9 @@ button {
   display: block;
   width: 105px;
 }
-
+.goods-card-btn:hover{
+  background-color: #c4c4c4;
+}
 .card-title {
   color: #262d33;
   font-size: 25px;
