@@ -221,6 +221,7 @@ button {
   padding-left: 46px;
   padding-right: 46px;
   padding-bottom: 80px;
+  margin-top: 10%;
 }
 
 .card-1 {
@@ -240,20 +241,17 @@ button {
 .card-2 {
   background: url("../img/card2.png") no-repeat top right;
   background-size: contain;
-  
 }
 
 .card-3 {
   background: url("../img/card3.png") no-repeat top right;
   background-size: contain;
-  margin-top: 10%;
 }
 
 .card-4 {
   background: url("../img/card4.png") no-repeat top right;
   background-size: contain;
-  margin-top: 10%;
-}
+  margin-top: 10%}
 
 .goods-card-btn {
   background-color: #f1f1f1;
@@ -774,7 +772,7 @@ button {
   border-radius: 10px;
   box-sizing: border-box;
   margin-top: 5%;
-  margin-bottom: 12px;
+  margin-bottom: 10%;
   padding-left: 50%;
   position: relative;
   min-height: 540px;
@@ -793,7 +791,7 @@ button {
   font-weight: 200;
   font-size: 20px;
   line-height: 24px;
-
+  margin-bottom: 7%;
   color: #1b1b1b;
 }
 
@@ -807,7 +805,7 @@ button {
   bottom: 0;
 }
 .delivery-link {
-  margin-top: 50%;
+  margin-top: 25%;
 }
 .delivery-banner-btn:hover {
   background: rgba(255, 255, 255, 0.3);
@@ -819,9 +817,7 @@ button {
   right: 0;
   z-index: 1;
 }
-.delivery-banner-img2 {
-  display: none;
-}
+
 .delivery-section,
 .method {
   display: flex;
@@ -848,10 +844,7 @@ button {
 }
 
 @media (max-width: 1200px) {
-  .card-1 {
-    background: #fff url("../img/card1.png") no-repeat top right 30%;
-    background-size: contain;
-  }
+
   .card-link {
     margin-left: 10%;
   }
@@ -863,7 +856,19 @@ button {
 
     color: #1b1b1b;
   }
-
+  .card {
+    min-height: 370px;
+    padding-top: 60px;
+    padding-left: 46px;
+    padding-right: 46px;
+    padding-bottom: 80px;
+    margin-top: 5%;
+  }
+  .card-1 {
+    background: #fff url("../img/card1.png") no-repeat top right 30%;
+    background-size: contain;
+    margin-top: 0;
+  }
   .card-2 {
     background: url("../img/card2.png") no-repeat top right 30%;
     background-size: contain;
@@ -878,7 +883,9 @@ button {
     background: url("../img/card4.png") no-repeat top right 30%;
     background-size: contain;
   }
-
+  .delivery-link {
+    margin-top: 40%;
+  }
   .modalCard-close {
     font-size: 13px;
     padding: 0 15px;
@@ -889,9 +896,6 @@ button {
     font-size: 13px;
   }
 
-  .delivery-banner-img {
-    margin-right: 0%;
-  }
 }
 
 @media (max-width: 992px) {
@@ -1141,13 +1145,14 @@ button {
     padding: 30px 50px 35px;
     max-height: 380px;
   }
-}
+  .delivery-banner {
+    padding-left: 60%;
+  }
 
-@media (max-width: 880px) {
   .advantage-item {
     font-size: 15px;
-    line-height: 28px;
-    width: 150px;
+    line-height: 18px;
+   min-width: 200px;
     margin: 10px;
     padding: 5px;
     border-radius: 10px;
