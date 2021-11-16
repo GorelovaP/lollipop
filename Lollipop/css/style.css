@@ -69,11 +69,9 @@ button {
 
 .button {
   padding: 10px 20px;
-  background: #ffaab8;
-  border-radius: 20px;
+  /* background: #ceb3b8; */
   border: none;
-  color: #fff;
-  font-family: "Merriweather", serif;
+  /* color: #fff; */
   font-style: normal;
   font-weight: 900;
   font-size: 14px;
@@ -84,7 +82,7 @@ button {
 
 .button:hover {
   cursor: pointer;
-  background-color: #ff5a74;
+  background-color: #8a8a8a;
   text-align: center;
 }
 
@@ -127,7 +125,9 @@ button {
 .button-icon:last-child {
   margin-right: 0;
 }
-
+.button-cart-style{
+  background-color: none;
+}
 .cart-count {
   margin-left: 10px;
 }
@@ -490,8 +490,7 @@ button {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  background: rgb(255, 255, 255);
-  border-radius: 20px;
+  background: #e0e8e4;
   min-width: 600px;
   min-height: 300px;
 
@@ -507,7 +506,7 @@ button {
 .modal-title {
   margin-top: 0;
   margin-bottom: 15px;
-  color: #383838;
+  color: #1b1b1b;
 }
 
 .modal-close {
@@ -570,13 +569,13 @@ button {
 }
 
 .cart-table th {
-  background: #ffaab8;
-  color: #383838;
+  background: #dadada;
+  color: #1b1b1b;
 }
 
 .cart-table td {
   margin-top: 5px;
-  background: rgba(255, 215, 221, 0.91);
+  background: rgba(240, 240, 240, 0.91);
 }
 
 .cart-table th,
@@ -694,37 +693,34 @@ button {
 }
 .dropdown:hover .cat,
 .hov:hover {
-  color: #ffaab8;
+  color: #b9b9b9;
 }
 
 .modalCardBuy {
   border: 2px solid #ffeef3;
   width: 700px;
   height: 400px;
-  background: rgba(255, 215, 221, 0.91);
+  background: rgba(238, 238, 238, 0.91);
   display: none;
   border-radius: 20px;
 }
 .modalCard {
-  border: 2px solid #ffeef3;
+  border: 2px solid #474747;
   width: 700px;
   height: 400px;
-  background: rgba(255, 215, 221, 0.91);
+  background: #e0e8e4;
   display: none;
-  border-radius: 20px;
 }
 
 .modalCard-title {
-  font-family: "Lato", "Roboto Slab", serif;
   font-size: 64px;
-  color: rgb(255 170 184);
-  -webkit-text-stroke: 1px #806d71;
+  color: rgb(61, 61, 61);
+  -webkit-text-stroke: 1px #1b1b1b;
 }
 .modalCard-title2 {
-  font-family: "Lato", "Roboto Slab", serif;
   font-size: 46px;
   color: rgb(255 170 184);
-  -webkit-text-stroke: 1px #806d71;
+  -webkit-text-stroke: 1px #1b1b1b;
 }
 
 .modalCardContent {
@@ -751,20 +747,22 @@ button {
   justify-content: center;
 }
 
-.modalCard-close {
+.modalCard-btn1 {
   position: initial;
-  background-color: rgba(241, 149, 163, 0.91);
+  text-decoration-line: underline;
+  background-color: none; 
+  color: #1b1b1b;
   right: 35%;
-  font-size: 14px;
+  font-size: 16px;
 }
 
-.modalCard-cart {
+/* .modalCard-cart {
   height: 50px;
   border: none;
-  background-color: rgba(241, 149, 163, 0.91);
+  background-color: rgba(209, 208, 208, 0.91);
   font-size: 14px;
   padding: 35px;
-}
+} */
 
 /* Доставка */
 .delivery-banner {
@@ -1091,7 +1089,7 @@ button {
 
   .modalCard-title {
     font-size: 48px;
-    color: #fa879a;
+    color: #dddddd;
   }
 
   .modalCardContent {
