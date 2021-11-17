@@ -8,6 +8,7 @@ const mySwiper = new Swiper(".swiper-container", {
 
 //cart
 
+
 const buttonCarts = document.querySelectorAll(".button-cart");
 const modalCart = document.querySelector("#modal-cart");
 const modalClose = document.querySelector(".modal-close");
@@ -22,6 +23,14 @@ const cartTableGoods = document.querySelector(".cart-table__goods");
 const cartTableTotal = document.querySelector(".card-table__total");
 const bg = document.querySelector(".bg");
 const modalCardBuy = document.querySelector(".modalCardBuy")
+let sectionTitle = document.querySelector(".section-title")
+
+navigationLink.forEach(function (link){
+    link.addEventListener("click", function (e){
+       let link =  e.target;
+        sectionTitle.innerHTML = link.name.toUpperCase();
+        })
+})
 
 
 const modalform = document.querySelector(".modal-form")
