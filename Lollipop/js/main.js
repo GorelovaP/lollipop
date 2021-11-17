@@ -17,6 +17,9 @@ const viewAll = document.querySelectorAll(".view-all");
 const navigationLink = document.querySelectorAll(
     ".navigation-link:not(.view-all)"
 );
+ const navigationLinks = document.querySelectorAll(
+    ".navigation-link"
+);
 const showClothing = document.querySelectorAll(".show-clothing");
 const showAcsessories = document.querySelectorAll(".show-acsessories");
 const cartTableGoods = document.querySelector(".cart-table__goods");
@@ -25,7 +28,7 @@ const bg = document.querySelector(".bg");
 const modalCardBuy = document.querySelector(".modalCardBuy")
 let sectionTitle = document.querySelector(".section-title")
 
-navigationLink.forEach(function (link){
+navigationLinks.forEach(function (link){
     link.addEventListener("click", function (e){
        let link =  e.target;
         sectionTitle.innerHTML = link.name.toUpperCase();
