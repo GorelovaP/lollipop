@@ -1106,9 +1106,6 @@ button {
     margin: 0;
   }
 
-  .margin {
-    margin-top: 20px;
-  }
 
   .dropdown-content {
     width: 100%;
@@ -1181,7 +1178,7 @@ button {
     flex-direction: column;
     position: relative;
     padding: 30px 50px 35px;
-    max-height: 380px;
+    max-height: 480px;
   }
   .delivery-banner {
     padding-left: 60%;
@@ -1195,7 +1192,7 @@ button {
     padding: 5px;
     border-radius: 10px;
   }
-  delivery-banner-list li:before {
+  .delivery-banner-list li:before {
         top: 15px;
 
   }
