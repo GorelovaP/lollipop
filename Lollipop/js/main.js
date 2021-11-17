@@ -60,7 +60,7 @@ const showModal = function () {
 };
 showModal();
 const getGoods = async () => {
-  const result = await fetch("db/db.json");
+  const result = await fetch("../db/db.json");
   if (!result.ok) {
     throw "Ошибочка вышла:" + result.status;
   }
@@ -217,7 +217,7 @@ const createCard = function ({ label, name, img, id, description, price }) {
   card.innerHTML = `
 	<div class="goods-card">
 	${label ? `<span class="label">${label}</span>` : ""}
-		<img src="db/${img}" alt="${name}" class="goods-image">
+		<img src="../db/${img}" alt="${name}" class="goods-image">
 	<h3 class="goods-title">${name}</h3>
      <p class="goods-description">${description}</p>
 	<button class="goods-card-btn add-to-cart" data-id="${id}">

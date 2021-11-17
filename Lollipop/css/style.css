@@ -593,7 +593,9 @@ button {
 }
 
 .cart-buy {
-  background-color: #f7667e;
+  background-color: #ffffff;
+  font-family: "Merriweather", serif;
+  text-decoration: underline;
   display: block;
   margin-left: auto;
   height: 40px;
@@ -605,7 +607,7 @@ button {
   border-radius: 50%;
   border: none;
   text-align: center;
-  background-color: #fc7b91;
+  background-color: #bce4cf;
   color: #000000;
   margin: 0 5px;
   font-weight: bold;
@@ -700,7 +702,7 @@ button {
   border: 2px solid #ffeef3;
   width: 700px;
   height: 400px;
-  background: rgba(238, 238, 238, 0.91);
+  background: rgba(224, 233, 228, 0.91);
   display: none;
   border-radius: 20px;
 }
@@ -717,10 +719,8 @@ button {
   color: rgb(61, 61, 61);
   -webkit-text-stroke: 1px #1b1b1b;
 }
-.modalCard-title2 {
+.small {
   font-size: 46px;
-  color: rgb(255 170 184);
-  -webkit-text-stroke: 1px #1b1b1b;
 }
 
 .modalCardContent {
@@ -750,7 +750,8 @@ button {
 .modalCard-btn1 {
   position: initial;
   text-decoration-line: underline;
-  background-color: none; 
+  background-color: #f3f3f3; 
+  font-family: "Merriweather", serif;
   color: #1b1b1b;
   right: 35%;
   font-size: 16px;
@@ -830,7 +831,7 @@ button {
 
 .method-title {
   margin: 10px;
-  color: #f791a2;
+  color: #1b1b1b;
 }
 .method-payment h3 {
   color: #707070;
