@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lollipop</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/lollipop-icon128.png">
+    <link rel="apple-touch-icon" sizes="180x180" href=Lollipop/favicon/lollipop-icon128.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/lollipop-icon32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/lollipop-icon16.png">
     <!-- <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5"> -->
@@ -109,11 +109,11 @@
                 </ul>
             </nav>
         </div>
-        <div class="col-lg-3 col-8 d-flex justify-content-end flex-md-row cart">
-            <button class="button-cart button-cart-style button">
+        <div class="col-lg-3 col-8 d-flex align-items-center justify-content-end flex-md-row cart">
+            <button class="btn button-cart">
                 <img class="button-icon" src="../img/cart.png" alt="icon: cart">
-                <span class="button-text">Корзина</span>
-                <span class="button-text cart-count"></span>
+<!--&lt;!&ndash;                <span class="button-text">Корзина</span>&ndash;&gt;-->
+<!--                <span class="button-text cart-count"></span>-->
             </button>
         </div>
     </div>
@@ -123,8 +123,8 @@
     <div class="swiper-wrapper">
         <section class="slide slide-1 swiper-slide">
             <div class="container">
-                <div class="bottom row justify-content-center">
-                    <div class="col-lg-3">
+                <div class=" row justify-content-center">
+                    <div class="col-lg-4 col-md-5 col-sm-7 col-7">
                         <div class="slider-link">
                             <a href="#" class="navigation-link slide-link" data-field="category">Одежда</a>
                         </div>
@@ -133,16 +133,16 @@
                           </div>
                    </section>
         <section class="slide slide-2 swiper-slide">
-            <div class="container">
-                <div class="bottom row justify-content-center">
-                    <div class="col-lg-3">
+            <div class="container justify-content-center">
+                <div class=" row justify-content-center">
+                    <div class="col-lg-3 col-md-5 col-sm-6 col-6">
                         <!-- <h2 class="slide-title">Обувь</h2>
                         <p class="slide-description">Чувственность и свобода, естественность и комфорт, уверенность
                             и стремление
                             к разнообразию — обувь отражает все эти ценности современной женщины.
                             </p> -->
                         <div class="adapt slider-link">
-                            <a href="#" class="navigation-link slide-link" data-field="category">Обувь</a>
+                            <a href="#" class="navigation-link slide-link " data-field="category">Обувь</a>
                         </div>
                     </div>
                     <!-- /.col-4 offset-lg-1 -->
@@ -153,14 +153,14 @@
         </section>
         <section class="slide slide-3 swiper-slide">
             <div class="container">
-                <div class="bottom row justify-content-center">
-                    <div class="col-lg-4">
+                <div class="row justify-content-center">
+                    <div class="col-xl-5 col-lg-6 col-md-8 col-sm-10 col-10">
                         <!-- <h2 class="slide-title width">Нижнее бельё</h2>
                         <p class="slide-description">Настоящая женщина должна излучать уверенность в незыблемости
                             своей красоты и силе своего обаяния.
                             Без красивого белья здесь не обойтись!</p> -->
                         <div class="adapt slider-link">
-                            <a href="#" class="navigation-link slide-link" data-field="category">Нижнее бельё</a>
+                            <a href="#" class="navigation-link slide-link " data-field="category">Нижнее бельё</a>
                         </div>
                     </div>
                     <!-- /.col-4 offset-lg-1 -->
@@ -169,10 +169,10 @@
             </div>
             <!-- /.container -->
         </section>
-        <section class="slide slide-4 swiper-slide">
+        <section class="slide slide-4 swiper-slide justify-content-center">
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-lg-4">
+                    <div class="col-lg-5 col-md-7 col-sm-9 col-8">
 
                         <div class="adaptiv slider-link">
                             <a href="#" class="navigation-link slide-link" data-field="category">Аксессуары</a>
@@ -268,10 +268,9 @@
                 <h1 class="delivery-banner-title">Быстрая доставка по Минску</h1>
 
                 <div class="delivery-banner-advantage">
-                    <ul>
+                    <ul class="delivery-banner-list">
                         <li>
                             <div class="advantage-item advantage-item-free">Бесплатная доставка от 50BYN</div>
-
                         </li>
                         <li>
                             <div class="advantage-item advantage-item-time"> Доставка курьером по Минску

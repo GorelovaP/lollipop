@@ -68,6 +68,7 @@ button {
 }
 
 .button {
+  box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
   padding: 10px 20px;
   /* background: #ceb3b8; */
   border: none;
@@ -125,9 +126,7 @@ button {
 .button-icon:last-child {
   margin-right: 0;
 }
-.button-cart-style{
-  background-color: none;
-}
+
 .cart-count {
   margin-left: 10px;
 }
@@ -493,7 +492,7 @@ button {
   background: #e0e8e4;
   min-width: 600px;
   min-height: 300px;
-
+  box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
   padding: 30px;
   position: relative;
 }
@@ -536,7 +535,6 @@ button {
   margin-right: 30px;
   height: 40px;
   padding: 10px;
-  border-radius: 20px;
   margin-bottom: 10px;
   border: 1px solid #5a5a5a;
 }
@@ -653,7 +651,7 @@ button {
 .logo-link {
   color: #1b1b1b;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 20px;
   line-height: 21px;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -707,11 +705,12 @@ button {
   border-radius: 20px;
 }
 .modalCard {
-  border: 2px solid #474747;
+  border: 2px solid rgba(71, 71, 71, 0.73);
   width: 700px;
   height: 400px;
   background: #e0e8e4;
   display: none;
+  box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
 }
 
 .modalCard-title {
@@ -749,12 +748,39 @@ button {
 
 .modalCard-btn1 {
   position: initial;
-  text-decoration-line: underline;
   background-color: #f3f3f3; 
   font-family: "Merriweather", serif;
   color: #1b1b1b;
   right: 35%;
   font-size: 16px;
+}
+.delivery-banner-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.btn{
+  background-color: transparent;
+  border: none;
+  width: 100px;
+  height: 22px;
+  margin-bottom: 1px;
+}
+.delivery-banner-list {
+  list-style: none;
+  margin: 0
+}
+.delivery-banner-list li{
+  position: relative;
+}
+.delivery-banner-list li:before {
+  content:  "";
+  width: 16px;
+  height: 0px;
+  top: 10px;
+  border: 1px solid #1B1B1B;
+  position: absolute;
+  left: -40px;
 }
 
 /* .modalCard-cart {
@@ -782,7 +808,7 @@ button {
   font-size: 23px;
   line-height: 28px;
   text-transform: uppercase;
-
+  margin-bottom: 45px;
   color: #1b1b1b;
 }
 
@@ -802,9 +828,22 @@ button {
   letter-spacing: 0.02em;
   color: #1b1b1b;
   bottom: 0;
+  text-decoration: none;
 }
 .delivery-link {
-  margin-top: 25%;
+ margin-top: 7%;
+  text-align: center;
+  max-width: 390px;
+}
+
+
+.delivery-link:after {
+  content: "";
+  width: 100%;
+  display: block;
+  height: 2px;
+  background: #1b1b1b;
+  margin-top: 8px;
 }
 .delivery-banner-btn:hover {
   background: rgba(255, 255, 255, 0.3);
@@ -882,9 +921,7 @@ button {
     background: url("../img/card4.png") no-repeat top right 30%;
     background-size: contain;
   }
-  .delivery-link {
-    margin-top: 40%;
-  }
+
   .modalCard-close {
     font-size: 13px;
     padding: 0 15px;
@@ -968,8 +1005,8 @@ button {
     display: flex; /* используем flex для центрирования содержимого */
     align-items: center; /* центрируем содержимое кнопки */
     flex-direction: row;
-    top: 20px;
-    left: 20px;
+    top: 12px;
+    left: 15px;
     width: 26px;
     height: 26px;
     cursor: pointer;
@@ -1156,6 +1193,10 @@ button {
     padding: 5px;
     border-radius: 10px;
   }
+  delivery-banner-list li:before {
+        top: 15px;
+
+  }
 }
 
 @media (max-width: 576px) {
@@ -1287,8 +1328,16 @@ button {
   .slide-4 {
     background: url("../img/slider-4min.png") no-repeat top center;
   }
+  .delivery-banner-list li:before{
+    top:15px;
+  }
+  .button-icon {
+    margin-left: 70px;}
+.logo-link{
+  margin-left: 10px;
+}
   .slider-link {
-    margin-bottom: 20px;
+    margin-top: 145px;
     text-align: center;
   }
   .slide-link:after {
@@ -1301,7 +1350,7 @@ button {
   }
   .slide-link {
     font-weight: 200;
-    font-size: 34px;
+    font-size: 26px;
     line-height: 24px;
     letter-spacing: 0.07em;
     color: #fefefe;
@@ -1394,7 +1443,6 @@ button {
   }
   .delivery-link {
     margin-top: 10%;
-    margin-left: 10%;
   }
   .delivery-banner-btn {
     font-weight: 200;
