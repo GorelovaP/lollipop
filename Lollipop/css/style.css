@@ -899,7 +899,7 @@ button {
 
 @media (max-width: 992px) {
   .modalCard-cart {
-    width: 230px;
+    width: 200px;
     display: flex;
     justify-content: center;
     padding: 0;
@@ -1090,9 +1090,10 @@ button {
 
   .modalCard-title {
     font-size: 48px;
-    color: #dddddd;
   }
-
+.small{
+  font-size: 38px;
+}
   .modalCardContent {
     margin: 10% 15%;
   }
@@ -1108,7 +1109,8 @@ button {
   .modal-close {
     margin-right: 0;
   }
-  .modalCard {
+  .modalCard,
+  .modalCardBuy  {
     width: 576px;
     height: 400px;
   }
@@ -1159,7 +1161,8 @@ button {
 }
 
 @media (max-width: 576px) {
-  .modalCard {
+  .modalCard,
+  .modalCardBuy  {
     width: 90vw;
     height: 400px;
   }
@@ -1203,9 +1206,10 @@ button {
 
   .modalCard-title {
     font-size: 36px;
-    color: #fa879a;
   }
-
+.small{
+  font-size: 26px;
+}
   .modalCardContent {
     margin: 15% 25%;
   }
