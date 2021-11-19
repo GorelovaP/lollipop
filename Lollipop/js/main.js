@@ -14,17 +14,14 @@ const modalCart = document.querySelector("#modal-cart");
 const modalClose = document.querySelector(".modal-close");
 const longGoodsList = document.querySelector(".long-goods-list");
 const viewAll = document.querySelectorAll(".view-all");
-const navigationLink = document.querySelectorAll(
-    ".navigation-link:not(.view-all)"
-);
- const navigationLinks = document.querySelectorAll(
-    ".navigation-link"
-);
+const navigationLink = document.querySelectorAll(".navigation-link:not(.view-all)");
+ const navigationLinks = document.querySelectorAll(".navigation-link");
 const showClothing = document.querySelectorAll(".show-clothing");
 const showAcsessories = document.querySelectorAll(".show-acsessories");
 const cartTableGoods = document.querySelector(".cart-table__goods");
 const cartTableTotal = document.querySelector(".card-table__total");
 const bg = document.querySelector(".bg");
+const bg2 = document.querySelector(".bg2");
 const modalCardBuy = document.querySelector(".modalCardBuy")
 let sectionTitle = document.querySelector(".section-title")
 
@@ -39,14 +36,14 @@ navigationLinks.forEach(function (link){
 const modalform = document.querySelector(".modal-form")
 modalform.addEventListener("submit", function (e) {
     e.preventDefault();
-    if (modalCardBuy.classList.contains("close")) {
-        modalCardBuy.classList.replace("close", "active");
-    } else modalCardBuy.classList.add("active");
+    if (bg2.classList.contains("close")) {
+        bg2.classList.replace("close", "active");
+    } else bg2.classList.add("active");
     closeModal();
     let modalClose2 = document.querySelector(".modal-close2");
     modalClose2.addEventListener("click", () => {
 
-        modalCardBuy.classList.replace("active", "close");
+        bg2.classList.replace("active", "close");
     });
 });
 

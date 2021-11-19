@@ -215,19 +215,26 @@ button {
 }
 
 .card {
-  min-height: 370px;
-  padding-top: 60px;
+  min-height: 520px;
+  
+  /* padding-top: 60px;
   padding-left: 46px;
   padding-right: 46px;
-  padding-bottom: 80px;
-  margin-top: 10%;
+  padding-bottom: 80px; 
+  margin-top: 10%;*/
+}
+.card-img{
+min-height: 470px;
+background:  url("../img/card1.png") no-repeat bottom right;
+background-size: contain;
+margin-right: 10%;
 }
 
-.card-1 {
-  background: #fff url("../img/card1.png") no-repeat top right;
-  background-size: contain;
-}
 .card-link {
+  display: inline-block;
+margin-top: 30px;
+margin-left: 50%;
+
 }
 .card-text {
   font-weight: normal;
@@ -236,8 +243,27 @@ button {
   text-decoration-line: underline;
   color: #1b1b1b;
 }
+.card2-img{
+  min-height: 470px;
+  background:  url("../img/card2.png") no-repeat bottom right;
+  background-size: contain;
+  margin-left: 10%;
+  }
+  .card3-img{
+    min-height: 470px;
+    background:  url("../img/card3.png") no-repeat bottom right;
+    background-size: contain;
+ 
+    }
+    .card4-img{
+      min-height: 470px;
+      background:  url("../img/card4.png") no-repeat bottom right;
+      background-size: contain;
+     
+      }
 
-.card-2 {
+
+/* .card-2 {
   background: url("../img/card2.png") no-repeat top right;
   background-size: contain;
 }
@@ -250,7 +276,7 @@ button {
 .card-4 {
   background: url("../img/card4.png") no-repeat top right;
   background-size: contain;
-  margin-top: 10%}
+  margin-top: 10%} */
 
 .goods-card-btn {
   background-color: #f1f1f1;
@@ -484,7 +510,7 @@ button {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-.bg {
+.bg, .bg2{
   display: none;
   position: fixed;
   top: 0;
@@ -494,11 +520,10 @@ button {
   z-index: 10;
   background-color: rgba(0, 0, 0, 0.3);
 }
-.bg.active{
+.bg.active, .bg2.active{
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
 .overlay.show {
   display: flex;
@@ -718,12 +743,11 @@ button {
 }
 
 .modalCardBuy {
-  border: 2px solid #ffeef3;
+  border: 2px solid rgba(71, 71, 71, 0.73);
   width: 700px;
   height: 400px;
   background: rgba(224, 233, 228, 0.91);
-  display: none;
-  border-radius: 20px;
+ 
 }
 .modalCard {
   border: 2px solid rgba(71, 71, 71, 0.73);
