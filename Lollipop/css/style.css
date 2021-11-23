@@ -216,25 +216,13 @@ button {
 
 .card {
   min-height: 520px;
-  
-  /* padding-top: 60px;
-  padding-left: 46px;
-  padding-right: 46px;
-  padding-bottom: 80px; 
-  margin-top: 10%;*/
 }
-.card-img{
-min-height: 470px;
-background:  url("../img/card1.png") no-repeat bottom right;
-background-size: contain;
-margin-right: 10%;
-}
-
 .card-link {
   display: inline-block;
-margin-top: 30px;
-margin-left: 50%;
-
+margin: 30px 35% 0;
+}
+.center{
+  margin-left: 50%;
 }
 .card-text {
   font-weight: normal;
@@ -243,40 +231,33 @@ margin-left: 50%;
   text-decoration-line: underline;
   color: #1b1b1b;
 }
+.card-img{
+  min-height: 470px;
+  background:  url("../img/card1.png") no-repeat bottom right;
+  background-size: contain;
+  margin-right: 10%;
+  margin-top: 10%;
+  }
+  
 .card2-img{
   min-height: 470px;
   background:  url("../img/card2.png") no-repeat bottom right;
   background-size: contain;
   margin-left: 10%;
+  margin-top: 10%;
   }
   .card3-img{
     min-height: 470px;
     background:  url("../img/card3.png") no-repeat bottom right;
     background-size: contain;
- 
+    margin-right: 10%;
     }
     .card4-img{
       min-height: 470px;
       background:  url("../img/card4.png") no-repeat bottom right;
       background-size: contain;
-     
+      margin-left: 10%;
       }
-
-
-/* .card-2 {
-  background: url("../img/card2.png") no-repeat top right;
-  background-size: contain;
-}
-
-.card-3 {
-  background: url("../img/card3.png") no-repeat top right;
-  background-size: contain;
-}
-
-.card-4 {
-  background: url("../img/card4.png") no-repeat top right;
-  background-size: contain;
-  margin-top: 10%} */
 
 .goods-card-btn {
   background-color: #f1f1f1;
@@ -930,45 +911,44 @@ margin-left: 50%;
 }
 
 @media (max-width: 1200px) {
-
+  .col-xl-5{
+    width: 400px
+  }
+  .card {  
+    min-height: 450px;
+  }
   .card-link {
-    margin-left: 10%;
+  display: inline-block;
+  margin: 30px 35% 0;
   }
-  .card-text {
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 22px;
-    text-decoration-line: underline;
 
-    color: #1b1b1b;
-  }
-  .card {
-    min-height: 370px;
-    padding-top: 60px;
-    padding-left: 46px;
-    padding-right: 46px;
-    padding-bottom: 80px;
-    margin-top: 5%;
-  }
-  .card-1 {
-    background: #fff url("../img/card1.png") no-repeat top right 30%;
+  .card-img{
+    min-height: 400px;
+    background:  url("../img/card1.png") no-repeat bottom right;
     background-size: contain;
+    margin-right: 0;
+    margin-top: 0; 
+    }
+    
+  .card2-img{
+    min-height: 400px;
+    background:  url("../img/card2.png") no-repeat bottom right;
+    background-size: contain;
+    margin-left: 0;
     margin-top: 0;
-  }
-  .card-2 {
-    background: url("../img/card2.png") no-repeat top right 30%;
-    background-size: contain;
-  }
-
-  .card-3 {
-    background: url("../img/card3.png") no-repeat top right 30%;
-    background-size: contain;
-  }
-
-  .card-4 {
-    background: url("../img/card4.png") no-repeat top right 30%;
-    background-size: contain;
-  }
+    }
+    .card3-img{
+      min-height: 400px;
+      background:  url("../img/card3.png") no-repeat bottom right;
+      background-size: contain;
+      margin-right: 0;
+      }
+      .card4-img{
+        min-height: 400px;
+        background:  url("../img/card4.png") no-repeat bottom right;
+        background-size: contain;
+        margin-left: 0;
+        }
 
   .modalCard-close {
     font-size: 13px;
@@ -1275,14 +1255,14 @@ margin-left: 50%;
   .button-slide {
     margin-left: 10%;
   }
-  .card {
+  /* .card {
     background-position: left top;
   }
 
   .card {
     padding: 30px;
     min-height: 300px;
-  }
+  } */
 
   .modal {
     min-width: 300px;
@@ -1431,52 +1411,52 @@ margin-left: 50%;
   .mobile {
     margin-top: 40%;
   }
-  .card {
-    min-height: 370px;
-    padding-top: 60px;
-    padding-left: 46px;
-    padding-right: 46px;
-    padding-bottom: 80px;
+.col-xl-5{
+  width: 300px;
+}
+  .card {  
+    min-height: 350px;
   }
- 
-  .card-1 {
-    background: #fff url("../img/card1.png") no-repeat top;
-    background-size: contain;
-  }
-  .card-2 {
-    background: #fff url("../img/card2.png") no-repeat top;
-    background-size: contain;
-    margin-top: 10%;
-  }
-
-  .card-3 {
-    background: #fff url("../img/card3.png") no-repeat top;
-    background-size: contain;
-  }
-
-  .card-4 {
-    background: #fff url("../img/card4.png") no-repeat top;
-    background-size: contain;
-  }
-
   .card-link {
-    margin-top: 110%;
-    margin-bottom: -30%;
-    margin-left: 20%;
+  display: inline-block;
+  margin: 30px 35% 0;
   }
-  .card-text {
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 22px;
-    text-decoration-line: underline;
-    color: #1b1b1b;
+  .center{
+    margin-left: 40%;
   }
- 
+
+  .card-img{
+    min-height: 350px;
+    background:  url("../img/card1.png") no-repeat bottom right;
+    background-size: contain;
+     margin-right: 0;
+    margin-top: 0; 
+    }
+    
+  .card2-img{
+    min-height: 350px;
+    background:  url("../img/card2.png") no-repeat bottom right;
+    background-size: contain;
+    margin-left: 0;
+    margin-top: 0; 
+    }
+    .card3-img{
+      min-height: 350px;
+      background:  url("../img/card3.png") no-repeat bottom right;
+      background-size: contain;
+      margin-right: 0; 
+      }
+      .card4-img{
+        min-height:350px;
+        background:  url("../img/card4.png") no-repeat bottom right;
+        background-size: contain;
+         margin-left: 0; 
+        }
   .delivery-banner {
     background: #fff;
     border-radius: 10px;
     box-sizing: border-box;
-    margin-top: 50px;
+    margin-top:0;
     margin-bottom: 12px;
     padding-left: 10%;
     position: relative;
