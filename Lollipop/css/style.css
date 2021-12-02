@@ -1226,6 +1226,12 @@ button {
     width: 90vw;
     height: 400px;
   }
+  .goods-card:hover {
+    transform: none;
+    background: none;
+    z-index: 1;
+    transition: transform 0.5s;
+  }
   .active {
     left: calc(50vw - 45vw);
     top: calc(50vh - 200px);
@@ -1249,15 +1255,6 @@ button {
   .button-slide {
     margin-left: 10%;
   }
-  /* .card {
-    background-position: left top;
-  }
-
-  .card {
-    padding: 30px;
-    min-height: 300px;
-  } */
-
   .modal {
     min-width: 300px;
     max-height: 400px;
